@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--12 Gauge-->
+  <SoundDef>
+    <defName>HID_GunTail_12Gauge</defName>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>GTEK_GunTails/GTek_ShotgunTail</clipPath>
+          </li>
+        </grains>
+        <volumeRange>18.23529~20.58824</volumeRange>
+        <pitchRange>0.9082352~1.091765</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

@@ -320,14 +320,15 @@
     </modExtensions>
   </ThingDef>
   <!--=SMG=-->
-  <!--Uzi-->
+  <!--IMI Uzi-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Uzi</defName>
-    <label>Uzi</label>
+    <label>IMI Uzi</label>
     <description>A relatively compact submachine gun with a foldable stock.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Uzi</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.16</drawSize>
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <recipeMaker>
@@ -346,7 +347,7 @@
       <ShotSpread>0.12</ShotSpread>
       <SwayFactor>0.99</SwayFactor>
       <Bulk>4.70</Bulk>
-      <WorkToMake>29500</WorkToMake>
+      <WorkToMake>28500</WorkToMake>
     </statBases>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
@@ -359,8 +360,9 @@
       <li>RangedLight</li>
     </weaponClasses>
     <costList>
-      <Steel>45</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <Steel>40</Steel>
+      <Chemfuel>5</Chemfuel>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -432,14 +434,15 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Micro Uzi-->
+  <!--IMI Micro Uzi-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_UziMicro</defName>
-    <label>Micro Uzi</label>
+    <label>IMI Micro Uzi</label>
     <description>An infamous machine pistol design, very hard to control in automatic fire.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/UziMicro</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.16</drawSize>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_SMG</soundInteract>
@@ -450,13 +453,13 @@
       </skillRequirements>
     </recipeMaker>
     <statBases>
-      <Mass>1.30</Mass>
-      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
-      <SightsEfficiency>0.70</SightsEfficiency>
-      <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.27</SwayFactor>
-      <Bulk>2.50</Bulk>
-      <WorkToMake>24500</WorkToMake>
+      <Mass>1.95</Mass>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.16</ShotSpread>
+      <SwayFactor>1.17</SwayFactor>
+      <Bulk>2.82</Bulk>
+      <WorkToMake>26500</WorkToMake>
     </statBases>
     <weaponTags>
       <li>ShortShots</li>
@@ -469,19 +472,20 @@
       <li>ShortShots</li>
     </weaponClasses>
     <costList>
-      <Steel>30</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <Steel>25</Steel>
+      <Chemfuel>5</Chemfuel>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>2.08</recoilAmount>
+        <recoilAmount>1.66</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>20</range>
         <soundCast>HID_Shot_9mmPara_SMG</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -527,7 +531,7 @@
         <def>MF_StandardMuzzleFalshTwo</def>
         <drawSize>(0.55,0.55)</drawSize>
         <offsets>
-          <li>(0.22,0)</li>
+          <li>(0.25,0)</li>
         </offsets>
       </li>
     </modExtensions>
@@ -695,7 +699,7 @@
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <warmupTime>0.6</warmupTime>
-        <range>16</range>
+        <range>20</range>
         <soundCast>HID_Shot_MP5Type</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -2691,10 +2695,10 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--APC9K Pro-->
+  <!--B&T APC9K Pro-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_APC9K_Pro</defName>
-    <label>APC9K Pro</label>
+    <label>B&amp;T APC9K Pro</label>
     <description>A compact submachine gun favored by security and law enforcement. Small enough to be used one-handed.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/APC9K_Pro</texPath>
@@ -2750,7 +2754,7 @@
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <warmupTime>0.5</warmupTime>
-        <range>20</range>
+        <range>25</range>
         <soundCast>HID_Shot_9mmPara_SMG</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

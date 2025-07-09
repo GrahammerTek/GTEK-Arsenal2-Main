@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ==================== AmmoSet ========================== -->
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_35x32mmSRType11Grenade</defName>
+    <label>35x32mmSR Grenades</label>
+    <ammoTypes>
+      <Ammo_35x32mmSRGrenade_HE>Bullet_35x32mmSRType11Grenade_HE</Ammo_35x32mmSRGrenade_HE>
+      <Ammo_35x32mmSRGrenade_HEDP>Bullet_35x32mmSRType11Grenade_HEDP</Ammo_35x32mmSRGrenade_HEDP>
+      <Ammo_35x32mmSRGrenade_EMP>Bullet_35x32mmSRType11Grenade_EMP</Ammo_35x32mmSRGrenade_EMP>
+      <Ammo_35x32mmSRGrenade_Smoke>Bullet_35x32mmSRType11Grenade_Smoke</Ammo_35x32mmSRGrenade_Smoke>
+    </ammoTypes>
+    <similarTo>AmmoSet_LauncherGrenade</similarTo>
+  </CombatExtended.AmmoSetDef>
+  <!-- ================== Projectiles ================== -->
+  <ThingDef Name="Base35x32mmSRType11GrenadeBullet" ParentName="BaseExplosiveBullet" Abstract="true">
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.45,0.45)</drawSize>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <speed>76</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="Base35x32mmSRType11GrenadeBullet">
+    <defName>Bullet_35x32mmSRType11Grenade_HE</defName>
+    <label>35x32mmSR grenade (HE)</label>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <explosionRadius>1</explosionRadius>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Fragments">
+        <fragments>
+          <Fragment_Small>20</Fragment_Small>
+        </fragments>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="Base35x32mmSRType11GrenadeBullet">
+    <defName>Bullet_35x32mmSRType11Grenade_HEDP</defName>
+    <thingClass>CombatExtended.BulletCE</thingClass>
+    <label>35x32mmSR grenade (HEDP)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>33</damageAmountBase>
+      <armorPenetrationSharp>55</armorPenetrationSharp>
+      <armorPenetrationBlunt>4.961</armorPenetrationBlunt>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <damageAmountBase>17</damageAmountBase>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveRadius>0.5</explosiveRadius>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+      <li Class="CombatExtended.CompProperties_Fragments">
+        <fragments>
+          <Fragment_Small>8</Fragment_Small>
+        </fragments>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="Base35x32mmSRType11GrenadeBullet">
+    <defName>Bullet_35x32mmSRType11Grenade_EMP</defName>
+    <label>35x32mmSR grenade (EMP)</label>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>EMP</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <explosionRadius>1.5</explosionRadius>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="Base35x32mmSRType11GrenadeBullet">
+    <defName>Bullet_35x32mmSRType11Grenade_Smoke</defName>
+    <label>35x32mmSR grenade (Smoke)</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Smoke</damageDef>
+      <explosionRadius>2</explosionRadius>
+      <suppressionFactor>0.0</suppressionFactor>
+      <dangerFactor>0.0</dangerFactor>
+      <postExplosionGasType>BlindSmoke</postExplosionGasType>
+      <preExplosionSpawnChance>1</preExplosionSpawnChance>
+    </projectile>
+  </ThingDef>
+</Defs>

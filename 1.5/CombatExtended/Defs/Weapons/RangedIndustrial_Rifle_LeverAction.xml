@@ -1,0 +1,863 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--=LEVER-ACTION RIFLE=-->
+  <!--Marlin Model 336-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_Marlin336Model</defName>
+    <label>Marlin Model 336</label>
+    <description>A powerful lever-action repeater rifle, chambered for .30-30 Winchester cartridges.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Marlin336</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.35</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>12500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>1.32</SwayFactor>
+      <Bulk>9.81</Bulk>
+      <Mass>3.40</Mass>
+      <RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.08</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_3030Winchester_FMJ</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>31</range>
+        <soundCast>HID_Shot_ThunderLeverGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_3030Winchester</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.16,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1,1)</drawSize>
+        <offsets>
+          <li>(0.8,0.08)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Marlin Model 336 Dark-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_Marlin336Model_Dark</defName>
+    <label>Marlin Model 336 Dark</label>
+    <description>A powerful lever-action repeater rifle, chambered for .30-30 Winchester cartridges. Its improved design has made it much lighter and capable of accepting a red dot sight.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Marlin336_Dark</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.215</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.5</generateCommonality>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <SightsEfficiency>1.1</SightsEfficiency>
+      <ShotSpread>0.09</ShotSpread>
+      <SwayFactor>1.22</SwayFactor>
+      <Bulk>9.02</Bulk>
+      <Mass>3.17</Mass>
+      <RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.15</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_3030Winchester_FMJ</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>35</range>
+        <soundCast>HID_Shot_ThunderLeverGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>GTEK_Marlin336Dark</li>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_3030Winchester</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite Inherit="false" />
+      <researchPrerequisites>
+        <li>Gunsmithing</li>
+        <li>CE_SimpleNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1,1)</drawSize>
+        <offsets>
+          <li>(0.7,0.08)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Marlin Model 1894-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_Marlin1894Model</defName>
+    <label>Marlin Model 1894</label>
+    <description>Popular lever-action repeater rifle, chambered for .357 Magnum.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Marlin1894</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.215</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>11500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.20</SwayFactor>
+      <Bulk>9.14</Bulk>
+      <Mass>2.81</Mass>
+      <RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.76</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_357Magnum_HV_FMJ</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>31</range>
+        <soundCast>HID_Shot_357Magnum_Lever</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>9</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_357Magnum_Lever</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(0.9,0.9)</drawSize>
+        <offsets>
+          <li>(0.7,0.08)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Marlin Model 1895 Guide Gun-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_Marlin1895Model_GuideGun</defName>
+    <label>Marlin Model 1895 Guide Gun</label>
+    <description>High-quality lever-action repeater rifle, chambered for .45-70 Government.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Marlin1895_GuideGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.215</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.4</generateCommonality>
+    <statBases>
+      <WorkToMake>12500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.28</SwayFactor>
+      <Bulk>9.46</Bulk>
+      <Mass>3.36</Mass>
+      <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.58</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_4570Gov_FMJ</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>31</range>
+        <soundCast>HID_Shot_ThunderGigaGun_Lever</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_4570Gov</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1.1,1)</drawSize>
+        <offsets>
+          <li>(0.7,0.08)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Winchester Ranger-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_WinchesterRanger</defName>
+    <label>Winchester Ranger</label>
+    <description>A lightweight high-capacity lever action rifle chambered for a low caliber cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/WinchesterRanger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.305,1.305)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>11500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.06</ShotSpread>
+      <SwayFactor>1.20</SwayFactor>
+      <Bulk>9.59</Bulk>
+      <Mass>2.38</Mass>
+      <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.88</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>31</range>
+        <soundCast>HID_Shot_22Caliber_Lever</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>15</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_22LR</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(0.25,0.25)</drawSize>
+        <offsets>
+          <li>(0.76,0.1)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--S&W Model 1854-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SW1854_Traditional</defName>
+    <label>S&amp;W Model 1854</label>
+    <description>Modernized lever-action repeating rifle fitted with a close-range scope.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/SW1854</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.305,1.305)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.8</generateCommonality>
+    <statBases>
+      <WorkToMake>19000</WorkToMake>
+      <SightsEfficiency>2.36</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.35</SwayFactor>
+      <Bulk>9.14</Bulk>
+      <Mass>3.74</Mass>
+      <RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.14</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_44Magnum_HV_FMJ</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>40</range>
+        <soundCast>HID_Shot_357Magnum_Lever</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>GTEK_SW1854</li>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>9</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_44Magnum_Lever</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1,1)</drawSize>
+        <offsets>
+          <li>(0.7,0.08)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--S&W Model 1854 SF-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SW1854_SF</defName>
+    <label>S&amp;W Model 1854 SF</label>
+    <description>Modernized lever-action repeating rifle fitted with a red dot sight.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/SW1854_SF</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.305,1.305)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.6</generateCommonality>
+    <statBases>
+      <WorkToMake>16000</WorkToMake>
+      <SightsEfficiency>1.10</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.24</SwayFactor>
+      <Bulk>9.14</Bulk>
+      <Mass>3.23</Mass>
+      <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.31</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_44Magnum_HV_FMJ</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>35</range>
+        <soundCast>HID_Shot_357Magnum_Lever</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>GTEK_SW1854_SF</li>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>9</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_44Magnum_Lever</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite Inherit="false" />
+      <researchPrerequisites>
+        <li>Gunsmithing</li>
+        <li>CE_SimpleNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1,1)</drawSize>
+        <offsets>
+          <li>(0.7,0.08)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Henry Lever Action .45-70-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_HenryLeverAction4570_Steel</defName>
+    <label>Henry Lever Action .45-70</label>
+    <description>Very common lever action rifle available in a wide variety of calibers. This one is chambered in the powerful .45-70 Government cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HenryLeverAction4570</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.35</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>12500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.27</SwayFactor>
+      <Bulk>9.53</Bulk>
+      <Mass>3.21</Mass>
+      <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.63</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_4570Gov_FMJ</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>31</range>
+        <soundCast>HID_Shot_ThunderGigaGun_Lever</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>4</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_4570Gov</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1.1,1)</drawSize>
+        <offsets>
+          <li>(0.77,0.08)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

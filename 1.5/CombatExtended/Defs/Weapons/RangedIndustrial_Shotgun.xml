@@ -1572,7 +1572,7 @@
         <magazineSize>4</magazineSize>
         <reloadOneAtATime>true</reloadOneAtATime>
         <reloadTime>0.85</reloadTime>
-        <ammoSet>AmmoSet_12Gauge</ammoSet>
+        <ammoSet>AmmoSet_12Gauge_Slug</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
         <aiAimMode>AimedShot</aiAimMode>
@@ -3430,7 +3430,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>2</magazineSize>
         <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_20Gauge</ammoSet>
+        <ammoSet>AmmoSet_20Gauge_Slug</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
         <aiAimMode>AimedShot</aiAimMode>
