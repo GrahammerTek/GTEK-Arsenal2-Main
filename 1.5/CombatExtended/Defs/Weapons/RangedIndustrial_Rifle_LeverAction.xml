@@ -13,6 +13,9 @@
       <drawSize>1.35</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>12500</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -120,6 +123,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>15000</WorkToMake>
       <SightsEfficiency>1.1</SightsEfficiency>
@@ -230,6 +236,9 @@
       <drawSize>1.215</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>11500</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -337,6 +346,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>12500</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -443,6 +455,9 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>11500</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -549,6 +564,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>19000</WorkToMake>
       <SightsEfficiency>2.36</SightsEfficiency>
@@ -656,6 +674,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.6</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>16000</WorkToMake>
       <SightsEfficiency>1.10</SightsEfficiency>
@@ -766,6 +787,9 @@
       <drawSize>1.35</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>12500</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>

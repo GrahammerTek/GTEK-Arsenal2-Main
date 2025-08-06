@@ -14,6 +14,9 @@
     </graphicData>
     <possessionCount>1</possessionCount>
     <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>3.4</Mass>
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
@@ -131,6 +134,9 @@
     </graphicData>
     <possessionCount>1</possessionCount>
     <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>2.95</Mass>
       <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
@@ -249,6 +255,9 @@
     <possessionCount>1</possessionCount>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>3.72</Mass>
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
@@ -365,6 +374,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.02</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>2.46</Mass>
       <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
@@ -483,6 +495,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.3</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionShotguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>12000</WorkToMake>
       <Mass>2.77</Mass>
@@ -620,6 +635,9 @@
       <drawSize>(1.485,1.485)</drawSize>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>2.26</Mass>
       <RangedWeapon_Cooldown>0.92</RangedWeapon_Cooldown>
@@ -736,6 +754,9 @@
       <drawSize>(1.35,1.35)</drawSize>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -846,6 +867,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -954,6 +978,9 @@
       <drawSize>(1.35,1.35)</drawSize>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -1066,6 +1093,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>3.29</Mass>
       <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
@@ -1176,6 +1206,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>3.06</Mass>
       <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
@@ -1288,6 +1321,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.75</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>3.40</Mass>
       <RangedWeapon_Cooldown>0.99</RangedWeapon_Cooldown>
@@ -1399,6 +1435,9 @@
     <uiIconScale>1.1</uiIconScale>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>2.72</Mass>
       <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
@@ -1494,6 +1533,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>4.08</Mass>
       <RangedWeapon_Cooldown>0.99</RangedWeapon_Cooldown>
@@ -1606,6 +1648,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>3.40</Mass>
       <RangedWeapon_Cooldown>0.99</RangedWeapon_Cooldown>
@@ -1715,6 +1760,9 @@
       <drawSize>(1.35,1.35)</drawSize>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>3.40</Mass>
       <RangedWeapon_Cooldown>0.99</RangedWeapon_Cooldown>
@@ -1825,6 +1873,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>3.44</Mass>
       <RangedWeapon_Cooldown>0.99</RangedWeapon_Cooldown>
@@ -1940,6 +1991,9 @@
     <uiIconScale>1.1</uiIconScale>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -2040,6 +2094,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -2148,6 +2205,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_PumpActionShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -2253,6 +2313,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -2365,6 +2428,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -2469,6 +2535,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -2570,6 +2639,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -2680,6 +2752,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -2799,6 +2874,9 @@
       <drawSize>(1.375,1.375)</drawSize>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -2903,10 +2981,10 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Browning Auto-5 Hunter-->
+  <!--Browning A5 Hunter-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_BrowningA5Gun</defName>
-    <label>Browning Auto-5 Hunter</label>
+    <label>Browning A5 Hunter</label>
     <description>An autoloading shotgun ready for hunting.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Browning/Auto5Hunter</texPath>
@@ -2914,6 +2992,9 @@
       <drawSize>(1.62,1.62)</drawSize>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -3015,7 +3096,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase">
     <defName>HIDGun_BrowningA5Gun_SawnOff</defName>
-    <label>Browning Auto-5 Hunter (sawed-off)</label>
+    <label>Browning A5 Hunter (sawed-off)</label>
     <description>An autoloading shotgun ready for hunting. Its barrel has been cut down to a shorter length to improve its close-quarters combat capabilities, though it sacrifices some range and accuracy.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Browning/Auto5Hunter_SawnOff</texPath>
@@ -3024,6 +3105,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.3</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -3129,6 +3213,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.75</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -3240,7 +3327,10 @@
       <drawSize>(1.485,1.485)</drawSize>
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
-    <generateCommonality>0.25</generateCommonality>
+    <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -3353,6 +3443,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionShotguns</li>
+    </thingCategories>
     <statBases>
       <Mass>3.78</Mass>
       <RangedWeapon_Cooldown>1.18</RangedWeapon_Cooldown>
@@ -3465,6 +3558,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>
@@ -3583,6 +3679,9 @@
     </graphicData>
     <soundInteract>Interact_Shotgun</soundInteract>
     <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AutomaticShotguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>ShortShots</li>
     </weaponClasses>

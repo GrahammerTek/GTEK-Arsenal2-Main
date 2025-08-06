@@ -25,6 +25,9 @@
     <defName>HIDGun_M202Flash</defName>
     <label>M202 Flash</label>
     <description>A fairly lightweight incendiary launcher boasting a four round capactity and capable of multiple use. It reloads from a large clip which holds all four rockets, and features a collapsable rear to reduce bulk.</description>
+    <thingCategories Inherit="False">
+      <li>HID_Launchers</li>
+    </thingCategories>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/M202Flash</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -153,6 +156,9 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_Launchers</li>
+    </thingCategories>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -227,6 +233,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.05</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_Launchers</li>
+    </thingCategories>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -298,6 +307,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_Launchers</li>
+    </thingCategories>
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -370,6 +382,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_Launchers</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>

@@ -14,6 +14,9 @@
     <possessionCount>1</possessionCount>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>10000</WorkToMake>
       <Mass>3.40</Mass>
@@ -95,6 +98,9 @@
     </statBases>
     <generateCommonality>0.5</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <weaponTags>
       <li>GTEK_Marlin336Dark</li>
       <li>CivilDefenseRifle</li>
@@ -158,6 +164,9 @@
     <possessionCount>1</possessionCount>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>10000</WorkToMake>
       <Mass>2.81</Mass>
@@ -230,6 +239,9 @@
     <possessionCount>1</possessionCount>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>12500</WorkToMake>
       <Mass>3.36</Mass>
@@ -299,6 +311,9 @@
     <possessionCount>1</possessionCount>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>9500</WorkToMake>
       <Mass>2.38</Mass>
@@ -371,6 +386,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>16000</WorkToMake>
       <Mass>3.74</Mass>
@@ -444,6 +462,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.6</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>16000</WorkToMake>
       <Mass>3.23</Mass>
@@ -516,6 +537,9 @@
     <possessionCount>1</possessionCount>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>12500</WorkToMake>
       <Mass>3.21</Mass>

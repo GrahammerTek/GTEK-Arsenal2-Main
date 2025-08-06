@@ -1,5 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <!--9mm Para-->
+  <SoundDef>
+    <defName>HID_GunTail_9mmPara</defName>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>GTEK_GunTails/GTek_9mmTail</clipPath>
+          </li>
+        </grains>
+        <volumeRange>22~22</volumeRange>
+        <pitchRange>0.9082352~1.091765</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
   <!--12 Gauge-->
   <SoundDef>
     <defName>HID_GunTail_12Gauge</defName>
@@ -14,7 +33,100 @@
             <clipPath>GTEK_GunTails/GTek_ShotgunTail</clipPath>
           </li>
         </grains>
-        <volumeRange>18.23529~20.58824</volumeRange>
+        <volumeRange>25~25</volumeRange>
+        <pitchRange>0.9082352~1.091765</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--.50 BMG-->
+  <SoundDef>
+    <defName>HID_GunTail_50BMG</defName>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>GTEK_GunTails/GTek_ShotgunTail</clipPath>
+          </li>
+        </grains>
+        <volumeRange>32~32</volumeRange>
+        <pitchRange>0.9082352~1.091765</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--5.56mm-->
+  <SoundDef>
+    <defName>HID_GunTail_556mmNATO</defName>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>GTEK_GunTails/GTek_556mmTail</clipPath>
+          </li>
+        </grains>
+        <volumeRange>30~30</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--7.62mm NATO-->
+  <SoundDef>
+    <defName>HID_GunTail_762mmNATO</defName>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>GTEK_GunTails/GTek_762mmTail</clipPath>
+          </li>
+        </grains>
+        <volumeRange>20~20</volumeRange>
+        <pitchRange>0.9082352~1.091765</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--7.62mm Soviet-->
+  <SoundDef>
+    <defName>HID_GunTail_762mmSoviet</defName>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>GTEK_GunTails/GTek_762mmSovietTail</clipPath>
+          </li>
+        </grains>
+        <volumeRange>15~15</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!--Thunder Light-->
+  <SoundDef>
+    <defName>HID_GunTail_MagnumPistol</defName>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>GTEK_GunTails/GTek_50AETail</clipPath>
+          </li>
+        </grains>
+        <volumeRange>35~35</volumeRange>
         <pitchRange>0.9082352~1.091765</pitchRange>
       </li>
     </subSounds>

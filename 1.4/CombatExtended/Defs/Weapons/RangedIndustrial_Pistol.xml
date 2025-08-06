@@ -1,6 +1,679 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--=REVOLVER=-->
+  <!--Ruger Redhawk 44 Mag 7.5"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_44Mag_75In</defName>
+    <label>Ruger Redhawk 44 Mag 7.5"</label>
+    <description>A large double-action hunting revolver, chambered for .44 Magnum cartridges. Accurate out to long ranges, if you can handle the weight.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk44_75</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.3</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.53</Mass>
+      <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.14</ShotSpread>
+      <SwayFactor>1.21</SwayFactor>
+      <Bulk>3.30</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.83</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_44Magnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>24</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_44Magnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.03,0.0</DrawOffset>
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(1,1)</drawSize>
+        <offsets>
+          <li>(0.4,0.089)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Ruger Redhawk 44 Mag 5.5" (ADDED IN PATCHES)-->
+  <!--Ruger Redhawk 44 Mag 4.2"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_44Mag_42In</defName>
+    <label>Ruger Redhawk 44 Mag 4.2"</label>
+    <description>A compact .44 Magnum double-action revolver.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk44_42</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.33</Mass>
+      <RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.94</SwayFactor>
+      <Bulk>2.41</Bulk>
+      <WorkToMake>5500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>3.03</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_44Magnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>18</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_44Magnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(1,1)</drawSize>
+        <offsets>
+          <li>(0.2,0.089)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Ruger Redhawk 45 ACP 4.2"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_45ACP_42In</defName>
+    <label>Ruger Redhawk 45 ACP 4.2"</label>
+    <description>An ancient pattern double-action revolver. It's not very powerful, but has a decent range for a pistol and is quick on the draw.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk45_42</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.25</Mass>
+      <RangedWeapon_Cooldown>0.48</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.92</SwayFactor>
+      <Bulk>2.41</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.56</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>16</range>
+        <soundCast>HID_Shot_38Special</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_45ACP</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.6,0.6)</drawSize>
+        <offsets>
+          <li>(0.21,0.091)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Ruger Redhawk 357 Mag 5.5"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_357Mag_55In</defName>
+    <label>Ruger Redhawk 357 Mag 5.5"</label>
+    <description>An eight-shot double action revolver firing a powerful pistol cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk357_55</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.47</Mass>
+      <RangedWeapon_Cooldown>0.48</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.16</ShotSpread>
+      <SwayFactor>1.07</SwayFactor>
+      <Bulk>2.79</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.45</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>20</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>8</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_357Magnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.9,0.9)</drawSize>
+        <offsets>
+          <li>(0.32,0.089)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Ruger Redhawk 357 Mag 4.2"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_357Mag_42In</defName>
+    <label>Ruger Redhawk 357 Mag 4.2"</label>
+    <description>An eight-shot double action revolver firing a powerful pistol cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk357_42</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.39</Mass>
+      <RangedWeapon_Cooldown>0.48</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.95</SwayFactor>
+      <Bulk>2.41</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.52</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>18</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>8</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_357Magnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.9,0.9)</drawSize>
+        <offsets>
+          <li>(0.2,0.089)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Ruger Redhawk 357 Mag 2.75"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_357Mag_275In</defName>
+    <label>Ruger Redhawk 357 Mag 2.75"</label>
+    <description>An eight-shot double action revolver firing a powerful pistol cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk357_275</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.25</Mass>
+      <RangedWeapon_Cooldown>0.48</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.19</ShotSpread>
+      <SwayFactor>0.84</SwayFactor>
+      <Bulk>2.10</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.66</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>14</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>8</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_357Magnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.9,0.9)</drawSize>
+        <offsets>
+          <li>(0.16,0.089)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--Ruger Super Redhawk-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_RugerSuperRedhawk</defName>
@@ -13,12 +686,15 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>1.78</Mass>
       <RangedWeapon_Cooldown>0.51</RangedWeapon_Cooldown>
       <SightsEfficiency>1.88</SightsEfficiency>
       <ShotSpread>0.14</ShotSpread>
-      <SwayFactor>1.73</SwayFactor>
+      <SwayFactor>1.78</SwayFactor>
       <Bulk>3.30</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -49,7 +725,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_454Casull_FMJ</defaultProjectile>
         <warmupTime>0.75</warmupTime>
-        <range>23</range>
+        <range>31</range>
         <soundCast>HID_Shot_ThunderRevolver</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -120,12 +796,15 @@
     <uiIconScale>1.2</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>2.18</Mass>
       <RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
       <SightsEfficiency>1.88</SightsEfficiency>
       <ShotSpread>0.13</ShotSpread>
-      <SwayFactor>2.03</SwayFactor>
+      <SwayFactor>2.18</SwayFactor>
       <Bulk>3.81</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -156,7 +835,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_22Hornet_FMJ</defaultProjectile>
         <warmupTime>0.75</warmupTime>
-        <range>25</range>
+        <range>33</range>
         <soundCast>HID_Shot_38Special</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -230,12 +909,15 @@
     <uiIconScale>1.65</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.66</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>0.38</Mass>
       <RangedWeapon_Cooldown>0.52</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.2</ShotSpread>
-      <SwayFactor>0.68</SwayFactor>
+      <SwayFactor>0.51</SwayFactor>
       <Bulk>1.65</Bulk>
       <WorkToMake>4500</WorkToMake>
     </statBases>
@@ -268,7 +950,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_38Special_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>10</range>
+        <range>12</range>
         <soundCast>HID_Shot_38Special</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -341,12 +1023,15 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>1.13</Mass>
       <RangedWeapon_Cooldown>0.89</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
-      <SwayFactor>1.32</SwayFactor>
+      <SwayFactor>0.99</SwayFactor>
       <Bulk>2.82</Bulk>
       <WorkToMake>3500</WorkToMake>
     </statBases>
@@ -378,7 +1063,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45Colt_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>20</range>
         <soundCast>HID_Shot_357Magnum_Single</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -438,10 +1123,10 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Taurus Model 455 Tracker-->
+  <!--Taurus Tracker 455-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_TaurusM455Tracker</defName>
-    <label>Taurus Model 455 Tracker</label>
+    <label>Taurus Tracker 455</label>
     <description>A very light double action revolver firing a small pistol cartridge.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -452,12 +1137,15 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.3</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>0.82</Mass>
       <RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>1.01</SwayFactor>
+      <SwayFactor>0.76</SwayFactor>
       <Bulk>2.22</Bulk>
       <WorkToMake>5000</WorkToMake>
     </statBases>
@@ -489,7 +1177,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>14</range>
         <soundCast>HID_Shot_38Special</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -550,7 +1238,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_TaurusM455TrackerGold</defName>
-    <label>Taurus Model 455 Tracker (Gold)</label>
+    <label>Taurus Tracker 455 (Gold)</label>
     <description>A very light double action revolver firing a small pistol cartridge. This one has been gold-plated.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -561,12 +1249,15 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>0.82</Mass>
       <RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>1.01</SwayFactor>
+      <SwayFactor>0.76</SwayFactor>
       <Bulk>2.22</Bulk>
       <WorkToMake>5000</WorkToMake>
       <SellPriceFactor>1.5</SellPriceFactor>
@@ -601,7 +1292,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>14</range>
         <soundCast>HID_Shot_38Special</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -673,12 +1364,15 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>1.45</Mass>
       <RangedWeapon_Cooldown>0.52</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.37</SwayFactor>
+      <SwayFactor>1.03</SwayFactor>
       <Bulk>2.67</Bulk>
       <WorkToMake>5500</WorkToMake>
     </statBases>
@@ -710,7 +1404,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_454Casull_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_ThunderRevolver</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -781,12 +1475,15 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>1.79</Mass>
       <RangedWeapon_Cooldown>0.51</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.14</ShotSpread>
-      <SwayFactor>1.78</SwayFactor>
+      <SwayFactor>1.34</SwayFactor>
       <Bulk>3.56</Bulk>
       <WorkToMake>5500</WorkToMake>
       <SellPriceFactor>1</SellPriceFactor>
@@ -820,7 +1517,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_454Casull_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>15</range>
+        <range>24</range>
         <soundCast>HID_Shot_ThunderRevolver</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -893,12 +1590,15 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>1.50</Mass>
       <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.15</ShotSpread>
-      <SwayFactor>1.53</SwayFactor>
+      <SwayFactor>1.14</SwayFactor>
       <Bulk>3.08</Bulk>
       <WorkToMake>5500</WorkToMake>
     </statBases>
@@ -930,7 +1630,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_44Magnum_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>14</range>
+        <range>22</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -990,19 +1690,359 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Colt Python-->
+  <!--Colt Python 2.5"-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_ColtPython</defName>
-    <label>Colt Python</label>
+    <defName>HIDGun_ColtPython_25In</defName>
+    <label>Colt Python 2.5"</label>
     <description>A double action revolver firing a powerful pistol cartridge.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ColtPython</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtPython25</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.13</Mass>
+      <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.2</ShotSpread>
+      <SwayFactor>0.79</SwayFactor>
+      <Bulk>2.03</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CE_Sidearm</li>
+      <li>Revolver</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.79</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>12</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_357Magnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.9,0.9)</drawSize>
+        <offsets>
+          <li>(0.16,0.088)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Colt Python 4.25"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_ColtPython_425In</defName>
+    <label>Colt Python 4.25"</label>
+    <description>A double action revolver firing a powerful pistol cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtPython425</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.3</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.19</Mass>
+      <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.92</SwayFactor>
+      <Bulk>2.48</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CE_Sidearm</li>
+      <li>Revolver</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.72</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>18</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_357Magnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.9,0.9)</drawSize>
+        <offsets>
+          <li>(0.24,0.088)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_MainWeaponBase">
+    <defName>HIDGun_ColtPython_425In_Gold</defName>
+    <label>Colt Python 4.25" (Gold)</label>
+    <description>A double action revolver firing a powerful pistol cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtPython425_Gold</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.19</Mass>
+      <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.92</SwayFactor>
+      <Bulk>2.48</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CE_Sidearm</li>
+      <li>Revolver</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+      <li>ExoticHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Gold>5</Gold>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.72</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>18</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_357Magnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.9,0.9)</drawSize>
+        <offsets>
+          <li>(0.24,0.088)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Colt Python 6"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_ColtPython</defName>
+    <label>Colt Python 6"</label>
+    <description>A double action revolver firing a powerful pistol cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtPython</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.6</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>1.22</Mass>
       <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
@@ -1101,16 +2141,19 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_ColtPythonBlued</defName>
-    <label>Colt Python (Blue)</label>
+    <label>Colt Python 6" (Blue)</label>
     <description>A double action revolver firing a powerful pistol cartridge.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ColtPython_Blued</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtPython_Blued</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>1.22</Mass>
       <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
@@ -1207,6 +2250,119 @@
       </li>
     </modExtensions>
   </ThingDef>
+  <!--Colt Python 8"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_ColtPython_8In</defName>
+    <label>Colt Python 8"</label>
+    <description>A double action revolver firing a powerful pistol cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtPython8</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.30</Mass>
+      <RangedWeapon_Cooldown>0.48</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.14</ShotSpread>
+      <SwayFactor>1.18</SwayFactor>
+      <Bulk>3.43</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CE_Sidearm</li>
+      <li>Revolver</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.60</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>24</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_357Magnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.04,0.0</DrawOffset>
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.9,0.9)</drawSize>
+        <offsets>
+          <li>(0.41,0.088)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--S&W Model 686-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SW686Gun</defName>
@@ -1219,12 +2375,15 @@
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>1.14</Mass>
       <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>1.19</SwayFactor>
+      <SwayFactor>0.89</SwayFactor>
       <Bulk>2.43</Bulk>
       <WorkToMake>5000</WorkToMake>
     </statBases>
@@ -1256,7 +2415,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1329,12 +2488,15 @@
     <uiIconScale>1.65</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>0.56</Mass>
       <RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.2</ShotSpread>
-      <SwayFactor>0.77</SwayFactor>
+      <SwayFactor>0.58</SwayFactor>
       <Bulk>1.76</Bulk>
       <WorkToMake>4500</WorkToMake>
     </statBases>
@@ -1367,7 +2529,120 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_38Special_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>10</range>
+        <range>12</range>
+        <soundCast>HID_Shot_38Special</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_38Special</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.4,0.4)</drawSize>
+        <offsets>
+          <li>(0.2,0.088)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--S&W Model 442-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SW442Gun</defName>
+    <label>S&amp;W Model 442</label>
+    <description>An extremely light double action revolver firing a small cartridge. Easy to handle but only holds 5 rounds, so make those shots count.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SW442</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.65</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.56</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>0.41</Mass>
+      <RangedWeapon_Cooldown>0.51</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.2</ShotSpread>
+      <SwayFactor>0.50</SwayFactor>
+      <Bulk>1.60</Bulk>
+      <WorkToMake>4500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>15</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>3.54</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_38Special_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>12</range>
         <soundCast>HID_Shot_38Special</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1438,13 +2713,16 @@
     </graphicData>
     <uiIconScale>1.65</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
-    <generateCommonality>0.2</generateCommonality>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>0.43</Mass>
       <RangedWeapon_Cooldown>0.51</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.2</ShotSpread>
-      <SwayFactor>0.20</SwayFactor>
+      <SwayFactor>0.51</SwayFactor>
       <Bulk>1.60</Bulk>
       <WorkToMake>5500</WorkToMake>
     </statBases>
@@ -1487,7 +2765,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_38Special_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_38Special</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1546,6 +2824,451 @@
       </li>
     </modExtensions>
   </ThingDef>
+  <!--S&W Model 460V-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SW460V</defName>
+    <label>S&amp;W Model 460V</label>
+    <description>Large and heavy 5-shot double-action revolver, chambered for the rare but powerful .460 Magnum cartridge. Can take .45 Colt or .454 Casull in a pinch.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SW460V</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.71</Mass>
+      <RangedWeapon_Cooldown>0.51</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>1.14</SwayFactor>
+      <Bulk>2.86</Bulk>
+      <WorkToMake>5500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.33</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_460SWMagnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>18</range>
+        <soundCast>HID_Shot_ThunderRevolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_460SWMagnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(1.5,1.2)</drawSize>
+        <offsets>
+          <li>(0.32,0.088)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--S&W Model 460XVR 10.5"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SW460XVR_1050In</defName>
+    <label>S&amp;W Model 460XVR 10.5"</label>
+    <description>A heavy scoped 5-shot double-action hunting revolver, chambered for the rare but powerful .460 Magnum cartridge. Can take .45 Colt or .454 Casull in a pinch.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SW460XVR_1050</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>3.01</Mass>
+      <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
+      <SightsEfficiency>1.94</SightsEfficiency>
+      <ShotSpread>0.12</ShotSpread>
+      <SwayFactor>1.93</SwayFactor>
+      <Bulk>4.57</Bulk>
+      <WorkToMake>8000</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.76</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_460SWMagnum_FMJ</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>31</range>
+        <soundCast>HID_Shot_ThunderRevolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_460SWMagnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.06,0.0</DrawOffset>
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(1.5,1.2)</drawSize>
+        <offsets>
+          <li>(0.50,0.088)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--S&W Model 460XVR 8.38"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SW460XVR_838In</defName>
+    <label>S&amp;W Model 460XVR 8.38"</label>
+    <description>Large and heavy 5-shot double-action revolver, chambered for the rare but powerful .460 Magnum cartridge. Can take .45 Colt or .454 Casull in a pinch.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SW460XVR_838</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2.04</Mass>
+      <RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.14</ShotSpread>
+      <SwayFactor>1.46</SwayFactor>
+      <Bulk>3.81</Bulk>
+      <WorkToMake>5500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.14</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_460SWMagnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>24</range>
+        <soundCast>HID_Shot_ThunderRevolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_460SWMagnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.04,0.0</DrawOffset>
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(1.5,1.2)</drawSize>
+        <offsets>
+          <li>(0.40,0.088)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--S&W Model 460XVR 3.5"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SW460XVR_35In</defName>
+    <label>S&amp;W Model 460XVR 3.5"</label>
+    <description>A heavy 5-shot double-action revolver, chambered for the rare but powerful .460 Magnum cartridge. Can take .45 Colt or .454 Casull in a pinch.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SW460XVR_35</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.67</Mass>
+      <RangedWeapon_Cooldown>0.51</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>1.05</SwayFactor>
+      <Bulk>2.54</Bulk>
+      <WorkToMake>5500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Revolver</li>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>CE_AI_BROOM</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>3.58</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_460SWMagnum_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>16</range>
+        <soundCast>HID_Shot_ThunderRevolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>5</magazineSize>
+        <reloadTime>4.6</reloadTime>
+        <ammoSet>AmmoSet_460SWMagnum_Revolver</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DropCasingWhenReload>true</DropCasingWhenReload>
+        <AdvancedCasingVariables>true</AdvancedCasingVariables>
+        <CasingRotationRandomRange>20</CasingRotationRandomRange>
+        <CasingOffset>-0.1,0.05</CasingOffset>
+        <CasingSpeedOverrideRange>1.5~2</CasingSpeedOverrideRange>
+        <CasingAngleOffset>-135</CasingAngleOffset>
+        <CasingLifeTimeMultiplier>2</CasingLifeTimeMultiplier>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(1.5,1.2)</drawSize>
+        <offsets>
+          <li>(0.28,0.088)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--S&W M&P R8-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SWR8Revolver</defName>
@@ -1559,12 +3282,15 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>1.10</Mass>
       <RangedWeapon_Cooldown>0.49</RangedWeapon_Cooldown>
       <SightsEfficiency>0.80</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.25</SwayFactor>
+      <SwayFactor>0.94</SwayFactor>
       <Bulk>2.67</Bulk>
       <WorkToMake>6000</WorkToMake>
     </statBases>
@@ -1601,7 +3327,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_357Magnum_FMJ</defaultProjectile>
         <warmupTime>0.5</warmupTime>
-        <range>16</range>
+        <range>21</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1674,6 +3400,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.75</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1686,7 +3415,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.04</SwayFactor>
+      <SwayFactor>0.78</SwayFactor>
       <Bulk>2.16</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -1712,7 +3441,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1774,6 +3503,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1786,7 +3518,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.04</SwayFactor>
+      <SwayFactor>0.78</SwayFactor>
       <Bulk>2.17</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -1812,7 +3544,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1875,6 +3607,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1887,7 +3622,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.04</SwayFactor>
+      <SwayFactor>0.78</SwayFactor>
       <Bulk>2.17</Bulk>
       <WorkToMake>7000</WorkToMake>
       <SellPriceFactor>1</SellPriceFactor>
@@ -1914,7 +3649,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1977,6 +3712,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -1993,7 +3731,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.80</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.36</SwayFactor>
+      <SwayFactor>0.90</SwayFactor>
       <Bulk>2.33</Bulk>
       <WorkToMake>8000</WorkToMake>
     </statBases>
@@ -2023,7 +3761,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.5</warmupTime>
-        <range>16</range>
+        <range>21</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -2086,6 +3824,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.75</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2098,7 +3839,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.06</SwayFactor>
+      <SwayFactor>0.79</SwayFactor>
       <Bulk>2.06</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -2123,7 +3864,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -2186,6 +3927,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2198,7 +3942,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.96</SwayFactor>
+      <SwayFactor>0.72</SwayFactor>
       <Bulk>1.84</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -2224,7 +3968,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -2286,6 +4030,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2298,7 +4045,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.87</SwayFactor>
+      <SwayFactor>0.65</SwayFactor>
       <Bulk>1.83</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -2324,7 +4071,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -2386,6 +4133,9 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2498,6 +4248,9 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2610,6 +4363,9 @@
     </graphicData>
     <generateCommonality>0.06</generateCommonality>
     <soundInteract>Interact_SMG</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -2645,7 +4401,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_300AACBlackout_FMJ</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
+        <warmupTime>0.6</warmupTime>
         <range>31</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -2721,6 +4477,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2733,7 +4492,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.96</SwayFactor>
+      <SwayFactor>0.72</SwayFactor>
       <Bulk>1.96</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -2759,7 +4518,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -2809,101 +4568,6 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--SIG P250-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase">
-    <defName>HIDGun_P250SIG</defName>
-    <label>SIG P250</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/SIG/P250</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.93,0.93)</drawSize>
-    </graphicData>
-    <uiIconScale>1.5</uiIconScale>
-    <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.4</generateCommonality>
-    <recipeMaker IsNull="True"></recipeMaker>
-    <statBases>
-      <Mass>0.82</Mass>
-      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
-      <SightsEfficiency>0.70</SightsEfficiency>
-      <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.96</SwayFactor>
-      <Bulk>2.05</Bulk>
-      <WorkToMake>7500</WorkToMake>
-    </statBases>
-    <weaponTags>
-      <li>SimpleGun</li>
-      <li>Autopistol</li>
-      <li>CE_Sidearm</li>
-      <li>CE_AI_BROOM</li>
-      <li>CE_OneHandedWeapon</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <costList>
-      <Steel>20</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-      <Chemfuel>5</Chemfuel>
-    </costList>
-    <verbs>
-      <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>2.58</recoilAmount>
-        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>12</range>
-        <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li Class="CombatExtended.ToolCE">
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.54</cooldownTime>
-        <chanceFactor>1.5</chanceFactor>
-        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
-      </li>
-      <li Class="CombatExtended.ToolCE">
-        <label>muzzle</label>
-        <capacities>
-          <li>Poke</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.54</cooldownTime>
-        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-      </li>
-    </tools>
-    <comps>
-      <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>17</magazineSize>
-        <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
-      </li>
-      <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>FALSE</aiUseBurstMode>
-        <aiAimMode>Snapshot</aiAimMode>
-      </li>
-    </comps>
-    <modExtensions>
-      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
-        <def>MF_StandardMuzzleFalshTwo</def>
-        <drawSize>(0.55,0.55)</drawSize>
-        <offsets>
-          <li>(0.24,0.1)</li>
-        </offsets>
-      </li>
-    </modExtensions>
-  </ThingDef>
   <!--SIG P320-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_P320SIG</defName>
@@ -2916,6 +4580,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2928,7 +4595,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.95</SwayFactor>
+      <SwayFactor>0.72</SwayFactor>
       <Bulk>2.03</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -2954,7 +4621,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3017,6 +4684,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -3033,7 +4703,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.80</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.13</SwayFactor>
+      <SwayFactor>0.85</SwayFactor>
       <Bulk>2.16</Bulk>
       <WorkToMake>8500</WorkToMake>
     </statBases>
@@ -3060,7 +4730,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.5</warmupTime>
-        <range>16</range>
+        <range>21</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3110,6 +4780,218 @@
       </li>
     </modExtensions>
   </ThingDef>
+  <!--SIG P322-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_P322SIG</defName>
+    <label>SIG P322</label>
+    <description>An advanced .22 caliber pistol, which features a high magazine capacity for most pistols.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SIG/P322</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.48</Mass>
+      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>0.57</SwayFactor>
+      <Bulk>1.78</Bulk>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.98</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>16</range>
+        <soundCast>HID_Shot_22Caliber</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>20</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_22LR</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.25,0.25)</drawSize>
+        <offsets>
+          <li>(0.2,0.083)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--SIG P322-Comp-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_P322SIG_Comp</defName>
+    <label>SIG P322-Comp</label>
+    <description>An advanced .22 caliber pistol, which features a high magazine capacity for most pistols. Fitted with a red dot sight and a compensator, as well as an extended magazine.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SIG/P322Comp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite Inherit="false" />
+      <researchPrerequisites>
+        <li>BlowbackOperation</li>
+        <li>CE_SimpleNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.56</Mass>
+      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>0.65</SwayFactor>
+      <Bulk>2.03</Bulk>
+      <WorkToMake>8500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ExoticHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.21</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>20</range>
+        <soundCast>HID_Shot_22Caliber</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>25</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_22LR</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.25,0.25)</drawSize>
+        <offsets>
+          <li>(0.24,0.083)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--SIG P365-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_P365SIG</defName>
@@ -3123,6 +5005,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3135,7 +5020,7 @@
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.19</ShotSpread>
-      <SwayFactor>0.67</SwayFactor>
+      <SwayFactor>0.51</SwayFactor>
       <Bulk>1.52</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -3161,7 +5046,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>11</range>
+        <range>14</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3224,6 +5109,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3236,7 +5124,7 @@
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.10</SwayFactor>
+      <SwayFactor>0.83</SwayFactor>
       <Bulk>2.22</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -3262,7 +5150,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_45ACP</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3325,6 +5213,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3337,7 +5228,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.13</SwayFactor>
+      <SwayFactor>0.85</SwayFactor>
       <Bulk>2.22</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -3362,7 +5253,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_45ACP</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3425,6 +5316,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3437,7 +5331,7 @@
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
-      <SwayFactor>1.20</SwayFactor>
+      <SwayFactor>0.90</SwayFactor>
       <Bulk>2.48</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -3462,7 +5356,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_10mmAuto_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>14</range>
+        <range>20</range>
         <soundCast>HID_Shot_10mmAuto</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3518,13 +5412,16 @@
     <label>Colt Delta Elite</label>
     <description>A familiar looking pistol, chambered for a very powerful caliber.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ColtDeltaElite</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtDeltaElite</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9,0.9)</drawSize>
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3537,7 +5434,7 @@
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.07</SwayFactor>
+      <SwayFactor>0.80</SwayFactor>
       <Bulk>2.10</Bulk>
       <WorkToMake>7000</WorkToMake>
       <SellPriceFactor>1</SellPriceFactor>
@@ -3563,7 +5460,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_10mmAuto_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_10mmAuto</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3626,6 +5523,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3638,7 +5538,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.20</SwayFactor>
+      <SwayFactor>0.90</SwayFactor>
       <Bulk>2.10</Bulk>
       <WorkToMake>7000</WorkToMake>
       <SellPriceFactor>1</SellPriceFactor>
@@ -3664,7 +5564,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_40SW_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_45ACP</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3727,6 +5627,9 @@
     <uiIconScale>1.35</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3739,7 +5642,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.84</SwayFactor>
+      <SwayFactor>0.63</SwayFactor>
       <Bulk>1.91</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -3765,7 +5668,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_380ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_380ACP</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3827,6 +5730,9 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3839,7 +5745,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.52</SwayFactor>
+      <SwayFactor>1.14</SwayFactor>
       <Bulk>3.17</Bulk>
       <WorkToMake>8000</WorkToMake>
     </statBases>
@@ -3865,7 +5771,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara_SMG</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3926,6 +5832,9 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>Machining</researchPrerequisite>
       <skillRequirements>
@@ -3938,7 +5847,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.52</SwayFactor>
+      <SwayFactor>1.14</SwayFactor>
       <Bulk>3.17</Bulk>
       <WorkToMake>4500</WorkToMake>
     </statBases>
@@ -3966,7 +5875,7 @@
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara_SMG</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -4030,6 +5939,9 @@
     <uiIconScale>1.6</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4042,7 +5954,7 @@
       <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.19</ShotSpread>
-      <SwayFactor>0.50</SwayFactor>
+      <SwayFactor>0.37</SwayFactor>
       <Bulk>1.29</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -4069,7 +5981,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_32ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>11</range>
+        <range>14</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -4132,6 +6044,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4144,9 +6059,9 @@
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.03</SwayFactor>
+      <SwayFactor>0.77</SwayFactor>
       <Bulk>2.29</Bulk>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToMake>6500</WorkToMake>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -4160,7 +6075,7 @@
     </weaponClasses>
     <costList>
       <Steel>25</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -4169,7 +6084,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -4232,6 +6147,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4244,9 +6162,9 @@
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
-      <SwayFactor>1.23</SwayFactor>
+      <SwayFactor>0.92</SwayFactor>
       <Bulk>2.48</Bulk>
-      <WorkToMake>7500</WorkToMake>
+      <WorkToMake>6500</WorkToMake>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -4260,7 +6178,7 @@
     </weaponClasses>
     <costList>
       <Steel>30</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -4269,7 +6187,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>14</range>
+        <range>20</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -4332,6 +6250,9 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -4348,9 +6269,9 @@
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
       <SightsEfficiency>0.80</SightsEfficiency>
       <ShotSpread>0.15</ShotSpread>
-      <SwayFactor>1.46</SwayFactor>
+      <SwayFactor>1.10</SwayFactor>
       <Bulk>3.50</Bulk>
-      <WorkToMake>9000</WorkToMake>
+      <WorkToMake>8000</WorkToMake>
       <SellPriceFactor>1</SellPriceFactor>
     </statBases>
     <equippedStatOffsets>
@@ -4368,7 +6289,7 @@
     </weaponClasses>
     <costList>
       <Steel>25</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
       <Chemfuel>5</Chemfuel>
     </costList>
     <verbs>
@@ -4378,7 +6299,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
         <warmupTime>0.5</warmupTime>
-        <range>16</range>
+        <range>21</range>
         <soundCast>HID_Shot_22Suppressed</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -4434,7 +6355,10 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.5</generateCommonality>
+    <generateCommonality>0.25</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4447,7 +6371,7 @@
       <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.92</SwayFactor>
+      <SwayFactor>0.69</SwayFactor>
       <Bulk>1.94</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -4474,7 +6398,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_45ACP</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -4556,6 +6480,9 @@
     </graphicData>
     <uiIconScale>1.65</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4568,7 +6495,7 @@
       <RangedWeapon_Cooldown>0.42</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.19</ShotSpread>
-      <SwayFactor>0.53</SwayFactor>
+      <SwayFactor>0.40</SwayFactor>
       <Bulk>1.31</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -4595,7 +6522,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_380ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>11</range>
+        <range>14</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -4718,6 +6645,10 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4730,7 +6661,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.89</SwayFactor>
+      <SwayFactor>0.67</SwayFactor>
       <Bulk>1.92</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -4757,7 +6688,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -4813,7 +6744,6 @@
       <texPath>Things/Item/Equipment/WeaponRanged/Ruger/RugerSR9</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.33</generateCommonality>
     <weaponTags>
       <li>GTEK_Ruger_SR9_StnStl</li>
     </weaponTags>
@@ -4825,7 +6755,6 @@
       <texPath>Things/Item/Equipment/WeaponRanged/Ruger/RugerSR9_Blk</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.33</generateCommonality>
     <weaponTags>
       <li>GTEK_Ruger_SR9_Blk</li>
     </weaponTags>
@@ -4838,11 +6767,563 @@
       <texPath>Things/Item/Equipment/WeaponRanged/Ruger/RugerSR9_Grn</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.33</generateCommonality>
     <weaponTags>
       <li>GTEK_Ruger_SR9_Grn</li>
     </weaponTags>
     <recipeMaker IsNull="True" />
+  </ThingDef>
+  <!--Ruger American Duty Pistol 9mm-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerAmericanDutyPistol_9mm</defName>
+    <label>Ruger American Duty Pistol 9mm</label>
+    <description>A sturdy, modular, polymer-framed 9mm pistol. Available in a variety of configurations.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanDutyPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.85</Mass>
+      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.69</SwayFactor>
+      <Bulk>1.91</Bulk>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.53</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>18</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>17</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.21,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Ruger American Duty Pistol 45 ACP-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase">
+    <defName>HIDGun_RugerAmericanDutyPistol_45ACP</defName>
+    <label>Ruger American Duty Pistol 45 ACP</label>
+    <description>A sturdy, modular, polymer-framed .45 ACP pistol. Available in a variety of configurations.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanDutyPistol_45</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.92</Mass>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.74</SwayFactor>
+      <Bulk>2.03</Bulk>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.97</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>16</range>
+        <soundCast>HID_Shot_45ACP</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>10</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_45ACP</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.6,0.6)</drawSize>
+        <offsets>
+          <li>(0.24,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Ruger American Compact Pistol 9mm-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable" Name="HIDGun_RugerAmericanCompactPistol_9mm_Base" Abstract="True">
+    <description>A sturdy, modular, polymer-framed 9mm pistol. Available in a variety of configurations. Relatively heavier than most other compact pistols, which gives it less recoil.</description>
+    <graphicData>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.83</Mass>
+      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>0.63</SwayFactor>
+      <Bulk>1.69</Bulk>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.57</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>16</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>12</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.16,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_9mm_Base">
+    <defName>HIDGun_RugerAmericanCompactPistol_9mm</defName>
+    <label>Ruger American Compact Pistol 9mm</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_9mm_Base">
+    <defName>HIDGun_RugerAmericanCompactPistol_9mm_Gray</defName>
+    <label>Ruger American Compact Pistol 9mm (Gray)</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol_Gray</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker IsNull="True" />
+  </ThingDef>
+  <!--Ruger American Compact Pistol 45 ACP-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase" Name="HIDGun_RugerAmericanCompactPistol_45ACP_Base" Abstract="True">
+    <description>A sturdy, modular, polymer-framed .45 ACP pistol. Available in a variety of configurations. Relatively heavier than most other compact pistols, which gives it less recoil.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol_45</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.82</Mass>
+      <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>0.64</SwayFactor>
+      <Bulk>1.75</Bulk>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>3.14</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>14</range>
+        <soundCast>HID_Shot_45ACP</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>7</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_45ACP</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.18,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_45ACP_Base">
+    <defName>HIDGun_RugerAmericanCompactPistol_45ACP</defName>
+    <label>Ruger American Compact Pistol 45 ACP</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol_45</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_45ACP_Base">
+    <defName>HIDGun_RugerAmericanCompactPistol_45ACP_Gray</defName>
+    <label>Ruger American Compact Pistol 45 ACP (Gray)</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol_Gray_45</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker IsNull="True" />
+  </ThingDef>
+  <!--Ruger American Competition Pistol-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerAmericanCompetitionPistol</defName>
+    <label>Ruger American Competition Pistol</label>
+    <description>A sturdy, modular, polymer-framed 9mm pistol. Available in a variety of configurations.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompetitionPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite Inherit="false" />
+      <researchPrerequisites>
+        <li>BlowbackOperation</li>
+        <li>CE_SimpleNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>1.06</Mass>
+      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.16</ShotSpread>
+      <SwayFactor>0.79</SwayFactor>
+      <Bulk>2.11</Bulk>
+      <WorkToMake>8500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+      <li>ExoticHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.28</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>21</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>17</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.25,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--FN Model 1910-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
@@ -4857,6 +7338,9 @@
     <uiIconScale>1.6</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4869,9 +7353,9 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.50</SightsEfficiency>
       <ShotSpread>0.19</ShotSpread>
-      <SwayFactor>0.71</SwayFactor>
+      <SwayFactor>0.53</SwayFactor>
       <Bulk>1.53</Bulk>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -4885,7 +7369,7 @@
     </weaponClasses>
     <costList>
       <Steel>20</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -4894,7 +7378,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_32ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>11</range>
+        <range>14</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -4957,6 +7441,9 @@
     <uiIconScale>1.6</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4969,7 +7456,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.93</SwayFactor>
+      <SwayFactor>0.70</SwayFactor>
       <Bulk>1.95</Bulk>
       <WorkToMake>7000</WorkToMake>
     </statBases>
@@ -4994,7 +7481,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_762x25mmTokarev_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_380ACP</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -5056,6 +7543,9 @@
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -5068,7 +7558,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.97</SwayFactor>
+      <SwayFactor>0.72</SwayFactor>
       <Bulk>1.93</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -5095,7 +7585,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -5155,6 +7645,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -5167,7 +7660,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.92</SwayFactor>
+      <SwayFactor>0.69</SwayFactor>
       <Bulk>2.04</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -5195,7 +7688,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -5248,7 +7741,7 @@
   <ThingDef ParentName="HIDGun_Glock17S_Base">
     <defName>HIDGun_Glock17S</defName>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock17</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock17</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <generateCommonality>1.2</generateCommonality>
@@ -5260,7 +7753,7 @@
     <defName>HIDGun_Glock17S_Grn</defName>
     <label>Glock 17 (Green)</label>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock17_Grn</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock17_Grn</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <generateCommonality>0.4</generateCommonality>
@@ -5275,13 +7768,16 @@
     <label>Glock 17 Auto</label>
     <description>A sleek and lightweight polymer-framed 9mm pistol, like many others. Easy to shoot and has a high magazine capacity, it makes for a popular everyday civilian carry handgun. It can fire fully automatic thanks to a simple modification on the back of the slide.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock17Switch</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock17Switch</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.93,0.93)</drawSize>
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -5294,7 +7790,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.13</SwayFactor>
+      <SwayFactor>0.85</SwayFactor>
       <Bulk>2.54</Bulk>
       <WorkToMake>25000</WorkToMake>
     </statBases>
@@ -5322,7 +7818,7 @@
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -5379,13 +7875,16 @@
     <label>Glock 19</label>
     <description>A sleek and lightweight polymer-framed 9mm pistol, like many others. Easy to shoot and has a high magazine capacity, it makes for a popular everyday civilian carry handgun.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock19</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock19</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.93,0.93)</drawSize>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -5398,7 +7897,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.84</SwayFactor>
+      <SwayFactor>0.63</SwayFactor>
       <Bulk>1.85</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -5424,7 +7923,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -5480,13 +7979,16 @@
     <label>Glock 19 MOS</label>
     <description>A sleek and lightweight polymer-framed 9mm pistol, like many others. Easy to shoot and has a high magazine capacity, it makes for a popular everyday civilian carry handgun. Fitted with a reflex sight.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock19_MOS</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock19_MOS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.93,0.93)</drawSize>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -5503,7 +8005,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.80</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.85</SwayFactor>
+      <SwayFactor>0.64</SwayFactor>
       <Bulk>1.85</Bulk>
       <WorkToMake>8500</WorkToMake>
     </statBases>
@@ -5529,7 +8031,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.5</warmupTime>
-        <range>16</range>
+        <range>20</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -5579,6 +8081,114 @@
       </li>
     </modExtensions>
   </ThingDef>
+  <!--Glock 20 MOS-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_Glock20S_MOS</defName>
+    <label>Glock 20 MOS</label>
+    <description>A sleek and lightweight polymer-framed 10mm pistol, like many others. Easy to shoot and has a high magazine capacity, it makes for a popular everyday civilian carry handgun. Fitted with a reflex sight.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock17_MOS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.25</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite Inherit="false" />
+      <researchPrerequisites>
+        <li>BlowbackOperation</li>
+        <li>CE_SimpleNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.89</Mass>
+      <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.74</SwayFactor>
+      <Bulk>2.05</Bulk>
+      <WorkToMake>8500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>3.30</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_10mmAuto_FMJ</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>21</range>
+        <soundCast>HID_Shot_10mmAuto</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>15</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_10mmAuto</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.65,0.65)</drawSize>
+        <offsets>
+          <li>(0.19,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--FN Five-SeveN-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_FiveSeven</defName>
@@ -5591,6 +8201,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -5603,7 +8216,7 @@
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.90</SwayFactor>
+      <SwayFactor>0.67</SwayFactor>
       <Bulk>2.0</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -5629,7 +8242,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_FN57x28mm_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>15</range>
+        <range>20</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -5691,6 +8304,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -5703,7 +8319,7 @@
       <RangedWeapon_Cooldown>0.40</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.90</SwayFactor>
+      <SwayFactor>0.67</SwayFactor>
       <Bulk>1.95</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -5729,7 +8345,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_45ACP</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -5792,6 +8408,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -5808,7 +8427,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.11</ShotSpread>
-      <SwayFactor>0.54</SwayFactor>
+      <SwayFactor>1.34</SwayFactor>
       <Bulk>4.08</Bulk>
       <WorkToMake>9000</WorkToMake>
     </statBases>
@@ -5841,7 +8460,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>16</range>
+        <range>20</range>
         <soundCast>HID_Shot_9mmParaSuppressed</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
@@ -5900,6 +8519,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -5912,7 +8534,7 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
-      <SwayFactor>1.19</SwayFactor>
+      <SwayFactor>0.90</SwayFactor>
       <Bulk>2.40</Bulk>
       <WorkToMake>7500</WorkToMake>
       <SellPriceFactor>1</SellPriceFactor>
@@ -5940,7 +8562,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>14</range>
+        <range>20</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -6002,6 +8624,9 @@
     </graphicData>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.6</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -6014,7 +8639,7 @@
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
-      <SwayFactor>1.58</SwayFactor>
+      <SwayFactor>1.18</SwayFactor>
       <Bulk>2.73</Bulk>
       <WorkToMake>8000</WorkToMake>
     </statBases>
@@ -6040,7 +8665,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_50AE_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>14</range>
+        <range>20</range>
         <soundCast>HID_Shot_ThunderPistol</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -6102,6 +8727,9 @@
     </graphicData>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -6118,7 +8746,7 @@
       <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
-      <SwayFactor>0.48</SwayFactor>
+      <SwayFactor>1.19</SwayFactor>
       <Bulk>2.73</Bulk>
       <WorkToMake>10500</WorkToMake>
     </statBases>
@@ -6149,7 +8777,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_50AE_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>16</range>
+        <range>23</range>
         <soundCast>HID_Shot_ThunderPistol</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>
@@ -6202,7 +8830,7 @@
   <!--Desert Eagle 44-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_DesertEagle_44MagnumGold</defName>
-    <label>Desert Eagle 44 Gold</label>
+    <label>Desert Eagle 44 (Gold)</label>
     <description>A large semi-automatic pistol which uses a gas operated system, similar to a rifle. Available in a variety of calibers, this one is chambered in the powerful .44 Magnum cartridge and has been gold plated.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/DesertEagle44_Gold</texPath>
@@ -6211,6 +8839,9 @@
     </graphicData>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.05</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -6223,7 +8854,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
-      <SwayFactor>1.55</SwayFactor>
+      <SwayFactor>1.16</SwayFactor>
       <Bulk>2.73</Bulk>
       <WorkToMake>8000</WorkToMake>
       <SellPriceFactor>1.5</SellPriceFactor>
@@ -6251,7 +8882,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_44Magnum_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>14</range>
+        <range>20</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>
@@ -6301,200 +8932,6 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Desert Eagle L5 Reaction Force (MOVING TO 2035 ARMORIES)-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase">
-    <defName>HIDGun_DesertEagle_50AE_ReactionForce</defName>
-    <label>Desert Eagle L5 custom</label>
-    <description>A large semi-automatic pistol which uses a gas operated system, similar to a rifle. Available in a variety of calibers, this one is chambered in the powerful .50 AE cartridge.\n\nThe L5 is a modernized variant of the classic Desert Eagle, which is lighter, more compact, and features an integrated muzzle brake to greatly reduce felt recoil.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/DesertEagle_ReactionForce</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.9,0.9)</drawSize>
-    </graphicData>
-    <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0</generateCommonality>
-    <recipeMaker IsNull="True"></recipeMaker>
-    <statBases>
-      <Mass>1.41</Mass>
-      <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
-      <SightsEfficiency>0.80</SightsEfficiency>
-      <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>1.29</SwayFactor>
-      <Bulk>2.46</Bulk>
-      <WorkToMake>8500</WorkToMake>
-      <SellPriceFactor>1</SellPriceFactor>
-    </statBases>
-    <weaponTags Inherit="False">
-      <li>Autopistol</li>
-      <li>CE_OneHandedWeapon</li>
-      <li>CE_Sidearm</li>
-      <li>CE_AI_BROOM</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <costList>
-      <Steel>30</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>2.30</recoilAmount>
-        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_50AE_FMJ</defaultProjectile>
-        <warmupTime>0.5</warmupTime>
-        <range>16</range>
-        <soundCast>HID_Shot_ThunderPistol</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>12</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li Class="CombatExtended.ToolCE">
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.54</cooldownTime>
-        <chanceFactor>1.5</chanceFactor>
-        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
-      </li>
-      <li Class="CombatExtended.ToolCE">
-        <label>muzzle</label>
-        <capacities>
-          <li>Poke</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.54</cooldownTime>
-        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-      </li>
-    </tools>
-    <comps>
-      <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>7</magazineSize>
-        <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_50AE</ammoSet>
-      </li>
-      <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>FALSE</aiUseBurstMode>
-        <aiAimMode>Snapshot</aiAimMode>
-      </li>
-    </comps>
-    <modExtensions>
-      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
-        <def>MF_StandardMuzzleFalshTwo</def>
-        <drawSize>(1.5,1.2)</drawSize>
-        <offsets>
-          <li>(0.23,0.02)</li>
-        </offsets>
-      </li>
-    </modExtensions>
-  </ThingDef>
-  <!--Savage Stance-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_SavageStance</defName>
-    <label>Savage Stance</label>
-    <description>A compact 9mm pocket pistol with a light weight. Easy to aim but low range.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Savage/Stance_Gray</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.93,0.93)</drawSize>
-    </graphicData>
-    <uiIconScale>1.5</uiIconScale>
-    <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.33</generateCommonality>
-    <recipeMaker IsNull="True">
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <displayPriority>405</displayPriority>
-    </recipeMaker>
-    <statBases>
-      <Mass>0.62</Mass>
-      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
-      <SightsEfficiency>0.70</SightsEfficiency>
-      <ShotSpread>0.19</ShotSpread>
-      <SwayFactor>0.73</SwayFactor>
-      <Bulk>1.57</Bulk>
-      <WorkToMake>7500</WorkToMake>
-    </statBases>
-    <weaponTags>
-      <li>Autopistol</li>
-      <li>CE_Sidearm</li>
-      <li>CE_AI_BROOM</li>
-      <li>CE_OneHandedWeapon</li>
-      <li>ModernHandgun</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <costList>
-      <Steel>15</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-      <Chemfuel>5</Chemfuel>
-    </costList>
-    <verbs>
-      <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>2.96</recoilAmount>
-        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>11</range>
-        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li Class="CombatExtended.ToolCE">
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.54</cooldownTime>
-        <chanceFactor>1.5</chanceFactor>
-        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
-      </li>
-      <li Class="CombatExtended.ToolCE">
-        <label>muzzle</label>
-        <capacities>
-          <li>Poke</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.54</cooldownTime>
-        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-      </li>
-    </tools>
-    <comps>
-      <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>8</magazineSize>
-        <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
-      </li>
-      <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>FALSE</aiUseBurstMode>
-        <aiAimMode>Snapshot</aiAimMode>
-      </li>
-    </comps>
-    <modExtensions>
-      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
-        <def>MF_StandardMuzzleFalshTwo</def>
-        <drawSize>(0.55,0.55)</drawSize>
-        <offsets>
-          <li>(0.15,0.083)</li>
-        </offsets>
-      </li>
-    </modExtensions>
-  </ThingDef>
   <!--Walther PDP Compact-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable" Name="HIDGun_WaltherPDP_Compact_Base" Abstract="True">
     <defName>HIDGun_WaltherPDP_Compact_Base</defName>
@@ -6505,6 +8942,10 @@
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -6517,7 +8958,7 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.87</SwayFactor>
+      <SwayFactor>0.65</SwayFactor>
       <Bulk>1.91</Bulk>
       <WorkToMake>7500</WorkToMake>
     </statBases>
@@ -6544,7 +8985,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -6600,7 +9041,6 @@
       <texPath>Things/Item/Equipment/WeaponRanged/Walther/PDP_Compact_Snd</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.4</generateCommonality>
     <weaponTags>
       <li>GTEK_Walther_PDP_Compact_Snd</li>
     </weaponTags>
@@ -6612,7 +9052,6 @@
       <texPath>Things/Item/Equipment/WeaponRanged/Walther/PDP_Compact</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.4</generateCommonality>
     <weaponTags>
       <li>GTEK_Walther_PDP_Compact_Blk</li>
     </weaponTags>
@@ -6625,7 +9064,6 @@
       <texPath>Things/Item/Equipment/WeaponRanged/Walther/PDP_Compact_Grn</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.4</generateCommonality>
     <weaponTags>
       <li>GTEK_Walther_PDP_Compact_Grn</li>
     </weaponTags>
@@ -6644,6 +9082,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -6656,9 +9097,9 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.70</SwayFactor>
+      <SwayFactor>0.53</SwayFactor>
       <Bulk>1.65</Bulk>
-      <WorkToMake>7500</WorkToMake>
+      <WorkToMake>6500</WorkToMake>
     </statBases>
     <weaponTags>
       <li>Autopistol</li>
@@ -6672,7 +9113,7 @@
     </weaponClasses>
     <costList>
       <Steel>15</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <Chemfuel>5</Chemfuel>
     </costList>
     <verbs>
@@ -6682,7 +9123,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -6745,6 +9186,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -6757,9 +9201,9 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.87</SwayFactor>
+      <SwayFactor>0.65</SwayFactor>
       <Bulk>2.06</Bulk>
-      <WorkToMake>7500</WorkToMake>
+      <WorkToMake>7000</WorkToMake>
     </statBases>
     <weaponTags>
       <li>Autopistol</li>
@@ -6774,7 +9218,7 @@
     </weaponClasses>
     <costList>
       <Steel>20</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <Chemfuel>5</Chemfuel>
     </costList>
     <verbs>
@@ -6784,7 +9228,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_22LR_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>18</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -6847,6 +9291,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -6859,9 +9306,9 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.19</ShotSpread>
-      <SwayFactor>0.70</SwayFactor>
+      <SwayFactor>0.52</SwayFactor>
       <Bulk>1.55</Bulk>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -6875,7 +9322,7 @@
     </weaponClasses>
     <costList>
       <Steel>20</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -6884,7 +9331,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_380ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>11</range>
+        <range>14</range>
         <soundCast>HID_Shot_380ACP</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -6947,6 +9394,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -6959,9 +9409,9 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.76</SwayFactor>
+      <SwayFactor>0.95</SwayFactor>
       <Bulk>2.85</Bulk>
-      <WorkToMake>7500</WorkToMake>
+      <WorkToMake>6500</WorkToMake>
     </statBases>
     <equippedStatOffsets>
       <HuntingStealth>0.5</HuntingStealth>
@@ -6977,7 +9427,7 @@
     </weaponClasses>
     <costList>
       <Steel>30</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -6986,7 +9436,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_380ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>14</range>
         <soundCast>HID_Shot_9mmParaSuppressed</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
@@ -7045,6 +9495,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -7057,9 +9510,9 @@
       <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.19</ShotSpread>
-      <SwayFactor>0.73</SwayFactor>
+      <SwayFactor>0.63</SwayFactor>
       <Bulk>1.55</Bulk>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -7073,7 +9526,7 @@
     </weaponClasses>
     <costList>
       <Steel>20</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -7082,7 +9535,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_380ACP_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>11</range>
+        <range>14</range>
         <soundCast>HID_Shot_380ACP</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -7132,6 +9585,341 @@
       </li>
     </modExtensions>
   </ThingDef>
+  <!--S&W SD9 2.0-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable" Name="HIDGun_SD9_2SW_Base" Abstract="True">
+    <description>Cheap, lightweight, and compact 9mm pistol.</description>
+    <graphicData>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.64</Mass>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>0.62</SwayFactor>
+      <Bulk>1.83</Bulk>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.90</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>16</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>16</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.18,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_SD9_2SW_Base">
+    <defName>HIDGun_SD9_2SW</defName>
+    <label>S&amp;W SD9 2.0</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SWSD2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.3</generateCommonality>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_SD9_2SW_Base">
+    <defName>HIDGun_SD9_2SW_Tan</defName>
+    <label>S&amp;W SD9 2.0 (FDE)</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SWSD2_Tan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.2</generateCommonality>
+    <recipeMaker IsNull="True" />
+  </ThingDef>
+  <!--S&W SD9 2.0 Tactical-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SD9_2SW_Laser</defName>
+    <label>S&amp;W SD9 2.0 Tactical</label>
+    <description>Cheap, lightweight, and compact 9mm pistol. Fitted with a laser light.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SWSD2_Laser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite Inherit="false"></researchPrerequisite>
+      <researchPrerequisites>
+        <li>BlowbackOperation</li>
+        <li>CE_AdvancedNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.78</Mass>
+      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>0.70</SwayFactor>
+      <Bulk>2.01</Bulk>
+      <WorkToMake>9000</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <!--Because laser-->
+      <AimingAccuracy>0.05</AimingAccuracy>
+      <AimingDelayFactor>-0.10</AimingDelayFactor>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.64</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>20</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>16</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.18,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--S&W SD40 2.0-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SD40_2SW</defName>
+    <label>S&amp;W SD40 2.0</label>
+    <description>Cheap, lightweight, and compact .40 S&amp;W pistol.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SWSD2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.64</Mass>
+      <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>0.62</SwayFactor>
+      <Bulk>1.83</Bulk>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>3.38</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_40SW_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>18</range>
+        <soundCast>HID_Shot_45ACP</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>14</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_40SW</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.63,0.63)</drawSize>
+        <offsets>
+          <li>(0.18,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--Draco-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Draco</defName>
@@ -7142,6 +9930,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -7178,7 +9969,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
-        <warmupTime>0.9</warmupTime>
+        <warmupTime>0.6</warmupTime>
         <range>31</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -7229,7 +10020,7 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--=DERRINGER=-->
+  <!--=BREAK-ACTION PISTOL=-->
   <!--Powell Knife Pistol-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_PowellKnifePistol</defName>
@@ -7242,12 +10033,15 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>0.48</Mass>
       <RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
       <SightsEfficiency>0.50</SightsEfficiency>
       <ShotSpread>0.2</ShotSpread>
-      <SwayFactor>1.09</SwayFactor>
+      <SwayFactor>0.82</SwayFactor>
       <Bulk>2.79</Bulk>
       <WorkToMake>3000</WorkToMake>
       <MeleeCounterParryBonus>0.16</MeleeCounterParryBonus>
@@ -7280,7 +10074,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_38Special_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>10</range>
+        <range>12</range>
         <soundCast>HID_Shot_38Special</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -7365,12 +10159,15 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionHandguns</li>
+    </thingCategories>
     <statBases>
       <Mass>0.47</Mass>
       <RangedWeapon_Cooldown>0.94</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
-      <SwayFactor>0.66</SwayFactor>
+      <SwayFactor>0.50</SwayFactor>
       <Bulk>1.52</Bulk>
       <WorkToMake>3000</WorkToMake>
     </statBases>
@@ -7399,7 +10196,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_410Bore_Buck_SB</defaultProjectile>
         <warmupTime>0.6</warmupTime>
-        <range>12</range>
+        <range>16</range>
         <soundCast>HID_Shot_ThunderRevolver_Single</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

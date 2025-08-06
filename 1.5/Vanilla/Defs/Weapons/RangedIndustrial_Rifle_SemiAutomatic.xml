@@ -13,6 +13,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -89,6 +92,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.1</generateCommonality>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -168,6 +174,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.2</generateCommonality>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -243,6 +252,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -314,6 +326,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -385,6 +400,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.08</generateCommonality>
     <equippedDistanceOffset>0.15</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -443,19 +461,22 @@
       </li>
     </tools>
   </ThingDef>
-  <!--DS Arms SA-58 DMR-->
+  <!--DS Arms SA58 SPR-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SA58_dmr</defName>
-    <label>SA-58 DMR</label>
+    <label>DSA SA58 SPR</label>
     <description>An ancient pattern semi-automatic DMR, fitted with a highly advanced digital scope with night vision capabilities.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/SA58_DMR</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/SA58_SPR</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.45,1.45)</drawSize>
+      <drawSize>1.45</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>0.33</generateCommonality>
+    <generateCommonality>0.5</generateCommonality>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -471,7 +492,7 @@
     </thingSetMakerTags>
     <statBases>
       <WorkToMake>45000</WorkToMake>
-      <Mass>5.43</Mass>
+      <Mass>7.26</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.86</AccuracyMedium>
@@ -483,7 +504,7 @@
       <AimingDelayFactor>-0.10</AimingDelayFactor>
     </equippedStatOffsets>
     <costList>
-      <Steel>50</Steel>
+      <Steel>60</Steel>
       <ComponentIndustrial>9</ComponentIndustrial>
       <Chemfuel>10</Chemfuel>
     </costList>
@@ -537,6 +558,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
     <equippedDistanceOffset>0.3</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -612,6 +636,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -676,6 +703,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -741,15 +771,18 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.15</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <thingSetMakerTags>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
     <statBases>
       <WorkToMake>14000</WorkToMake>
       <Mass>2.64</Mass>
@@ -810,6 +843,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -881,6 +917,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.08</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -933,34 +972,41 @@
       </li>
     </tools>
   </ThingDef>
-  <!--Extar EP9-->
+  <!--Extar EP9 6.5"-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_ExtarEP9Pistol</defName>
-    <label>Extar EP9</label>
-    <description>A pistol-caliber carbine based on the AR-15 design, chambered for 9mm. The part that looks like a suppressor is actually a barrel shroud.</description>
+    <label>Extar EP9 6.5"</label>
+    <description>A pistol-caliber carbine based on the AR-15 design, chambered for 9mm.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/ExtarEP9</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.16,1.16)</drawSize>
+      <drawSize>1.16</drawSize>
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
+    <generateCommonality>0.5</generateCommonality>
     <equippedDistanceOffset>0.08</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
     </recipeMaker>
+    <weaponTags>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
     </weaponClasses>
     <statBases>
       <WorkToMake>11500</WorkToMake>
       <Mass>2.11</Mass>
-      <AccuracyTouch>0.70</AccuracyTouch>
-      <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.85</AccuracyMedium>
-      <AccuracyLong>0.81</AccuracyLong>
+      <AccuracyTouch>0.81</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.70</AccuracyLong>
       <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
     </statBases>
     <costList>
@@ -973,8 +1019,82 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>27.9</range>
+        <warmupTime>0.5</warmupTime>
+        <range>25.9</range>
+        <soundCast>HID_Shot_9mmPara_SMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Extar EP9 Carbine 16"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_ExtarEP9Carbine</defName>
+    <label>Extar EP9 Carbine 16"</label>
+    <description>A full length pistol-caliber carbine.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ExtarEP9Carbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.16</drawSize>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <generateCommonality>0.5</generateCommonality>
+    <equippedDistanceOffset>0.08</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>11500</WorkToMake>
+      <Mass>2.48</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.81</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>28.9</range>
         <soundCast>HID_Shot_9mmPara_SMG</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1011,8 +1131,10 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>1.2</generateCommonality>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -1084,8 +1206,10 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>1.2</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -1156,8 +1280,10 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>1.2</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -1229,6 +1355,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -1299,8 +1428,10 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>1.2</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -1372,6 +1503,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.08</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -1431,6 +1565,253 @@
       </li>
     </tools>
   </ThingDef>
+  <!--Ruger AR-556 MPR-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable" Name="HIDGun_RugerAR556MPR_Base" Abstract="True">
+    <description>A semi-automatic rifle, created for the civilian market.</description>
+    <graphicData>
+      <drawSize>(1.305,1.305)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>29000</WorkToMake>
+      <Mass>3.65</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>55</Steel>
+      <Chemfuel>5</Chemfuel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>35.9</range>
+        <soundCast>HID_Shot_556mmNATO</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_RugerAR556MPR_Base">
+    <defName>HIDGun_RugerAR556MPR</defName>
+    <label>Ruger AR-556 MPR</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/RugerAR556_MPR</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_RugerAR556MPR_Base">
+    <defName>HIDGun_RugerAR556MPR_Tan</defName>
+    <label>Ruger AR-556 MPR (Tan)</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/RugerAR556_MPR_Tan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.1</generateCommonality>
+    <recipeMaker IsNull="True" />
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_RugerAR556MPR_Base">
+    <defName>HIDGun_RugerAR556MPR_FlagSeries</defName>
+    <label>Ruger AR-556 MPR (Flag Series)</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/RugerAR556_MPR_FlagSeries</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.01</generateCommonality>
+    <recipeMaker IsNull="True" />
+  </ThingDef>
+  <!--Ruger AR-556 FFH-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase">
+    <defName>HIDGun_RugerAR556FFH</defName>
+    <label>Ruger AR-556 FFH</label>
+    <description>A semi-automatic rifle, created for the civilian market.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/RugerAR556_FFH</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.305,1.305)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>24000</WorkToMake>
+      <Mass>3.19</Mass>
+      <AccuracyTouch>0.66</AccuracyTouch>
+      <AccuracyShort>0.82</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <Chemfuel>5</Chemfuel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>30.9</range>
+        <soundCast>HID_Shot_556mmNATO</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--PSA PA-15 556 16"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_PSA_PA15_16in</defName>
+    <label>PSA PA-15 556 16"</label>
+    <description>A semi-automatic rifle, created for the civilian market.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/PSA_PA15_16in</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.305</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>3.18</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <soundCast>HID_Shot_556mmNATO</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--PSA Pistol 556 7.5"-->
   <!--Anderson AM-15-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_AndersonAM15Gun</defName>
@@ -1444,6 +1825,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -1506,6 +1890,80 @@
       </li>
     </tools>
   </ThingDef>
+  <!--Anderson AM-15 Dissipator-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_AndersonAM15Dissipator</defName>
+    <label>Anderson AM-15 Dissipator</label>
+    <description>A semi-automatic rifle, created for the civilian market.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/AndersonAM15Dissipator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.305</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>2.95</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AssaultRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <soundCast>HID_Shot_556mmNATO</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
   <!--DDM4 V7 Pro-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_DDM4V7Pro</defName>
@@ -1517,8 +1975,10 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>1.2</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -1592,8 +2052,11 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>0.33</generateCommonality>
+    <generateCommonality>0.1</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -1672,6 +2135,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1747,6 +2213,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.75</generateCommonality>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -1819,6 +2288,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.4</generateCommonality>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -1891,6 +2363,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -1963,6 +2438,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.1</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2035,6 +2513,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.08</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2106,6 +2587,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2178,6 +2662,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.08</generateCommonality>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2238,6 +2725,154 @@
       </li>
     </tools>
   </ThingDef>
+  <!--M1 Garand-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_M1Garand</defName>
+    <label>M1 Garand</label>
+    <description>Ancient semi-automatic battle rifle. Fires a full-power rifle cartridge and is still in service due to its shear firepower and simplicity.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HIDGun_M1Garand</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.595</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.24</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>25500</WorkToMake>
+      <Mass>4.17</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_762mm</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>30.9</range>
+        <soundCast>HID_Shot_762mmNATO</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--M1 Carbine-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_M1Carbine</defName>
+    <label>M1 Carbine</label>
+    <description>A lightweight semi-automatic rifle firing an early intermediate cartridge. Primitive and low range, but still quite deadly.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HIDGun_M1Carbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.305</drawSize>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <equippedDistanceOffset>0.2</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>17500</WorkToMake>
+      <Mass>2.48</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <WoodLog>10</WoodLog>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_556x45_Slow</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>22.9</range>
+        <soundCast>HID_Shot_MP510Type</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
   <!--Springfield Hellion-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SpringfieldHellion_Reflex</defName>
@@ -2251,6 +2886,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
     <equippedDistanceOffset>0.08</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -2322,6 +2960,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
     <equippedDistanceOffset>0.08</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2393,6 +3034,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -2469,6 +3113,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
     <equippedDistanceOffset>0.12</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2497,7 +3144,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>HIDBullet_762mm</defaultProjectile>
-        <warmupTime>1.2</warmupTime>
+        <warmupTime>1.1</warmupTime>
         <range>33.9</range>
         <soundCast>HID_Shot_M14Type</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -2540,6 +3187,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
     <equippedDistanceOffset>0.08</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -2617,6 +3267,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
     <equippedDistanceOffset>0.16</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>

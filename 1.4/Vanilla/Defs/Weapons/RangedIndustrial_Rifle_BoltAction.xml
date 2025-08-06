@@ -29,6 +29,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
     <equippedDistanceOffset>0.225</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -104,6 +107,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
     <equippedDistanceOffset>0.225</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -166,6 +172,82 @@
       <li>SniperRifle</li>
     </weaponTags>
   </ThingDef>
+  <!--M1903 Springfield-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_M1903Springfield</defName>
+    <label>M1903 Springfield</label>
+    <description>Ancient bolt-action rifle. Fires a full-power rifle cartridge and is a popular choice in the rimworlds due to its shear firepower and simplicity.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HIDGun_M1903Springfield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.595</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.24</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>11500</WorkToMake>
+      <Mass>3.90</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <WoodLog>15</WoodLog>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BoltActionRifle</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>36.9</range>
+        <soundCast>HID_Shot_762mmNATO_Bolt</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+  </ThingDef>
   <!--L42A1-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_L42A1Enfield</defName>
@@ -180,6 +262,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.1</generateCommonality>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -256,6 +341,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
     <equippedDistanceOffset>0.3</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -332,6 +420,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -406,6 +497,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.3</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -482,6 +576,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -553,6 +650,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -629,6 +729,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -651,7 +754,7 @@
     </statBases>
     <costList>
       <Steel>45</Steel>
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
       <WoodLog>15</WoodLog>
     </costList>
     <verbs>
@@ -704,6 +807,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>1.2</generateCommonality>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -780,6 +886,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.08</generateCommonality>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -857,6 +966,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -933,6 +1045,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1008,6 +1123,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
     <equippedDistanceOffset>0.3</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1088,6 +1206,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.4</generateCommonality>
     <equippedDistanceOffset>0.21</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1160,6 +1281,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.4</generateCommonality>
     <equippedDistanceOffset>0.21</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1232,6 +1356,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
     <equippedDistanceOffset>0.21</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1303,6 +1430,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
     <equippedDistanceOffset>0.32</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1384,6 +1514,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
     <equippedDistanceOffset>0.24</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1465,6 +1598,20 @@
       <speed>90</speed>
     </projectile>
   </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>HIDBullet_2Bore</defName>
+    <label>2-Bore bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>57</damageAmountBase>
+      <stoppingPower>5</stoppingPower>
+      <speed>88</speed>
+    </projectile>
+  </ThingDef>
   <!--Barrett M82A1-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_BarrettM82A1AMR</defName>
@@ -1477,6 +1624,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.5</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1553,6 +1703,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
     <equippedDistanceOffset>0.55</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1633,6 +1786,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.45</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1712,6 +1868,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.4</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1787,6 +1946,9 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.01</generateCommonality>
     <equippedDistanceOffset>0.25</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -1813,7 +1975,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HIDBullet_50Cal</defaultProjectile>
+        <defaultProjectile>HIDBullet_2Bore</defaultProjectile>
         <warmupTime>4.6</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_2BoreRifle</soundCast>

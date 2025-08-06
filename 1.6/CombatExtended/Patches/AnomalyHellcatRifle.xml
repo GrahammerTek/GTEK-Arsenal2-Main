@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Anomaly</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Gun_HellcatRifle"]/verbs/li/soundCast</xpath>
+          <value>
+            <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

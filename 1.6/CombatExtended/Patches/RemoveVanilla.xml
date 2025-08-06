@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--Ruger Redhawk 44 Mag 5.5"-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_Revolver"]/label</xpath>
+    <value>
+      <label>Ruger Redhawk 44 Mag 5.5"</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_Revolver"]/graphicData/texPath</xpath>
+    <value>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk44_55</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+    <value>
+      <generateCommonality>0.2</generateCommonality>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_Revolver"]/statBases/SwayFactor</xpath>
+    <value>
+      <SwayFactor>1.05</SwayFactor>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_Revolver"]/verbs/li/range</xpath>
+    <value>
+      <range>20</range>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_Revolver"]/verbs/li/soundCast</xpath>
+    <value>
+      <soundCast>HID_Shot_357Magnum</soundCast>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+    <value>
+      <thingCategories Inherit="False">
+        <li>HID_RevolverHandguns</li>
+      </thingCategories>
+    </value>
+  </Operation>
+</Patch>

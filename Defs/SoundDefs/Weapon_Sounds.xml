@@ -205,6 +205,47 @@
     </subSounds>
   </SoundDef>
   <SoundDef>
+    <defName>HID_Shot_12GaugeLong</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Shot_GTEK12GaB</clipPath>
+          </li>
+        </grains>
+        <volumeRange>40~40</volumeRange>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Sub_GTEKShotgunPump</clipPath>
+          </li>
+        </grains>
+        <volumeRange>10~10</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>HID_Shot_12GaugeLong_NoPump</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Shot_GTEK12GaB</clipPath>
+          </li>
+        </grains>
+        <volumeRange>40~40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
     <defName>HID_Shot_12Gauge_DoubleShot</defName>
     <context>MapOnly</context>
     <eventNames />
@@ -217,6 +258,21 @@
           </li>
         </grains>
         <volumeRange>30~30</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>HID_Shot_12Gauge_Automatic</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipPath>GTEK_12GaugeAutomatic</clipPath>
+          </li>
+        </grains>
+        <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
   </SoundDef>
@@ -1056,6 +1112,30 @@
           </li>
         </grains>
         <volumeRange>10~10</volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>HID_Shot_ThunderBoltGun</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Shot_GTEKThunderRevolver</clipPath>
+          </li>
+        </grains>
+        <volumeRange>15~15</volumeRange>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Sub_GTEKBoltAction</clipPath>
+          </li>
+        </grains>
+        <volumeRange>20~20</volumeRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>

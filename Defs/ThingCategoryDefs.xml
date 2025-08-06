@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Main-->
+  <ThingCategoryDef>
+    <defName>HID_GTekRanged</defName>
+    <label>GTek weapons</label>
+    <parent>WeaponsRanged</parent>
+  </ThingCategoryDef>
+  <!--Handguns-->
+  <ThingCategoryDef>
+    <defName>HID_Handguns</defName>
+    <label>handguns</label>
+    <parent>HID_GTekRanged</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_BreakActionHandguns</defName>
+    <label>break-action</label>
+    <parent>HID_Handguns</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_RevolverHandguns</defName>
+    <label>revolver</label>
+    <parent>HID_Handguns</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_SemiAutomaticHandguns</defName>
+    <label>semi-automatic</label>
+    <parent>HID_Handguns</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <!--Specifically for stockless full-auto pistols.-->
+    <defName>HID_AutomaticHandguns</defName>
+    <label>automatic</label>
+    <parent>HID_Handguns</parent>
+  </ThingCategoryDef>
+  <!--SMGs-->
+  <ThingCategoryDef>
+    <defName>HID_SMGs</defName>
+    <label>submachine guns</label>
+    <parent>HID_GTekRanged</parent>
+  </ThingCategoryDef>
+  <!--Shotguns-->
+  <ThingCategoryDef>
+    <defName>HID_Shotguns</defName>
+    <label>shotguns</label>
+    <parent>HID_GTekRanged</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_BoltActionShotguns</defName>
+    <label>bolt-action</label>
+    <parent>HID_Shotguns</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_BreakActionShotguns</defName>
+    <label>break-action</label>
+    <parent>HID_Shotguns</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_RevolverShotguns</defName>
+    <label>revolver</label>
+    <parent>HID_Shotguns</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_PumpActionShotguns</defName>
+    <label>pump-action</label>
+    <parent>HID_Shotguns</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_SemiAutomaticShotguns</defName>
+    <label>semi-automatic</label>
+    <parent>HID_Shotguns</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_AutomaticShotguns</defName>
+    <label>automatic</label>
+    <parent>HID_Shotguns</parent>
+  </ThingCategoryDef>
+  <!--Rifles-->
+  <ThingCategoryDef>
+    <defName>HID_Rifles</defName>
+    <label>rifles</label>
+    <parent>HID_GTekRanged</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_BoltActionRifles</defName>
+    <label>bolt-action</label>
+    <parent>HID_Rifles</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_LeverActionRifles</defName>
+    <label>lever-action</label>
+    <parent>HID_Rifles</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_SemiAutomaticRifles</defName>
+    <label>semi-automatic</label>
+    <parent>HID_Rifles</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_AssaultRifles</defName>
+    <label>assault rifles</label>
+    <parent>HID_Rifles</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_BattleRifles</defName>
+    <label>battle rifles</label>
+    <parent>HID_Rifles</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>HID_AntiMatRifles</defName>
+    <label>anti-materiel rifles</label>
+    <parent>HID_Rifles</parent>
+  </ThingCategoryDef>
+  <!--Squad Automatic Weapons-->
+  <ThingCategoryDef>
+    <defName>HID_SquadAutomaticWeapons</defName>
+    <label>squad automatic weapons</label>
+    <parent>HID_GTekRanged</parent>
+  </ThingCategoryDef>
+  <!--Explosives-->
+  <ThingCategoryDef>
+    <defName>HID_Launchers</defName>
+    <label>launchers</label>
+    <parent>HID_GTekRanged</parent>
+  </ThingCategoryDef>
+</Defs>

@@ -1,6 +1,309 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--=REVOLVER=-->
+  <!--Ruger Redhawk 44 Mag 7.5"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_44Mag_75In</defName>
+    <label>Ruger Redhawk 44 Mag 7.5"</label>
+    <description>A large double-action hunting revolver, chambered for .44 Magnum cartridges. Accurate out to long ranges, if you can handle the weight.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk44_75</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.3</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+      <Mass>1.53</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.5</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Revolver</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>28.9</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Ruger Redhawk 44 Mag 5.5"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_44Mag_55In</defName>
+    <label>Ruger Redhawk 44 Mag 5.5"</label>
+    <description>An ancient pattern double-action revolver. It's not very powerful, but has a decent range for a pistol and is quick on the draw.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk44_55</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Revolver</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Ruger Redhawk 44 Mag 4.2"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_44Mag_42In</defName>
+    <label>Ruger Redhawk 44 Mag 4.2"</label>
+    <description>A compact .44 Magnum double-action revolver.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk44_42</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>1.33</Mass>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Revolver</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>22.9</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Ruger Redhawk 45 ACP 4.2"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerRedhawk_45ACP_42In</defName>
+    <label>Ruger Redhawk 45 ACP 4.2"</label>
+    <description>An ancient pattern double-action revolver. It's not very powerful, but has a decent range for a pistol and is quick on the draw.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk45_42</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+      <Mass>1.25</Mass>
+      <AccuracyTouch>1.00</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Autopistol</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>20.9</range>
+        <soundCast>HID_Shot_38Special</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Ruger Redhawk 357 Mag 5.5"-->
+  <!--Ruger Redhawk 357 Mag 4.2"-->
+  <!--Ruger Redhawk 357 Mag 2.75"-->
   <!--Ruger Super Redhawk-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_RugerSuperRedhawk</defName>
@@ -13,6 +316,9 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>9000</WorkToMake>
       <Mass>1.8</Mass>
@@ -84,6 +390,9 @@
     <uiIconScale>1.65</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.66</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>4500</WorkToMake>
       <Mass>0.38</Mass>
@@ -158,6 +467,9 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <Mass>1.4</Mass>
@@ -231,6 +543,9 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <Mass>1.0</Mass>
@@ -302,6 +617,9 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <Mass>1.0</Mass>
@@ -371,6 +689,9 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>5500</WorkToMake>
       <Mass>1.45</Mass>
@@ -442,6 +763,9 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>5500</WorkToMake>
       <Mass>1.45</Mass>
@@ -516,6 +840,9 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>5500</WorkToMake>
       <Mass>1.4</Mass>
@@ -570,19 +897,24 @@
       </li>
     </tools>
   </ThingDef>
-  <!--Colt Python-->
+  <!--Colt Python 2.5"-->
+  <!--Colt Python 4.25"-->
+  <!--Colt Python 6"-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_ColtPython</defName>
-    <label>Colt Python</label>
+    <label>Colt Python 6"</label>
     <description>A double action revolver firing a powerful pistol cartridge.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ColtPython</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtPython</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
-    <generateCommonality>0.5</generateCommonality>
+    <generateCommonality>0.6</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <Mass>1.4</Mass>
@@ -590,7 +922,7 @@
       <AccuracyShort>0.77</AccuracyShort>
       <AccuracyMedium>0.46</AccuracyMedium>
       <AccuracyLong>0.36</AccuracyLong>
-      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -644,16 +976,19 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_ColtPythonBlued</defName>
-    <label>Colt Python</label>
+    <label>Colt Python 6" (Blue)</label>
     <description>A double action revolver firing a powerful pistol cartridge.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ColtPython_Blued</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtPython_Blued</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
-    <generateCommonality>0.05</generateCommonality>
+    <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <Mass>1.4</Mass>
@@ -661,7 +996,7 @@
       <AccuracyShort>0.77</AccuracyShort>
       <AccuracyMedium>0.46</AccuracyMedium>
       <AccuracyLong>0.36</AccuracyLong>
-      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
       <SellPriceFactor>1</SellPriceFactor>
     </statBases>
     <weaponTags>
@@ -714,6 +1049,81 @@
       </li>
     </tools>
   </ThingDef>
+  <!--Colt Python 8"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_ColtPython_8In</defName>
+    <label>Colt Python 8"</label>
+    <description>A double action revolver firing a powerful pistol cartridge.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtPython8</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+      <Mass>1.30</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.5</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>5</WoodLog>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_357Magnum</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>28.9</range>
+        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
   <!--S&W Model 686-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SW686Gun</defName>
@@ -726,6 +1136,9 @@
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>4500</WorkToMake>
       <Mass>1.14</Mass>
@@ -733,7 +1146,7 @@
       <AccuracyShort>0.77</AccuracyShort>
       <AccuracyMedium>0.46</AccuracyMedium>
       <AccuracyLong>0.36</AccuracyLong>
-      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -799,6 +1212,9 @@
     <uiIconScale>1.65</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <Mass>0.56</Mass>
@@ -872,6 +1288,9 @@
     <uiIconScale>1.65</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>5500</WorkToMake>
       <Mass>0.43</Mass>
@@ -936,6 +1355,10 @@
       </li>
     </tools>
   </ThingDef>
+  <!--S&W Model 460V-->
+  <!--S&W Model 460XVR 10.5"-->
+  <!--S&W Model 460XVR 8.38"-->
+  <!--S&W Model 460XVR 3.5"-->
   <!--S&W M&P R8-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SWR8Revolver</defName>
@@ -949,6 +1372,9 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>1.10</Mass>
@@ -1022,6 +1448,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.75</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1094,6 +1523,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1167,6 +1599,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1241,6 +1676,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <weaponTags>
       <li>Autopistol</li>
       <li>ModernHandgun</li>
@@ -1317,6 +1755,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.75</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1389,6 +1830,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1461,6 +1905,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1533,6 +1980,9 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponTags>
       <li>GTEK_RD9Pistol</li>
     </weaponTags>
@@ -1605,6 +2055,9 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponTags>
       <li>GTEK_RD45Pistol</li>
     </weaponTags>
@@ -1677,6 +2130,9 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponTags>
       <li>GTEK_RD300Pistol</li>
     </weaponTags>
@@ -1749,6 +2205,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1809,73 +2268,6 @@
       </li>
     </tools>
   </ThingDef>
-  <!--P250-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase">
-    <defName>HIDGun_P250SIG</defName>
-    <label>SIG P250</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/SIG/P250</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.93,0.93)</drawSize>
-    </graphicData>
-    <uiIconScale>1.5</uiIconScale>
-    <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.4</generateCommonality>
-    <recipeMaker IsNull="True"></recipeMaker>
-    <weaponTags>
-      <li>SimpleGun</li>
-      <li>Autopistol</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <statBases>
-      <WorkToMake>5500</WorkToMake>
-      <Mass>0.82</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.40</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>20</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-      <Chemfuel>5</Chemfuel>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
-        <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
-        <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
   <!--P320-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_P320SIG</defName>
@@ -1888,6 +2280,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -1961,6 +2356,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2035,6 +2433,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2108,6 +2509,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2181,6 +2585,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2253,6 +2660,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2318,13 +2728,16 @@
     <label>Colt Delta Elite</label>
     <description>A familiar looking pistol, chambered for a very powerful caliber.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ColtDeltaElite</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_ColtDeltaElite</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9,0.9)</drawSize>
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2385,6 +2798,158 @@
       </li>
     </tools>
   </ThingDef>
+  <!--Staccato 2011 P-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_StaccatoP</defName>
+    <label>Staccato 2011 P</label>
+    <description>An exceptionally well-made handgun derived from the ancient 1911 pattern design. It features extra modularity in the form of a rail and an optics mount, and feeds from a double-stack 17 round magazine.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/StaccatoP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>ModernHandgun</li>
+      <li>ExoticHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>1.03</Mass>
+      <AccuracyTouch>0.86</AccuracyTouch>
+      <AccuracyShort>0.76</AccuracyShort>
+      <AccuracyMedium>0.44</AccuracyMedium>
+      <AccuracyLong>0.34</AccuracyLong>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>25.9</range>
+        <soundCast>HID_Shot_9mmPara</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Staccato 2011 XC-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_StaccatoXC</defName>
+    <label>Staccato 2011 XC</label>
+    <description>An exceptionally well-made handgun derived from the ancient 1911 pattern design. It features extra modularity in the form of a rail and an optics mount, and feeds from a double-stack 17 round magazine. The integrated compensator reduces recoil substantially.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/StaccatoXC</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>ModernHandgun</li>
+      <li>ExoticHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>1.15</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>25.9</range>
+        <soundCast>HID_Shot_9mmPara</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
   <!--UDMC 2011 Custom-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_UDMC2011Custom</defName>
@@ -2398,6 +2963,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2471,6 +3039,9 @@
     <uiIconScale>1.35</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2544,6 +3115,9 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2615,6 +3189,9 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AutomaticHandguns</li>
+    </thingCategories>
     <weaponClasses>
       <li>RangedLight</li>
       <li>ShortShots</li>
@@ -2689,6 +3266,9 @@
     <uiIconScale>1.6</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2763,6 +3343,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2835,6 +3418,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2907,6 +3493,9 @@
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -2982,6 +3571,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3075,6 +3667,9 @@
     </graphicData>
     <uiIconScale>1.65</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3209,6 +3804,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3307,6 +3905,11 @@
     </weaponTags>
     <recipeMaker IsNull="True" />
   </ThingDef>
+  <!--Ruger American Duty Pistol 9mm-->
+  <!--Ruger American Duty Pistol 45 ACP-->
+  <!--Ruger American Compact Pistol 9mm-->
+  <!--Ruger American Compact Pistol 45 ACP-->
+  <!--Ruger American Competition Pistol-->
   <!--FN Model 1910-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_FN1910M</defName>
@@ -3320,6 +3923,9 @@
     <uiIconScale>1.6</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3392,6 +3998,9 @@
     <uiIconScale>1.6</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3463,6 +4072,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3533,6 +4145,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3598,7 +4213,7 @@
   <ThingDef ParentName="HIDGun_Glock17S_Base">
     <defName>HIDGun_Glock17S</defName>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock17</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock17</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <generateCommonality>1.2</generateCommonality>
@@ -3610,7 +4225,7 @@
     <defName>HIDGun_Glock17S_Grn</defName>
     <label>Glock 17 (Green)</label>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock17_Grn</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock17_Grn</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <generateCommonality>0.4</generateCommonality>
@@ -3625,13 +4240,16 @@
     <label>Glock 17 switched</label>
     <description>A sleek and lightweight polymer-framed 9mm pistol, like many others. Easy to shoot and has a high magazine capacity, it makes for a popular everyday civilian carry handgun. It can fire fully automatic thanks to a simple modification on the back of the slide.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock17Switch</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock17Switch</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.93,0.93)</drawSize>
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3700,13 +4318,16 @@
     <label>Glock 19</label>
     <description>A sleek and lightweight polymer-framed 9mm pistol, like many others. Easy to shoot and has a high magazine capacity, it makes for a popular everyday civilian carry handgun.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock19</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock19</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.93,0.93)</drawSize>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3773,13 +4394,16 @@
     <label>Glock 19 MOS</label>
     <description>A sleek and lightweight polymer-framed 9mm pistol, like many others. Easy to shoot and has a high magazine capacity, it makes for a popular everyday civilian carry handgun. Fitted with a reflex sight.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Glock19_MOS</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock19_MOS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.93,0.93)</drawSize>
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3852,6 +4476,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3924,6 +4551,9 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -3997,6 +4627,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4076,6 +4709,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4150,6 +4786,9 @@
     </graphicData>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.6</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>2.00</Mass>
@@ -4222,6 +4861,9 @@
     </graphicData>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>7500</WorkToMake>
       <Mass>2.03</Mass>
@@ -4298,6 +4940,9 @@
     </graphicData>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.05</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>1.91</Mass>
@@ -4360,152 +5005,6 @@
       </li>
     </tools>
   </ThingDef>
-  <!--Desert Eagle L5 Reaction Force-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_DesertEagle_50AE_ReactionForce</defName>
-    <label>Desert Eagle L5 custom</label>
-    <description>A large semi-automatic pistol which uses a gas operated system, similar to a rifle. Available in a variety of calibers, this one is chambered in the powerful .50 AE cartridge.\n\nThe L5 is a modernized variant of the classic Desert Eagle, which is lighter, more compact, and features an integrated muzzle brake to greatly reduce felt recoil.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/DesertEagle_ReactionForce</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.93,0.93)</drawSize>
-    </graphicData>
-    <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.01</generateCommonality>
-    <statBases>
-      <WorkToMake>6000</WorkToMake>
-      <Mass>1.91</Mass>
-      <AccuracyTouch>0.85</AccuracyTouch>
-      <AccuracyShort>0.75</AccuracyShort>
-      <AccuracyMedium>0.45</AccuracyMedium>
-      <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
-      <SellPriceFactor>1</SellPriceFactor>
-    </statBases>
-    <weaponTags>
-      <li>Autopistol</li>
-      <li>GTEK_DesertEagle_Main</li>
-      <li>GTEK_DesertEagle_L5_ARMA3</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <costList>
-      <Steel>35</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-    <recipeMaker IsNull="True">
-      <researchPrerequisite>GasOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <displayPriority>405</displayPriority>
-    </recipeMaker>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HIDBullet_454Casull</defaultProjectile>
-        <warmupTime>0.2</warmupTime>
-        <range>25.9</range>
-        <soundCast>HID_Shot_ThunderPistol</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>6</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-  <!--Savage Stance-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_SavageStance</defName>
-    <label>Savage Stance</label>
-    <description>A compact 9mm pocket pistol with a light weight. Easy to aim but low range.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Savage/Stance_Gray</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.93,0.93)</drawSize>
-    </graphicData>
-    <uiIconScale>1.5</uiIconScale>
-    <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.33</generateCommonality>
-    <recipeMaker IsNull="True">
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <displayPriority>405</displayPriority>
-    </recipeMaker>
-    <weaponTags>
-      <li>Autopistol</li>
-      <li>ModernHandgun</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <statBases>
-      <WorkToMake>5500</WorkToMake>
-      <Mass>0.62</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.60</AccuracyShort>
-      <AccuracyMedium>0.30</AccuracyMedium>
-      <AccuracyLong>0.25</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>20</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-      <Chemfuel>5</Chemfuel>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
-        <warmupTime>0.1</warmupTime>
-        <range>20.9</range>
-        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
   <!--Walther PDP Compact-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable" Name="HIDGun_WaltherPDP_Compact_Base" Abstract="True">
     <defName>HIDGun_WaltherPDP_Compact_Base</defName>
@@ -4516,6 +5015,9 @@
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4627,6 +5129,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4700,6 +5205,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4774,6 +5282,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4846,6 +5357,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4920,6 +5434,9 @@
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -4979,6 +5496,9 @@
       </li>
     </tools>
   </ThingDef>
+  <!--S&W SD9 2.0-->
+  <!--S&W SD9 2.0 Tactical-->
+  <!--S&W SD40 2.0-->
   <!--Draco-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Draco</defName>
@@ -4989,6 +5509,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <weaponTags>
       <li>SimpleGun</li>
     </weaponTags>
@@ -5062,6 +5585,9 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <Mass>0.48</Mass>
@@ -5135,6 +5661,9 @@
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
     <generateCommonality>0.15</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionHandguns</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <Mass>0.47</Mass>
@@ -5193,4 +5722,5 @@
       </li>
     </tools>
   </ThingDef>
+  <!--Rossi Brawler-->
 </Defs>

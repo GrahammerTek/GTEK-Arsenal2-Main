@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <label>Disable crafting restrictions (Guns Galore!!!):</label>
+    <operations>
+      <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[@ParentName="HIDGun_MainWeaponBase_Makeable"]/recipeMaker</xpath>
+        <attribute>IsNull</attribute>
+        <value>False</value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="VFECore.PatchOperationToggableSequence">
+    <enabled>True</enabled>
+    <label>[CE] Remove duplicate weapons from Combat Extended submods:</label>
+    <operations>
+      <!--CE Guns-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_MiniFourteen"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_MiniFourteen"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <!--CE Armory-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_Deagke"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_Deagke"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_FNFiveSeven"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_FNFiveSeven"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_PNinety"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_PNinety"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_MSeven"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_MSeven"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_MTwoFifty"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_MTwoFifty"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_MicroUzi"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_MicroUzi"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_Uzi"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_Uzi"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

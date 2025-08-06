@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--2035 Armories-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>2035 Armories - Arma 3 Weapons</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!--=HANDGUNS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_Base4five" or defName="UACGGun_ACPCtwo" or @Name="HID_BasePseven" or defName="UACGGun_MakarovPM" or defName="UACGGun_RookForty"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SemiAutomaticHandguns</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="UACGGun_Zubr"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_RevolverHandguns</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=SUBMACHINE GUNS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="UACGGun_PDW2k" or defName="UACGGun_ProtectorSMG" or defName="UACGGun_StingSMG" or @Name="HID_BaseVerminSMG"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SMGs</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=SHOTGUNS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="UACGGun_Kozlice" or defName="UACGGun_KozliceShort"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_BreakActionShotguns</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=RIFLES=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_BaseASP1Kir" or defName="UACGGun_CMR76_Blk" or defName="UACGGun_Mk14DMR_Classic" or @Name="HID_BaseMARIO"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SemiAutomaticRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="UACGGun_AKU12Gun" or defName="UACGGun_AKSSeventyFourU" or defName="UACGGun_KatibaCarbine" or @Name="HID_BaseMk20C" or @Name="HID_BaseMXC" or defName="UACGGun_TRG20Gun" or defName="UACGGun_AK12Gun" or defName="UACGGun_AK12GL" or defName="UACGGun_AKM" or defName="UACGGun_CAR95Gun" or defName="UACGGun_CAR95GL" or defName="UACGGun_Katiba" or defName="UACGGun_KatibaGL" or @Name="HID_BaseMX" or @Name="HID_BaseMX3GL" or @Name="HID_BaseMk20Gun" or @Name="HID_BaseMk20EGLM" or @Name="HID_BasePromet" or @Name="HID_BasePrometGL" or @Name="HID_BasePrometSG" or @Name="HID_BaseSpar16C" or @Name="HID_BaseSPAR16GL" or @Name="HID_BaseType115G" or defName="UACGGun_TRG21Gun" or defName="UACGGun_TRG21EGLM" or @Name="HID_BaseMXM" or @Name="HID_BasePrometMR"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_AssaultRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_BaseCyrus" or @Name="HID_BaseMKI_EMR" or @Name="HID_BaseMk14DMR" or @Name="HID_BaseMk18ABR" or @Name="HID_BaseRahim" or @Name="HID_SPAR17DMR"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_BattleRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_BaseGM6Lynx" or defName="UACGGun_M320LRR_Blk"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_AntiMatRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=SQUAD AUTOMATIC WEAPONS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="UACGGun_CAR951Gun" or defName="UACGGun_LIM85_Saw" or @Name="HID_BaseMk200SAW" or @Name="HID_BaseMXSW" or defName="UACGGun_RPK12Gun" or @Name="HID_BaseSpar16S" or defName="UACGGun_Zafir" or @Name="HID_BaseNavid" or @Name="HID_BaseSPMG"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SquadAutomaticWeapons</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=LAUNCHERS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_BaseMAAWSM4ModOne" or defName="UACGGun_RPGSeven"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_Launchers</li>
+            </thingCategories>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!--2035 Armories CDLC-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>2035 Armories - CDLC Weapons</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!--=HANDGUNS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_BaseG19S" or @Name="HID_BaseMk26Lfive"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SemiAutomaticHandguns</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_BaseG19A"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_AutomaticHandguns</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=SHOTGUNS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_BaseAAForty"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_AutomaticShotguns</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=RIFLES=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFive" or defName="UACGGun_VelkoRFiveGL" or @Name="HID_BaseGalatARM" or defName="UACGGun_VelkoRFour" or defName="UACGGun_VelkoRFour_Peacekeeper"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_AssaultRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_BaseSLR" or @Name="HID_BaseSLRPara"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_BattleRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=SQUAD AUTOMATIC WEAPONS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="UACGGun_GalatARM_Autorifleman"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SquadAutomaticWeapons</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=LAUNCHERS=-->
+      </operations>
+    </match>
+  </Operation>
+  <!--Hideous Destructor-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Hideous Destructor - 4.26mm Weapons</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!--=RIFLES=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HIDGun_ZM66AssaultRifle" or defName="HIDGun_ZM66AssaultRifle_UGL"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_AssaultRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HIDGun_ZM66AssaultRifle_Semi"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SemiAutomaticRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <!--=SQUAD AUTOMATIC WEAPONS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HIDGun_Vulcanette"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SquadAutomaticWeapons</li>
+            </thingCategories>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Hideous Destructor - 7.76mm Weapons</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!--=RIFLES=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HIDGun_LiberatorRifle" or defName="HIDGun_LiberatorRifle_UGL"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_BattleRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HIDGun_LiberatorRifle_Semi"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SemiAutomaticRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HIDGun_BossRifle"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_BoltActionRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!--Spirits of Industry-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>GTek's Factions - Spirits of Industry</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!--Weapons-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="HIDGun_Colt635WAECO"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_SMGs</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="HIDGun_Colt635WAECO"]/verbs/li/soundCastTail</xpath>
+          <value>
+            <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

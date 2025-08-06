@@ -26,6 +26,9 @@
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>HID_SquadAutomaticWeapons</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>52500</WorkToMake>
       <Mass>12.01</Mass>
@@ -107,14 +110,17 @@
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>HID_SquadAutomaticWeapons</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>43500</WorkToMake>
       <Mass>5.10</Mass>
       <AccuracyTouch>0.40</AccuracyTouch>
       <AccuracyShort>0.48</AccuracyShort>
-      <AccuracyMedium>0.35</AccuracyMedium>
-      <AccuracyLong>0.26</AccuracyLong>
-      <RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.34</AccuracyMedium>
+      <AccuracyLong>0.24</AccuracyLong>
+      <RangedWeapon_Cooldown>1.55</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>50</Steel>
@@ -183,6 +189,9 @@
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>HID_SquadAutomaticWeapons</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>44000</WorkToMake>
       <Mass>8.94</Mass>
@@ -190,7 +199,7 @@
       <AccuracyShort>0.48</AccuracyShort>
       <AccuracyMedium>0.35</AccuracyMedium>
       <AccuracyLong>0.26</AccuracyLong>
-      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>75</Steel>
@@ -202,12 +211,12 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>HIDBullet_762mm</defaultProjectile>
-        <warmupTime>1.8</warmupTime>
+        <warmupTime>1.7</warmupTime>
         <range>30.9</range>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <burstShotCount>7</burstShotCount>
         <soundCast>HID_Shot_762mmNATO_Belt</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -260,6 +269,9 @@
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>HID_SquadAutomaticWeapons</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>46500</WorkToMake>
       <Mass>3.60</Mass>
@@ -337,6 +349,9 @@
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>HID_SquadAutomaticWeapons</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>50500</WorkToMake>
       <Mass>8.94</Mass>
@@ -373,6 +388,85 @@
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
       <li>GTEK_MTwoFifty_NGSW</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Rheinmetall MG 3-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_MGThree</defName>
+    <label>MG 3</label>
+    <description>A gas-operated light machine gun. Has an exceptionally high rate of fire, capable of cutting through enemies in seconds, but is quite heavy.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HIDGun_MG3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.595</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <equippedDistanceOffset>0.24</equippedDistanceOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>HID_SquadAutomaticWeapons</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>39500</WorkToMake>
+      <Mass>11.50</Mass>
+      <AccuracyTouch>0.3</AccuracyTouch>
+      <AccuracyShort>0.38</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.16</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>95</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_762mm</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>HID_Shot_762mmNATO_Belt</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>GTEK_Rheinmetall_MG3</li>
     </weaponTags>
     <tools>
       <li>

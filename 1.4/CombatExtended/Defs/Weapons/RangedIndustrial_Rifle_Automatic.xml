@@ -12,6 +12,9 @@
       <drawSize>1.45</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -51,7 +54,7 @@
         <warmupTime>1.2</warmupTime>
         <range>62</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -122,6 +125,9 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -161,7 +167,7 @@
         <warmupTime>0.9</warmupTime>
         <range>48</range>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -234,6 +240,9 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -273,7 +282,7 @@
         <warmupTime>1</warmupTime>
         <range>51</range>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -347,6 +356,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -361,7 +373,7 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <statBases>
-      <WorkToMake>37500</WorkToMake>
+      <WorkToMake>39000</WorkToMake>
       <Mass>3.94</Mass>
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
       <SightsEfficiency>2.12</SightsEfficiency>
@@ -396,7 +408,6 @@
         <warmupTime>1.2</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_556Suppressed</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -451,7 +462,7 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Mk18-->
+  <!--Mk18 Mod 1-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Mk18C</defName>
     <label>Mk18 Mod 1</label>
@@ -462,6 +473,9 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -505,7 +519,7 @@
         <warmupTime>0.8</warmupTime>
         <range>40</range>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -570,7 +584,7 @@
   <!--Mk18 SAW-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Mk18C_SAW</defName>
-    <label>Mk18 Mod 1 custom</label>
+    <label>Mk18 CQBR custom</label>
     <description>A Mk18 carbine which has been equipped with a drum magazine and a close-range optic.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/Mk18_SAW</texPath>
@@ -579,6 +593,10 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+      <li>HID_SquadAutomaticWeapons</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -589,13 +607,13 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <statBases>
-      <WorkToMake>35500</WorkToMake>
+      <WorkToMake>39500</WorkToMake>
       <Mass>4.06</Mass>
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
       <SightsEfficiency>2.12</SightsEfficiency>
       <ShotSpread>0.1</ShotSpread>
-      <SwayFactor>1.34</SwayFactor>
-      <Bulk>9.31</Bulk>
+      <SwayFactor>1.15</SwayFactor>
+      <Bulk>8.76</Bulk>
     </statBases>
     <equippedStatOffsets>
       <HuntingStealth>0.5</HuntingStealth>
@@ -608,7 +626,7 @@
     <costList>
       <Steel>50</Steel>
       <Chemfuel>10</Chemfuel>
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>7</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -622,7 +640,6 @@
         <warmupTime>1.2</warmupTime>
         <range>51</range>
         <soundCast>HID_Shot_556Suppressed</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -677,6 +694,125 @@
       </li>
     </modExtensions>
   </ThingDef>
+  <!--Mk18 Mod 1 custom-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_Mk18Mod1_USA</defName>
+    <label>Mk18 Mod 1 custom</label>
+    <description>A well known carbine configuration which excels at close-quarters combat roles.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Mk18_Tan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.305</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite Inherit="false"></researchPrerequisite>
+      <researchPrerequisites>
+        <li>PrecisionRifling</li>
+        <li>CE_AdvancedNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>38000</WorkToMake>
+      <Mass>3.71</Mass>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <SightsEfficiency>2.12</SightsEfficiency>
+      <ShotSpread>0.1</ShotSpread>
+      <SwayFactor>1.25</SwayFactor>
+      <Bulk>7.76</Bulk>
+    </statBases>
+    <equippedStatOffsets>
+      <!--Laser + magnifier/holo sight combo-->
+      <AimingAccuracy>0.05</AimingAccuracy>
+      <AimingDelayFactor>-0.20</AimingDelayFactor>
+      <HuntingStealth>0.5</HuntingStealth>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>CE_AI_AR</li>
+      <li>GTEK_Mk18Mod1_USA</li>
+    </weaponTags>
+    <costList>
+      <Steel>45</Steel>
+      <Chemfuel>10</Chemfuel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.06</recoilAmount>
+        <!-- Decreased by 25% because of suppressor-->
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_556x45mmNATO_FMJ_SB</defaultProjectile>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <warmupTime>1</warmupTime>
+        <range>51</range>
+        <soundCast>HID_Shot_556Suppressed</soundCast>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>30</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_556x45mmNATO_SB</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>true</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--UDMC F5-PVAR-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_PVARRifle</defName>
@@ -689,6 +825,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -733,7 +872,7 @@
         <warmupTime>0.8</warmupTime>
         <range>40</range>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -806,6 +945,9 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -849,7 +991,7 @@
         <warmupTime>0.5</warmupTime>
         <range>31</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -920,6 +1062,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -966,7 +1111,6 @@
         <warmupTime>0.8</warmupTime>
         <range>40</range>
         <soundCast>HID_Shot_762mmSoviet_Suppressed</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -1033,6 +1177,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -1076,7 +1223,7 @@
         <warmupTime>0.8</warmupTime>
         <range>48</range>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1149,6 +1296,9 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>GasOperation</researchPrerequisite>
       <skillRequirements>
@@ -1170,12 +1320,9 @@
     <weaponTags>
       <li>CE_AI_AR</li>
     </weaponTags>
-    <weaponClasses>
-      <li>ShortShots</li>
-    </weaponClasses>
     <costList>
       <Steel>45</Steel>
-      <WoodLog>15</WoodLog>
+      <WoodLog>10</WoodLog>
       <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <verbs>
@@ -1187,9 +1334,9 @@
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <warmupTime>1.1</warmupTime>
-        <range>31</range>
+        <range>37</range>
         <soundCast>HID_Shot_MP510Type</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1263,6 +1410,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -1306,7 +1456,7 @@
         <warmupTime>0.8</warmupTime>
         <range>48</range>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1379,6 +1529,9 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -1418,7 +1571,7 @@
         <warmupTime>0.9</warmupTime>
         <range>48</range>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1489,6 +1642,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.3</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -1528,7 +1684,7 @@
         <warmupTime>1.1</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1606,6 +1762,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -1616,12 +1775,12 @@
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <statBases>
-      <WorkToMake>35500</WorkToMake>
+      <WorkToMake>38500</WorkToMake>
       <Mass>3.22</Mass>
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-      <SightsEfficiency>2.24</SightsEfficiency>
+      <SightsEfficiency>2.36</SightsEfficiency>
       <ShotSpread>0.12</ShotSpread>
-      <SwayFactor>1.11</SwayFactor>
+      <SwayFactor>1.13</SwayFactor>
       <Bulk>6.98</Bulk>
     </statBases>
     <weaponTags>
@@ -1633,7 +1792,7 @@
     <costList>
       <Steel>40</Steel>
       <Chemfuel>10</Chemfuel>
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>7</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -1643,10 +1802,10 @@
         <defaultProjectile>Bullet_556x45mmNATO_FMJ_SB</defaultProjectile>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-        <warmupTime>1.1</warmupTime>
+        <warmupTime>1.2</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1719,6 +1878,10 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+      <li>HID_SquadAutomaticWeapons</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -1732,9 +1895,6 @@
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
-    <weaponClasses>
-      <li>RangedHeavy</li>
-    </weaponClasses>
     <statBases>
       <WorkToMake>38000</WorkToMake>
       <Mass>4.64</Mass>
@@ -1770,7 +1930,7 @@
         <warmupTime>1.2</warmupTime>
         <range>65</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
@@ -1836,6 +1996,153 @@
       </li>
     </modExtensions>
   </ThingDef>
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_M27IAR_UGL</defName>
+    <label>M27 IAR + M320 GLM</label>
+    <description>An automatic rifle made for long range suppresive fire while being lighter than a typical LMG.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HK/M27IAR_UGL</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.305,1.305)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite Inherit="false" />
+      <researchPrerequisites>
+        <li>PrecisionRifling</li>
+        <li>CE_SimpleNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>44000</WorkToMake>
+      <Mass>5.46</Mass>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <SightsEfficiency>2.12</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.51</SwayFactor>
+      <Bulk>10.0</Bulk>
+    </statBases>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-0.10</AimingDelayFactor>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>CE_AI_AR</li>
+      <li>GTEK_M27IAR_UGL</li>
+    </weaponTags>
+    <costList>
+      <Steel>75</Steel>
+      <Chemfuel>15</Chemfuel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.16</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <warmupTime>1.2</warmupTime>
+        <range>65</range>
+        <soundCast>HID_Shot_556mmNATO</soundCast>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>30</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+      </li>
+      <li Class="CombatExtended.CompProperties_UnderBarrel">
+        <propsUnderBarrel>
+          <magazineSize>1</magazineSize>
+          <reloadTime>3</reloadTime>
+          <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+        </propsUnderBarrel>
+        <verbPropsUnderBarrel>
+          <recoilAmount>2.31</recoilAmount>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+          <warmupTime>0.55</warmupTime>
+          <range>48</range>
+          <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+          </targetParams>
+          <soundCast>HID_Shot_UGLauncher</soundCast>
+          <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
+          <muzzleFlashScale>5</muzzleFlashScale>
+        </verbPropsUnderBarrel>
+        <propsFireModesUnderBarrel>
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+          <aimedBurstShotCount>1</aimedBurstShotCount>
+        </propsFireModesUnderBarrel>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshThree</def>
+        <drawSize>(1,1)</drawSize>
+        <offsets>
+          <li>(0.76,0.01)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--Mk16-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Mk16SCAR</defName>
@@ -1848,6 +2155,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -1886,7 +2196,7 @@
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1963,6 +2273,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.25</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -1987,7 +2300,7 @@
     </statBases>
     <costList>
       <Steel>75</Steel>
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>8</ComponentIndustrial>
       <Chemfuel>15</Chemfuel>
     </costList>
     <verbs>
@@ -2001,7 +2314,7 @@
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <soundCast>HID_Shot_556mmNATO_Slow</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2070,7 +2383,7 @@
             <canTargetLocations>true</canTargetLocations>
           </targetParams>
           <soundCast>HID_Shot_UGLauncher</soundCast>
-          <soundCastTail>GunTail_Medium</soundCastTail>
+          <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
           <muzzleFlashScale>5</muzzleFlashScale>
         </verbPropsUnderBarrel>
         <propsFireModesUnderBarrel>
@@ -2105,6 +2418,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True" />
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
@@ -2132,7 +2448,7 @@
         <warmupTime>1</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2207,6 +2523,9 @@
       <drawSize>(1.125,1.125)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2246,7 +2565,7 @@
         <warmupTime>1.1</warmupTime>
         <range>44</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2319,6 +2638,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2360,7 +2682,7 @@
         <warmupTime>1.1</warmupTime>
         <range>44</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2433,6 +2755,9 @@
       <drawSize>(1.25,1.25)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2473,7 +2798,7 @@
         <warmupTime>1.1</warmupTime>
         <range>44</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
@@ -2547,6 +2872,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2588,7 +2916,7 @@
         <warmupTime>1.1</warmupTime>
         <range>44</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
@@ -2661,6 +2989,9 @@
       <drawSize>(1.25,1.25)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2701,7 +3032,7 @@
         <warmupTime>1.2</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_545mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -2774,6 +3105,9 @@
       <drawSize>(1.125,1.125)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -2818,7 +3152,7 @@
         <warmupTime>0.8</warmupTime>
         <range>48</range>
         <soundCast>HID_Shot_545mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -2891,6 +3225,9 @@
       <drawSize>(1.25,1.25)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -2930,7 +3267,7 @@
         <warmupTime>1.1</warmupTime>
         <range>44</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3003,6 +3340,9 @@
       <drawSize>(1.25,1.25)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -3042,7 +3382,7 @@
         <warmupTime>1.1</warmupTime>
         <range>44</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3116,6 +3456,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -3155,7 +3498,7 @@
         <warmupTime>1.1</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3228,6 +3571,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -3267,7 +3613,7 @@
         <warmupTime>1.1</warmupTime>
         <range>48</range>
         <soundCast>HID_Shot_545mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3338,6 +3684,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -3389,7 +3738,7 @@
         <warmupTime>1</warmupTime>
         <range>51</range>
         <soundCast>HID_Shot_545mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3463,6 +3812,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -3511,7 +3863,7 @@
         <warmupTime>0.8</warmupTime>
         <range>44</range>
         <soundCast>HID_Shot_545mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3585,6 +3937,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -3634,7 +3989,7 @@
         <warmupTime>1.5</warmupTime>
         <range>75</range>
         <soundCast>HID_Shot_545mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3708,6 +4063,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -3751,7 +4109,7 @@
         <warmupTime>1</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3824,6 +4182,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -3867,7 +4228,7 @@
         <warmupTime>1</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3932,7 +4293,7 @@
             <canTargetLocations>true</canTargetLocations>
           </targetParams>
           <soundCast>HID_Shot_UGLauncher</soundCast>
-          <soundCastTail>GunTail_Medium</soundCastTail>
+          <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
           <muzzleFlashScale>5</muzzleFlashScale>
         </verbPropsUnderBarrel>
         <propsFireModesUnderBarrel>
@@ -3966,6 +4327,9 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -4014,7 +4378,7 @@
         <warmupTime>1.2</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4087,6 +4451,9 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -4126,7 +4493,7 @@
         <warmupTime>1.2</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4200,6 +4567,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.75</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -4249,7 +4619,7 @@
         <warmupTime>1.2</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_556Suppressed</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -4315,6 +4685,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -4351,7 +4724,7 @@
         <warmupTime>1.2</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_556mmNATO</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4424,6 +4797,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.01</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AssaultRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -4463,7 +4839,7 @@
         <warmupTime>1.15</warmupTime>
         <range>50</range>
         <soundCast>HID_Shot_473mmCaseless</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4530,7 +4906,7 @@
           <warmupTime>1.15</warmupTime>
           <range>50</range>
           <soundCast>HID_Shot_473mmCaseless</soundCast>
-          <soundCastTail>GunTail_Medium</soundCastTail>
+          <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
           <muzzleFlashScale>9</muzzleFlashScale>
         </verbPropsUnderBarrel>
         <propsFireModesUnderBarrel>
@@ -4563,6 +4939,9 @@
       <drawSize>(1.16,1.16)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -4601,7 +4980,7 @@
         <warmupTime>1</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_FAL</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4678,6 +5057,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false" />
       <researchPrerequisites>
@@ -4716,7 +5098,7 @@
         <warmupTime>1</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_FAL</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4785,7 +5167,7 @@
             <canTargetLocations>true</canTargetLocations>
           </targetParams>
           <soundCast>HID_Shot_UGLauncher</soundCast>
-          <soundCastTail>GunTail_Medium</soundCastTail>
+          <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
           <muzzleFlashScale>5</muzzleFlashScale>
         </verbPropsUnderBarrel>
         <propsFireModesUnderBarrel>
@@ -4820,6 +5202,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -4862,7 +5247,7 @@
         <warmupTime>1.5</warmupTime>
         <range>75</range>
         <soundCast>HID_Shot_FAL</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <recoilPattern>Mounted</recoilPattern>
       </li>
@@ -4947,6 +5332,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True" />
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
@@ -4974,7 +5362,7 @@
         <warmupTime>1</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_FAL</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5050,6 +5438,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.01</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -5062,11 +5453,11 @@
     <statBases>
       <Mass>4.71</Mass>
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
-      <SightsEfficiency>2.24</SightsEfficiency>
+      <SightsEfficiency>2.36</SightsEfficiency>
       <ShotSpread>0.07</ShotSpread>
-      <SwayFactor>1.65</SwayFactor>
+      <SwayFactor>1.67</SwayFactor>
       <Bulk>8.84</Bulk>
-      <WorkToMake>37000</WorkToMake>
+      <WorkToMake>39500</WorkToMake>
       <SellPriceFactor>1</SellPriceFactor>
     </statBases>
     <equippedStatOffsets>
@@ -5074,7 +5465,7 @@
     </equippedStatOffsets>
     <costList>
       <Steel>50</Steel>
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>7</ComponentIndustrial>
       <Chemfuel>10</Chemfuel>
     </costList>
     <verbs>
@@ -5085,10 +5476,9 @@
         <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
         <burstShotCount>5</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <warmupTime>1.3</warmupTime>
-        <range>62</range>
+        <warmupTime>1.4</warmupTime>
+        <range>75</range>
         <soundCast>HID_Shot_FAL_suppressed</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -5159,6 +5549,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -5198,7 +5591,7 @@
         <warmupTime>1.1</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_FAL</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5260,17 +5653,20 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--DS Arms SA-58 IBR-->
+  <!--DS Arms SA58 IBR-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SA58_IBR</defName>
-    <label>SA-58 IBR</label>
+    <label>DSA SA58 IBR</label>
     <description>A compact battle rifle with a folding stock. It is very effective at mid to long ranges.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/SA58_IBR</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.305,1.305)</drawSize>
+      <drawSize>1.45</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -5305,7 +5701,7 @@
         <warmupTime>1.1</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_FAL</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5361,27 +5757,30 @@
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawOffset>0.12,0.0</DrawOffset>
+        <DrawOffset>0.16,0.0</DrawOffset>
       </li>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalshThree</def>
         <drawSize>(1.5,1)</drawSize>
         <offsets>
-          <li>(0.78,0)</li>
+          <li>(0.86,0)</li>
         </offsets>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase">
     <defName>HIDGun_SA58_IBR_Semi</defName>
-    <label>SA-58 IBR (semi)</label>
+    <label>DSA SA58 IBR (semi)</label>
     <description>A compact battle rifle with a folding stock. It is very effective at mid to long ranges.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/SA58_IBR</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.305,1.305)</drawSize>
+      <drawSize>1.45</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True"></recipeMaker>
     <statBases>
       <Mass>4.01</Mass>
@@ -5406,7 +5805,7 @@
         <warmupTime>1.1</warmupTime>
         <range>55</range>
         <soundCast>HID_Shot_FAL</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmNATO</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5459,29 +5858,32 @@
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawOffset>0.12,0.0</DrawOffset>
+        <DrawOffset>0.16,0.0</DrawOffset>
       </li>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalshThree</def>
         <drawSize>(1.5,1)</drawSize>
         <offsets>
-          <li>(0.78,0)</li>
+          <li>(0.86,0)</li>
         </offsets>
       </li>
     </modExtensions>
   </ThingDef>
-  <!--DS Arms SA-58 IBR Overkill-->
+  <!--DS Arms SA58 IBR Overkill-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SA58_tactical</defName>
-    <label>SA-58 IBR Tactical</label>
+    <label>DSA SA58 IBR Tactical</label>
     <description>A highly modified variant of an ancient battle rifle design. Its folding stock helps to greatly reduce bulk, which allows it to use a suppressor while remaining relatively compact. Comes fitted with an advanced set of optics, designed to make it easy to switch between long and short range combat.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/SA58_IBR_Overkill</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.45,1.45)</drawSize>
+      <drawSize>(1.595,1.595)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -5524,7 +5926,6 @@
         <warmupTime>1.2</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_FAL_suppressed</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -5581,21 +5982,24 @@
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawOffset>0.2,0.0</DrawOffset>
+        <DrawOffset>0.24,0.0</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase">
     <defName>HIDGun_SA58_tactical_semi</defName>
-    <label>SA-58 IBR Tactical (semi)</label>
+    <label>DSA SA58 IBR Tactical (semi)</label>
     <description>A highly modified variant of an ancient semi-automatic rifle design. Its folding stock helps to greatly reduce bulk, which allows it to use a suppressor while remaining relatively compact. Comes fitted with an advanced set of optics, designed to make it easy to switch between long and short range combat.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/SA58_IBR_Overkill</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.45,1.45)</drawSize>
+      <drawSize>(1.595,1.595)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True"></recipeMaker>
     <statBases>
       <Mass>5.20</Mass>
@@ -5624,7 +6028,6 @@
         <warmupTime>1.2</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_FAL_suppressed</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -5677,7 +6080,7 @@
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawOffset>0.2,0.0</DrawOffset>
+        <DrawOffset>0.24,0.0</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
@@ -5692,6 +6095,9 @@
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -5730,7 +6136,6 @@
         <warmupTime>0.9</warmupTime>
         <range>40</range>
         <soundCast>HID_Shot_762mmSoviet_Suppressed</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -5802,6 +6207,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -5836,7 +6244,7 @@
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <recoilAmount>1.42</recoilAmount>
-        <!-- Decreased by 25%, since 8.6 irl doesn't recoil nearly that bad.-->
+        <!-- Decreased by 25% because of suppressor-->
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_86x43mmBlackout_FMJ</defaultProjectile>
@@ -5845,7 +6253,6 @@
         <warmupTime>1</warmupTime>
         <range>44</range>
         <soundCast>HID_Shot_762mmSoviet_Suppressed</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -5917,6 +6324,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -5933,11 +6343,11 @@
     <statBases>
       <Mass>5.39</Mass>
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-      <SightsEfficiency>2.12</SightsEfficiency>
+      <SightsEfficiency>2.48</SightsEfficiency>
       <ShotSpread>0.08</ShotSpread>
-      <SwayFactor>1.47</SwayFactor>
+      <SwayFactor>1.53</SwayFactor>
       <Bulk>7.65</Bulk>
-      <WorkToMake>36500</WorkToMake>
+      <WorkToMake>43000</WorkToMake>
     </statBases>
     <equippedStatOffsets>
       <!--PCA Advanced Scope stats-->
@@ -5948,7 +6358,7 @@
     <costList>
       <Steel>55</Steel>
       <Chemfuel>5</Chemfuel>
-      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentIndustrial>9</ComponentIndustrial>
       <!-- +2 for the advanced scope -->
     </costList>
     <verbs>
@@ -5960,10 +6370,9 @@
         <defaultProjectile>Bullet_277Fury_FMJ</defaultProjectile>
         <burstShotCount>5</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-        <warmupTime>1.2</warmupTime>
-        <range>59</range>
+        <warmupTime>1.5</warmupTime>
+        <range>75</range>
         <soundCast>HID_Shot_277Fury_Suppressed</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -6036,6 +6445,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BattleRifles</li>
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite Inherit="false"></researchPrerequisite>
       <researchPrerequisites>
@@ -6080,7 +6492,6 @@
         <warmupTime>0.8</warmupTime>
         <range>51</range>
         <soundCast>HID_Shot_277Fury_Suppressed</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>

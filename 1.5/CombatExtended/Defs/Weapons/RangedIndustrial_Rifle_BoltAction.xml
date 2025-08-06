@@ -14,6 +14,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.8</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -129,6 +132,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
@@ -246,6 +252,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -362,6 +371,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -479,6 +491,9 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -594,6 +609,9 @@
       <drawSize>(1.66,1.66)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -711,6 +729,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -824,6 +845,9 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -941,6 +965,9 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1053,6 +1080,9 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1170,6 +1200,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1288,6 +1321,9 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1405,6 +1441,9 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1521,6 +1560,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -1635,6 +1677,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1746,6 +1791,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.4</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1857,6 +1905,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
     </weaponClasses>
@@ -1967,6 +2018,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -2089,6 +2143,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_BoltActionRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -2202,6 +2259,9 @@
       <drawSize>(2.03,2.03)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -2320,6 +2380,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -2442,6 +2505,9 @@
       <drawSize>(1.885,1.885)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -2567,6 +2633,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <weaponClasses>
       <li>LongShots</li>
       <li>RangedHeavy</li>
@@ -2684,6 +2753,9 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.01</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_AntiMatRifles</li>
+    </thingCategories>
     <recipeMaker IsNull="True">
       <skillRequirements>
         <Crafting>5</Crafting>
