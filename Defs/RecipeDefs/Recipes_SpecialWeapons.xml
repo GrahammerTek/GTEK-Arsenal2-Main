@@ -71,12 +71,12 @@
     </recipeUsers>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
-  <!--Browning Auto-5 Hunter (sawed-off)-->
+  <!--Browning A5 Hunter (sawed-off)-->
   <RecipeDef>
     <defName>Make_HIDGun_BrowningA5Gun_SawnOff</defName>
-    <label>make Browning Auto-5 Hunter (sawed-off)</label>
+    <label>make Browning A5 Hunter (sawed-off)</label>
     <description>An autoloading shotgun ready for hunting. Its barrel has been cut down to a shorter length to improve its close-quarters combat capabilities, though it sacrifices some range and accuracy.</description>
-    <jobString>sawing Browning Auto-5 Hunter.</jobString>
+    <jobString>sawing Browning A5 Hunter.</jobString>
     <workAmount>800</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>

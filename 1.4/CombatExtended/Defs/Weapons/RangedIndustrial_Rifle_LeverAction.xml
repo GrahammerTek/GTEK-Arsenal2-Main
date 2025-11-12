@@ -438,7 +438,7 @@
     <description>A lightweight high-capacity lever action rifle chambered for a low caliber cartridge.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/WinchesterRanger</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Winchester/HIDGun_WinchesterRanger</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
@@ -754,11 +754,11 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Henry Lever Action .45/70-->
+  <!--Henry Lever Action .45-70-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_HenryLeverAction4570_Steel</defName>
-    <label>Henry Lever Action .45/70</label>
-    <description>Very common lever action rifle available in a wide variety of calibers. This one is chambered in the powerful .45/70 Government cartridge.</description>
+    <label>Henry Lever Action .45-70</label>
+    <description>Very common lever action rifle available in a wide variety of calibers. This one is chambered in the powerful .45-70 Government cartridge.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/HenryLeverAction4570</texPath>

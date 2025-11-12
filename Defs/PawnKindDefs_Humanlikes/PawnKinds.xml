@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Outlander-->
+  <PawnKindDef ParentName="GuardBase">
+    <defName>HID_Town_Militiaman</defName>
+    <label>town militia</label>
+    <minGenerationAge>18</minGenerationAge>
+    <weaponMoney>330~650</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+  <!--Pirate-->
+  <PawnKindDef ParentName="PirateKindBase">
+    <defName>HID_Pirate_Rifleman</defName>
+    <label>pirate rifleman</label>
+    <minGenerationAge>18</minGenerationAge>
+    <weaponMoney>330~650</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>CivilDefenseRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+</Defs>

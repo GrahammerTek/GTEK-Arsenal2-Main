@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ========== Add town militiamen ========== -->
+  <Operation Class="PatchOperationAdd">
+    <!-- Normal fights, standard mix -->
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
+    <value>
+      <HID_Town_Militiaman>10</HID_Town_Militiaman>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <!--Peaceful-->
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[2]/options</xpath>
+    <value>
+      <HID_Town_Militiaman>10</HID_Town_Militiaman>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <!--Trader-->
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[3]/guards</xpath>
+    <value>
+      <HID_Town_Militiaman>10</HID_Town_Militiaman>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <!--Settlement-->
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[4]/options</xpath>
+    <value>
+      <HID_Town_Militiaman>10</HID_Town_Militiaman>
+    </value>
+  </Operation>
+  <!-- ========== Add pirate riflemen ========== -->
+  <Operation Class="PatchOperationAdd">
+    <!-- Normal fights, ranged with melee mix-ins -->
+    <xpath>Defs/FactionDef[@Name="PirateBandBase"]/pawnGroupMakers/li[1]/options</xpath>
+    <value>
+      <HID_Pirate_Rifleman>10</HID_Pirate_Rifleman>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <!-- Normal fights, ranged only -->
+    <xpath>Defs/FactionDef[@Name="PirateBandBase"]/pawnGroupMakers/li[3]/options</xpath>
+    <value>
+      <HID_Pirate_Rifleman>10</HID_Pirate_Rifleman>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <!-- Base defense, mainly ranged with melee mix-ins -->
+    <xpath>Defs/FactionDef[@Name="PirateBandBase"]/pawnGroupMakers/li[7]/options</xpath>
+    <value>
+      <HID_Pirate_Rifleman>10</HID_Pirate_Rifleman>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="VEF.PatchOperationToggableSequence">
+    <enabled>False</enabled>
+    <label>Disable crafting restrictions (Guns Galore!!!):</label>
+    <operations>
+      <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[@ParentName="HIDGun_MainWeaponBase_Makeable"]/recipeMaker</xpath>
+        <attribute>IsNull</attribute>
+        <value>False</value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="VEF.PatchOperationToggableSequence">
+    <enabled>True</enabled>
+    <label>[CE] Remove duplicate weapons from Combat Extended submods:</label>
+    <operations>
+      <!--Base CE-->
+      <li Class="PatchOperationFindMod">
+        <mods>
+          <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <!--Ruger Redhawk 44 Mag 5.5"-->
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Revolver"]/label</xpath>
+              <value>
+                <label>Ruger Redhawk 44 Mag 5.5"</label>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Revolver"]/graphicData/texPath</xpath>
+              <value>
+                <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_Redhawk44_55</texPath>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+              <value>
+                <generateCommonality>0.2</generateCommonality>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Revolver"]/statBases/SwayFactor</xpath>
+              <value>
+                <SwayFactor>1.05</SwayFactor>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Revolver"]/verbs/li/range</xpath>
+              <value>
+                <range>20</range>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Revolver"]/verbs/li/soundCast</xpath>
+              <value>
+                <soundCast>HID_Shot_357Magnum</soundCast>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Revolver"]/verbs/li/soundCastTail</xpath>
+              <value>
+                <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath>
+              <value>
+                <thingCategories Inherit="False">
+                  <li>HID_RevolverHandguns</li>
+                </thingCategories>
+              </value>
+            </li>
+            <!--M1911-->
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/label</xpath>
+              <value>
+                <label>M1911</label>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/graphicData/texPath</xpath>
+              <value>
+                <texPath>Things/Item/Equipment/WeaponRanged/Colt/HIDGun_M1911</texPath>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/verbs/li/soundCast</xpath>
+              <value>
+                <soundCast>HID_Shot_45ACP</soundCast>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/verbs/li/range</xpath>
+              <value>
+                <range>16</range>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/verbs/li/soundCastTail</xpath>
+              <value>
+                <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Gun_Autopistol"]</xpath>
+              <value>
+                <thingCategories Inherit="False">
+                  <li>HID_SemiAutomaticHandguns</li>
+                </thingCategories>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/modExtensions/li[@Class="CombatExtended.GunDrawExtension"]</xpath>
+              <value>
+                <li Class="CombatExtended.GunDrawExtension">
+                  <DrawOffset>0,0</DrawOffset>
+                </li>
+              </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+              <mods>
+                <li>Muzzle Flash</li>
+              </mods>
+              <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/modExtensions/li[@Class="MuzzleFlash.MuzzleFlashProps"]</xpath>
+                <value>
+                  <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                    <def>MF_StandardMuzzleFalshTwo</def>
+                    <drawSize>(0.6,0.6)</drawSize>
+                    <offsets>
+                      <li>(0.21,0.1)</li>
+                    </offsets>
+                  </li>
+                </value>
+              </match>
+            </li>
+            <!--Mossberg 500-->
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/label</xpath>
+              <value>
+                <label>Mossberg 500</label>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/graphicData/texPath</xpath>
+              <value>
+                <texPath>Things/Item/Equipment/WeaponRanged/Mossberg/M500</texPath>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/graphicData/drawSize</xpath>
+              <value>
+                <drawSize>1.35</drawSize>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/verbs/li/soundCast</xpath>
+              <value>
+                <soundCast>HID_Shot_12Gauge</soundCast>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/verbs/li/soundCastTail</xpath>
+              <value>
+                <soundCastTail>HID_GunTail_12Gauge</soundCastTail>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]</xpath>
+              <value>
+                <thingCategories Inherit="False">
+                  <li>HID_PumpActionShotguns</li>
+                </thingCategories>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/modExtensions/li[@Class="CombatExtended.GunDrawExtension"]</xpath>
+              <value>
+                <li Class="CombatExtended.GunDrawExtension">
+                  <DrawOffset>0.12,0.0</DrawOffset>
+                </li>
+              </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+              <mods>
+                <li>Muzzle Flash</li>
+              </mods>
+              <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/modExtensions/li[@Class="MuzzleFlash.MuzzleFlashProps"]</xpath>
+                <value>
+                  <li Class="MuzzleFlash.MuzzleFlashProps">
+                    <def>MF_StandardMuzzleFalsh</def>
+                    <drawSize>(0.9,1.2)</drawSize>
+                    <offsets>
+                      <li>(0.74,0.08)</li>
+                    </offsets>
+                  </li>
+                </value>
+              </match>
+            </li>
+            <!--UMP45-->
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/label</xpath>
+              <value>
+                <label>UMP45</label>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/graphicData/texPath</xpath>
+              <value>
+                <texPath>Things/Item/Equipment/WeaponRanged/HK/UMP40</texPath>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/graphicData</xpath>
+              <value>
+                <drawSize>1.2</drawSize>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/verbs/li/soundCast</xpath>
+              <value>
+                <soundCast>HID_Shot_45ACP_SMG</soundCast>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/verbs/li/soundCastTail</xpath>
+              <value>
+                <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]</xpath>
+              <value>
+                <thingCategories Inherit="False">
+                  <li>HID_SMGs</li>
+                </thingCategories>
+              </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+              <mods>
+                <li>Muzzle Flash</li>
+              </mods>
+              <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/modExtensions/li[@Class="MuzzleFlash.MuzzleFlashProps"]</xpath>
+                <value>
+                  <li Class="MuzzleFlash.MuzzleFlashProps">
+                    <def>MF_StandardMuzzleFalshTwo</def>
+                    <drawSize>(0.6,0.6)</drawSize>
+                    <offsets>
+                      <li>(0.41,0)</li>
+                    </offsets>
+                  </li>
+                </value>
+              </match>
+            </li>
+            <!--M16A4-->
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/label</xpath>
+              <value>
+                <label>M16A4</label>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/graphicData/texPath</xpath>
+              <value>
+                <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/AR15</texPath>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/graphicData/drawSize</xpath>
+              <value>
+                <drawSize>1.45</drawSize>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/verbs/li/soundCast</xpath>
+              <value>
+                <soundCast>HID_Shot_556mmNATO</soundCast>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/verbs/li/soundCastTail</xpath>
+              <value>
+                <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/verbs/li/burstShotCount</xpath>
+              <value>
+                <burstShotCount>3</burstShotCount>
+              </value>
+            </li>
+            <li Class="PatchOperationRemove">
+              <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/comps/li[@Class="CombatExtended.CompProperties_FireModes"]/aimedBurstShotCount</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]</xpath>
+              <value>
+                <thingCategories Inherit="False">
+                  <li>HID_AssaultRifles</li>
+                </thingCategories>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/modExtensions/li[@Class="CombatExtended.GunDrawExtension"]</xpath>
+              <value>
+                <li Class="CombatExtended.GunDrawExtension">
+                  <DrawOffset>0.16,0.0</DrawOffset>
+                </li>
+              </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+              <mods>
+                <li>Muzzle Flash</li>
+              </mods>
+              <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/modExtensions/li[@Class="MuzzleFlash.MuzzleFlashProps"]</xpath>
+                <value>
+                  <li Class="MuzzleFlash.MuzzleFlashProps">
+                    <def>MF_StandardMuzzleFalshThree</def>
+                    <drawSize>(1,1)</drawSize>
+                    <offsets>
+                      <li>(0.86,0.01)</li>
+                    </offsets>
+                  </li>
+                </value>
+              </match>
+            </li>
+            <!--M24 SWS-->
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/label</xpath>
+              <value>
+                <label>M24 SWS</label>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/graphicData/texPath</xpath>
+              <value>
+                <texPath>Things/Item/Equipment/WeaponRanged/Remington/RemingtonM700_M24SWS</texPath>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/graphicData/drawSize</xpath>
+              <value>
+                <drawSize>1.45</drawSize>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/verbs/li/soundCast</xpath>
+              <value>
+                <soundCast>HID_Shot_762mmNATO_Bolt</soundCast>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/verbs/li/soundCastTail</xpath>
+              <value>
+                <soundCastTail>HID_GunTail_762mmNATO</soundCastTail>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]</xpath>
+              <value>
+                <thingCategories Inherit="False">
+                  <li>HID_BoltActionRifles</li>
+                </thingCategories>
+              </value>
+            </li>
+            <li Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/modExtensions/li[@Class="CombatExtended.GunDrawExtension"]</xpath>
+              <value>
+                <li Class="CombatExtended.GunDrawExtension">
+                  <DrawOffset>0.25,0.0</DrawOffset>
+                </li>
+              </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+              <mods>
+                <li>Muzzle Flash</li>
+              </mods>
+              <match Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/modExtensions/li[@Class="MuzzleFlash.MuzzleFlashProps"]</xpath>
+                <value>
+                  <li Class="MuzzleFlash.MuzzleFlashProps">
+                    <def>MF_StandardMuzzleFalsh</def>
+                    <drawSize>(1.2,1)</drawSize>
+                    <offsets>
+                      <li>(0.89,0.05)</li>
+                    </offsets>
+                  </li>
+                </value>
+              </match>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <!--CE Guns-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_MiniFourteen"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_MiniFourteen"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <!--CE Armory-->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_Deagke"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_Deagke"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_FNFiveSeven"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_FNFiveSeven"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_PNinety"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_PNinety"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_M1Garand"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_M1Garand"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_MSeven"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_MSeven"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_MTwoFifty"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_MTwoFifty"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_M1903Springfield"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_M1903Springfield"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_MicroUzi"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_MicroUzi"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CE_Gun_Uzi"]</xpath>
+        <match Class="PatchOperationAttributeSet">
+          <xpath>Defs/ThingDef[defName="CE_Gun_Uzi"]</xpath>
+          <attribute>Abstract</attribute>
+          <value>True</value>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
