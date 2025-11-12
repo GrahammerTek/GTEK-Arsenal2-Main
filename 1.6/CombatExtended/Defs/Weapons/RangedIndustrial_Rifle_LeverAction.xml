@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--=LEVER-ACTION RIFLE=-->
-  <!--Marlin Model 336-->
+  <!--Marlin 336-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Marlin336Model</defName>
-    <label>Marlin Model 336</label>
+    <label>Marlin 336</label>
     <description>A powerful lever-action repeater rifle, chambered for .30-30 Winchester cartridges.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -109,10 +109,10 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Marlin Model 336 Dark-->
+  <!--Marlin 336 Dark-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Marlin336Model_Dark</defName>
-    <label>Marlin Model 336 Dark</label>
+    <label>Marlin 336 Dark</label>
     <description>A powerful lever-action repeater rifle, chambered for .30-30 Winchester cartridges. Its improved design has made it much lighter and capable of accepting a red dot sight.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -222,10 +222,10 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Marlin Model 1894-->
+  <!--Marlin 1894-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Marlin1894Model</defName>
-    <label>Marlin Model 1894</label>
+    <label>Marlin 1894</label>
     <description>Popular lever-action repeater rifle, chambered for .357 Magnum.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -330,10 +330,10 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Marlin Model 1895 Guide Gun-->
+  <!--Marlin 1895 Guide Gun-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Marlin1895Model_GuideGun</defName>
-    <label>Marlin Model 1895 Guide Gun</label>
+    <label>Marlin 1895 Guide Gun</label>
     <description>High-quality lever-action repeater rifle, chambered for .45-70 Government.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -439,6 +439,222 @@
       </li>
     </modExtensions>
   </ThingDef>
+  <!--Winchester 1892-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_WinchesterNinetyTwo</defName>
+    <label>Winchester 1892</label>
+    <description>Classic lever-action rifle chambered for magnum pistol-caliber rounds.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Winchester/HIDGun_Winchester1892</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.305,1.305)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>11500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.22</SwayFactor>
+      <Bulk>9.53</Bulk>
+      <Mass>2.72</Mass>
+      <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.51</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_44Magnum_HV_FMJ</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>31</range>
+        <soundCast>HID_Shot_357Magnum_Lever</soundCast>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>10</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_44Magnum_Lever</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.12,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1,1)</drawSize>
+        <offsets>
+          <li>(0.76,0.1)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Winchester 94-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_WinchesterNinetyFour</defName>
+    <label>Winchester 94</label>
+    <description>A powerful lever-action repeater rifle, chambered for .30-30 Winchester cartridges.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Winchester/HIDGun_Winchester1892</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.45</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_LeverActionRifles</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>12500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.26</SwayFactor>
+      <Bulk>9.65</Bulk>
+      <Mass>2.95</Mass>
+      <RangedWeapon_Cooldown>0.77</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.23</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_3030Winchester_FMJ</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>31</range>
+        <soundCast>HID_Shot_ThunderLeverGun</soundCast>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <reloadTime>0.85</reloadTime>
+        <ammoSet>AmmoSet_3030Winchester</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.16,0.0</DrawOffset>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1,1)</drawSize>
+        <offsets>
+          <li>(0.86,0.1)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--Winchester Ranger-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_WinchesterRanger</defName>
@@ -446,7 +662,7 @@
     <description>A lightweight high-capacity lever action rifle chambered for a low caliber cartridge.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/WinchesterRanger</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Winchester/HIDGun_WinchesterRanger</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>
@@ -547,10 +763,10 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--S&W Model 1854-->
+  <!--S&W 1854-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SW1854_Traditional</defName>
-    <label>S&amp;W Model 1854</label>
+    <label>S&amp;W 1854</label>
     <description>Modernized lever-action repeating rifle fitted with a close-range scope.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -656,10 +872,10 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--S&W Model 1854 SF-->
+  <!--S&W 1854 SF-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_SW1854_SF</defName>
-    <label>S&amp;W Model 1854 SF</label>
+    <label>S&amp;W 1854 SF</label>
     <description>Modernized lever-action repeating rifle fitted with a red dot sight.</description>
     <possessionCount>1</possessionCount>
     <graphicData>

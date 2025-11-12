@@ -336,7 +336,7 @@
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AzraelPRS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.74,1.74)</drawSize>
+      <drawSize>1.66</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.5</generateCommonality>
@@ -493,7 +493,7 @@
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/BarrettMRAD_Snd</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.66,1.66)</drawSize>
+      <drawSize>1.74</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedDistanceOffset>0.3</equippedDistanceOffset>

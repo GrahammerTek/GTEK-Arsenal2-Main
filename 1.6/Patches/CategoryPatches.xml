@@ -99,7 +99,7 @@
   <!--2035 Armories CDLC-->
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>2035 Armories - CDLC Weapons</li>
+      <li>2035 Armories - Arma 3 CDLC Weapons</li>
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
@@ -131,7 +131,15 @@
         </li>
         <!--=RIFLES=-->
         <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFive" or defName="UACGGun_VelkoRFiveGL" or @Name="HID_BaseGalatARM" or defName="UACGGun_VelkoRFour" or defName="UACGGun_VelkoRFour_Peacekeeper"]</xpath>
+          <xpath>Defs/ThingDef[@Name="HID_BaseHADES_HSix"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_BoltActionRifles</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="UACGGun_VelkoRFive" or defName="UACGGun_VelkoRFiveGL" or @Name="HID_BaseGalatARM" or defName="UACGGun_VelkoRFour" or defName="UACGGun_VelkoRFour_Peacekeeper" or @Name="HID_BaseXMS" or @Name="HID_BaseXMSGL" or @Name="HID_BaseXMSSG" or @Name="HID_BaseMXAR" or @Name="HID_BaseMXAR3GL"]</xpath>
           <value>
             <thingCategories Inherit="False">
               <li>HID_AssaultRifles</li>
@@ -139,7 +147,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[@Name="HID_BaseSLR" or @Name="HID_BaseSLRPara"]</xpath>
+          <xpath>Defs/ThingDef[@Name="HID_BaseSLR" or @Name="HID_BaseSLRPara" or defName="UACGGun_Veles_Blk" or defName="UACGGun_VelesS_Blk" or defName="UACGGun_VelesGL_Blk"]</xpath>
           <value>
             <thingCategories Inherit="False">
               <li>HID_BattleRifles</li>
@@ -148,7 +156,7 @@
         </li>
         <!--=SQUAD AUTOMATIC WEAPONS=-->
         <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="UACGGun_GalatARM_Autorifleman"]</xpath>
+          <xpath>Defs/ThingDef[defName="UACGGun_GalatARM_Autorifleman" or @Name="HID_BaseXMSSW" or defName="UACGGun_SA77G" or defName="UACGGun_SA77Compact"]</xpath>
           <value>
             <thingCategories Inherit="False">
               <li>HID_SquadAutomaticWeapons</li>
@@ -156,6 +164,14 @@
           </value>
         </li>
         <!--=LAUNCHERS=-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="HID_BaseGLX" or @Name="HID_BasePSRLOne"]</xpath>
+          <value>
+            <thingCategories Inherit="False">
+              <li>HID_Launchers</li>
+            </thingCategories>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>

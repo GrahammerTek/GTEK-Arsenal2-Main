@@ -52,7 +52,7 @@
         <warmupTime>0.35</warmupTime>
         <range>28.9</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -127,7 +127,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -202,7 +202,7 @@
         <warmupTime>0.3</warmupTime>
         <range>22.9</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -277,7 +277,7 @@
         <warmupTime>0.3</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_38Special</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -321,7 +321,7 @@
     </thingCategories>
     <statBases>
       <WorkToMake>9000</WorkToMake>
-      <Mass>1.8</Mass>
+      <Mass>1.78</Mass>
       <AccuracyTouch>0.60</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.85</AccuracyMedium>
@@ -335,8 +335,9 @@
       <li>RangedLight</li>
     </weaponClasses>
     <costList>
-      <Steel>30</Steel>
+      <Steel>25</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
     </costList>
     <recipeMaker>
       <skillRequirements>
@@ -352,7 +353,7 @@
         <warmupTime>0.5</warmupTime>
         <range>30.9</range>
         <soundCast>HID_Shot_ThunderRevolver</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -427,9 +428,9 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>HIDBullet_38Special</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
+        <range>20.9</range>
         <soundCast>HID_Shot_38Special</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -505,7 +506,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_357Magnum_Single</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -578,9 +579,9 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_Autopistol</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
+        <range>20.9</range>
         <soundCast>HID_Shot_38Special</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -650,9 +651,9 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_Autopistol</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
+        <range>20.9</range>
         <soundCast>HID_Shot_38Special</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -727,7 +728,7 @@
         <warmupTime>0.4</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_ThunderRevolver</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -803,7 +804,7 @@
         <warmupTime>0.4</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_ThunderRevolver</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -873,7 +874,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -950,7 +951,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1025,7 +1026,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1100,7 +1101,7 @@
         <warmupTime>0.35</warmupTime>
         <range>28.9</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1174,7 +1175,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1249,9 +1250,85 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>HIDBullet_38Special</defaultProjectile>
         <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
+        <range>20.9</range>
         <soundCast>HID_Shot_38Special</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--S&W Model 442-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SW442Gun</defName>
+    <label>S&amp;W Model 442</label>
+    <description>An extremely light double action revolver firing a small cartridge. Easy to handle but only holds 5 rounds, so make those shots count.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SW442</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.65</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.56</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+      <Mass>0.41</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.39</AccuracyMedium>
+      <AccuracyLong>0.29</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Revolver</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>15</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker IsNull="True">
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_38Special</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>20.9</range>
+        <soundCast>HID_Shot_38Special</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1287,7 +1364,7 @@
     </graphicData>
     <uiIconScale>1.65</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
-    <generateCommonality>0.2</generateCommonality>
+    <generateCommonality>0.1</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_RevolverHandguns</li>
     </thingCategories>
@@ -1331,7 +1408,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_38Special</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1357,6 +1434,77 @@
   </ThingDef>
   <!--S&W Model 460V-->
   <!--S&W Model 460XVR 10.5"-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SW460XVR_1050In</defName>
+    <label>S&amp;W Model 460XVR 10.5"</label>
+    <description>A heavy scoped 5-shot double-action hunting revolver, chambered for the rare but powerful .460 Magnum cartridge. Can take .45 Colt or .454 Casull in a pinch.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SW460XVR_1050</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_RevolverHandguns</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>3.01</Mass>
+      <AccuracyTouch>0.57</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.82</AccuracyLong>
+      <RangedWeapon_Cooldown>1.83</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Revolver</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>35</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_460Magnum</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>30.9</range>
+        <soundCast>HID_Shot_ThunderRevolver</soundCast>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
   <!--S&W Model 460XVR 8.38"-->
   <!--S&W Model 460XVR 3.5"-->
   <!--S&W M&P R8-->
@@ -1410,7 +1558,7 @@
         <warmupTime>0.3</warmupTime>
         <range>28.9</range>
         <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1435,87 +1583,11 @@
     </tools>
   </ThingDef>
   <!--=PISTOL=-->
-  <!--Beretta M9A1-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_BerettaM9Gun</defName>
-    <label>Beretta M9A1</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A1</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.9,0.9)</drawSize>
-    </graphicData>
-    <uiIconScale>1.5</uiIconScale>
-    <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.75</generateCommonality>
-    <thingCategories Inherit="False">
-      <li>HID_SemiAutomaticHandguns</li>
-    </thingCategories>
-    <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <displayPriority>405</displayPriority>
-    </recipeMaker>
-    <weaponTags>
-      <li>SimpleGun</li>
-      <li>Autopistol</li>
-      <li>ModernHandgun</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <statBases>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.96</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.40</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>25</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
-        <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
-        <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
   <!--Beretta 92FS-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Beretta92FS</defName>
     <label>Beretta 92FS</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
+    <description>Widely popular semi-automatic duty pistol. Feeds from 15-round magazines and chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Beretta/Beretta92FS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1562,7 +1634,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1590,7 +1662,7 @@
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Beretta92FS_Inox</defName>
     <label>Beretta 92FS Inox</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
+    <description>Widely popular semi-automatic duty pistol. Feeds from 15-round magazines and chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Beretta/Beretta92FS_Inox</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1639,7 +1711,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1663,13 +1735,89 @@
       </li>
     </tools>
   </ThingDef>
-  <!--Beretta M9A3-->
+  <!--Beretta M9A1-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_BerettaM9A3Gun</defName>
-    <label>Beretta M9A3</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire. Fitted with a suppressor.</description>
+    <defName>HIDGun_BerettaM9Gun</defName>
+    <label>Beretta M9A1</label>
+    <description>Developed as an upgrade to the original 92FS design, the Beretta M9A1 features an added accessory rail and various minor changes intended to improve reliability. Feeds from 15-round magazines and chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A3</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.75</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Autopistol</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.96</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>HID_Shot_9mmPara</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Beretta M9A4-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_BerettaM9A4Gun</defName>
+    <label>Beretta M9A4</label>
+    <description>A modernized upgrade to the aging M9 design, the Beretta M9A4 features an optics mount, a threaded barrel, and supports an improved 18-round magazine. Chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9,0.9)</drawSize>
     </graphicData>
@@ -1687,26 +1835,22 @@
       <li>RangedLight</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>6000</WorkToMake>
-      <Mass>1.35</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.40</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>0.95</Mass>
+      <AccuracyTouch>0.82</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.42</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
     </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
-      <AimingDelayFactor>-0.10</AimingDelayFactor>
-    </equippedStatOffsets>
     <costList>
-      <Steel>35</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>4</Crafting>
       </skillRequirements>
       <displayPriority>405</displayPriority>
     </recipeMaker>
@@ -1715,10 +1859,10 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
-        <warmupTime>0.4</warmupTime>
+        <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -1793,7 +1937,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1869,7 +2013,7 @@
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -1908,7 +2052,7 @@
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
-    <recipeMaker>
+    <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>4</Crafting>
@@ -1944,7 +2088,7 @@
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2019,7 +2163,7 @@
         <warmupTime>0.5</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara_SMG</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2094,7 +2238,7 @@
         <warmupTime>0.5</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_45ACP_SMG</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2169,7 +2313,7 @@
         <warmupTime>0.5</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2244,7 +2388,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2319,7 +2463,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2355,7 +2499,7 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.2</generateCommonality>
+    <generateCommonality>0.06</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
@@ -2396,7 +2540,7 @@
         <warmupTime>0.2</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2420,6 +2564,8 @@
       </li>
     </tools>
   </ThingDef>
+  <!--SIG P322-->
+  <!--SIG P322-Comp-->
   <!--SIG P365-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_P365SIG</defName>
@@ -2472,7 +2618,7 @@
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2548,7 +2694,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_45ACP</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2623,7 +2769,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_45ACP</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2698,7 +2844,7 @@
         <warmupTime>0.4</warmupTime>
         <range>26.9</range>
         <soundCast>HID_Shot_10mmAuto</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2774,7 +2920,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_10mmAuto</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2850,7 +2996,7 @@
         <warmupTime>0.2</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -2926,7 +3072,7 @@
         <warmupTime>0.2</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
@@ -3002,7 +3148,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_45ACP</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3078,8 +3224,8 @@
         <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
-        <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCast>HID_Shot_380ACP</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3154,7 +3300,7 @@
         <warmupTime>0.4</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara_SMG</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3229,7 +3375,7 @@
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <soundCast>HID_Shot_9mmPara_SMG</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3306,7 +3452,7 @@
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3536,7 +3682,6 @@
         <warmupTime>0.5</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_22Suppressed</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3611,7 +3756,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_45ACP</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3707,7 +3852,7 @@
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3844,7 +3989,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -3906,10 +4051,249 @@
     <recipeMaker IsNull="True" />
   </ThingDef>
   <!--Ruger American Duty Pistol 9mm-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerAmericanDutyPistol_9mm</defName>
+    <label>Ruger American Duty Pistol 9mm</label>
+    <description>A sturdy, modular, polymer-framed 9mm pistol. Available in a variety of configurations.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanDutyPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.3</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>0.85</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
   <!--Ruger American Duty Pistol 45 ACP-->
   <!--Ruger American Compact Pistol 9mm-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable" Name="HIDGun_RugerAmericanCompactPistol_9mm_Base" Abstract="True">
+    <description>A sturdy, modular, polymer-framed 9mm pistol. Available in a variety of configurations. Relatively heavier than most other compact pistols, which gives it less recoil.</description>
+    <graphicData>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>0.83</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>20.9</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_9mm_Base">
+    <defName>HIDGun_RugerAmericanCompactPistol_9mm</defName>
+    <label>Ruger American Compact Pistol 9mm</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_9mm_Base">
+    <defName>HIDGun_RugerAmericanCompactPistol_9mm_Gray</defName>
+    <label>Ruger American Compact Pistol 9mm (Gray)</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol_Gray</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker IsNull="True" />
+  </ThingDef>
   <!--Ruger American Compact Pistol 45 ACP-->
   <!--Ruger American Competition Pistol-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RugerAmericanCompetitionPistol</defName>
+    <label>Ruger American Competition Pistol</label>
+    <description>A sturdy, modular, polymer-framed 9mm pistol. Available in a variety of configurations.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompetitionPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.08</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>ModernHandgun</li>
+      <li>ExoticHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>6500</WorkToMake>
+      <Mass>1.06</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>25.9</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
   <!--FN Model 1910-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_FN1910M</defName>
@@ -3961,7 +4345,7 @@
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4036,7 +4420,7 @@
         <warmupTime>0.3</warmupTime>
         <range>22.9</range>
         <soundCast>HID_Shot_380ACP</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4111,7 +4495,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4186,7 +4570,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4288,7 +4672,7 @@
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4364,7 +4748,7 @@
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4440,7 +4824,7 @@
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4515,7 +4899,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_22Caliber</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4590,7 +4974,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_45ACP</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4672,7 +5056,6 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmParaSuppressed</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4750,7 +5133,7 @@
         <warmupTime>0.3</warmupTime>
         <range>27.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4825,7 +5208,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_ThunderPistol</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -4904,7 +5287,7 @@
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_ThunderPistol</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
@@ -4928,10 +5311,10 @@
       </li>
     </tools>
   </ThingDef>
-  <!--Desert Eagle 44-->
+  <!--Desert Eagle 50 Golden-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_DesertEagle_44MagnumGold</defName>
-    <label>Desert Eagle 44 Gold</label>
+    <label>Desert Eagle (Gold)</label>
     <description>A large semi-automatic pistol which uses a gas operated system, similar to a rifle. Available in a variety of calibers, this one is chambered in the powerful .44 Magnum cartridge and has been gold plated.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/DesertEagle44_Gold</texPath>
@@ -4945,12 +5328,12 @@
     </thingCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
-      <Mass>1.91</Mass>
+      <Mass>2.00</Mass>
       <AccuracyTouch>0.80</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.40</AccuracyMedium>
       <AccuracyLong>0.30</AccuracyLong>
-      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
       <SellPriceFactor>1.5</SellPriceFactor>
     </statBases>
     <weaponTags>
@@ -4977,11 +5360,11 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Revolver</defaultProjectile>
+        <defaultProjectile>HIDBullet_454Casull</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>25.9</range>
-        <soundCast>HID_Shot_357Magnum</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCast>HID_Shot_ThunderPistol</soundCast>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
@@ -5055,7 +5438,7 @@
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5319,8 +5702,8 @@
         <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
-        <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCast>HID_Shot_380ACP</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5397,7 +5780,6 @@
         <warmupTime>0.4</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmParaSuppressed</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
@@ -5471,8 +5853,8 @@
         <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
         <warmupTime>0.1</warmupTime>
         <range>20.9</range>
-        <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCast>HID_Shot_380ACP</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5497,7 +5879,193 @@
     </tools>
   </ThingDef>
   <!--S&W SD9 2.0-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable" Name="HIDGun_SD9_2SW_Base" Abstract="True">
+    <description>Cheap, lightweight, and compact 9mm pistol.</description>
+    <graphicData>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>0.64</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>20.9</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.18,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_SD9_2SW_Base">
+    <defName>HIDGun_SD9_2SW</defName>
+    <label>S&amp;W SD9 2.0</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SWSD2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.7</generateCommonality>
+  </ThingDef>
+  <ThingDef ParentName="HIDGun_SD9_2SW_Base">
+    <defName>HIDGun_SD9_2SW_Tan</defName>
+    <label>S&amp;W SD9 2.0 (FDE)</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SWSD2_Tan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.2</generateCommonality>
+    <recipeMaker IsNull="True" />
+  </ThingDef>
   <!--S&W SD9 2.0 Tactical-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_SD9_2SW_Laser</defName>
+    <label>S&amp;W SD9 2.0 Tactical</label>
+    <description>Cheap, lightweight, and compact 9mm pistol. Fitted with a laser light.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/S&amp;W/HIDGun_SWSD2_Laser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>6500</WorkToMake>
+      <Mass>0.78</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
+      <AimingDelayFactor>-0.10</AimingDelayFactor>
+    </equippedStatOffsets>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.1</warmupTime>
+        <range>20.9</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.18,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
   <!--S&W SD40 2.0-->
   <!--Draco-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
@@ -5548,7 +6116,7 @@
         <warmupTime>0.4</warmupTime>
         <range>22.9</range>
         <soundCast>HID_Shot_762mmSoviet</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_762mmSoviet</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5571,6 +6139,15 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1.5,1)</drawSize>
+        <offsets>
+          <li>(0.32,0.0)</li>
+        </offsets>
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--=DERRINGER=-->
   <!--Powell Knife Pistol-->
@@ -5584,15 +6161,15 @@
       <drawSize>(0.93,0.93)</drawSize>
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
-    <generateCommonality>0.06</generateCommonality>
+    <generateCommonality>0.02</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_BreakActionHandguns</li>
     </thingCategories>
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <Mass>0.48</Mass>
-      <AccuracyTouch>0.60</AccuracyTouch>
-      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.66</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
       <AccuracyLong>0.35</AccuracyLong>
       <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
@@ -5617,7 +6194,7 @@
         <warmupTime>0.3</warmupTime>
         <range>13.9</range>
         <soundCast>HID_Shot_38Special</soundCast>
-        <soundCastTail>GunTail_Light</soundCastTail>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5660,17 +6237,17 @@
       <drawSize>(0.9,0.9)</drawSize>
     </graphicData>
     <soundInteract>Interact_Revolver</soundInteract>
-    <generateCommonality>0.15</generateCommonality>
+    <generateCommonality>0.1</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_BreakActionHandguns</li>
     </thingCategories>
     <statBases>
-      <WorkToMake>3000</WorkToMake>
+      <WorkToMake>4000</WorkToMake>
       <Mass>0.47</Mass>
-      <AccuracyTouch>0.60</AccuracyTouch>
-      <AccuracyShort>0.64</AccuracyShort>
-      <AccuracyMedium>0.45</AccuracyMedium>
-      <AccuracyLong>0.35</AccuracyLong>
+      <AccuracyTouch>0.64</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
       <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -5697,8 +6274,10 @@
         <defaultProjectile>HIDBullet_410Bore</defaultProjectile>
         <warmupTime>0.2</warmupTime>
         <range>13.9</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>50</ticksBetweenBurstShots>
         <soundCast>HID_Shot_ThunderRevolver_Single</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
@@ -5723,4 +6302,79 @@
     </tools>
   </ThingDef>
   <!--Rossi Brawler-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_RossiBrawler</defName>
+    <label>Rossi Brawler</label>
+    <description>A large single-shot survival pistol capable of loading either .410 shells or .45 colt ammunition.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/HIDGun_RossiBrawler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <generateCommonality>0.15</generateCommonality>
+    <equippedDistanceOffset>0.08</equippedDistanceOffset>
+    <thingCategories Inherit="False">
+      <li>HID_BreakActionHandguns</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>1.04</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.30</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Revolver</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <Chemfuel>5</Chemfuel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_410Bore</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>18.9</range>
+        <soundCast>HID_Shot_ThunderRevolver_Single</soundCast>
+        <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 </Defs>

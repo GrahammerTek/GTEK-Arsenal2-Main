@@ -300,7 +300,7 @@
     <label>Winchester Ranger</label>
     <description>A lightweight high-capacity lever action rifle chambered for a low caliber cartridge.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/WinchesterRanger</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Winchester/HIDGun_WinchesterRanger</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.305,1.305)</drawSize>
     </graphicData>

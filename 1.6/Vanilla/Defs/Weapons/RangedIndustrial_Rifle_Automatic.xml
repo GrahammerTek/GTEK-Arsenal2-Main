@@ -466,11 +466,11 @@
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/Mk18_SAW</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.16,1.16)</drawSize>
+      <drawSize>1.305</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.1</generateCommonality>
-    <equippedDistanceOffset>0.08</equippedDistanceOffset>
+    <equippedDistanceOffset>0.12</equippedDistanceOffset>
     <thingCategories Inherit="False">
       <li>HID_AssaultRifles</li>
       <li>HID_SquadAutomaticWeapons</li>

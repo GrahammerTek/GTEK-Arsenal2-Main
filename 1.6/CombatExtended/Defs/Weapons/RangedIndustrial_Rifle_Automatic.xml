@@ -589,7 +589,7 @@
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AR15_Customs/Mk18_SAW</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.16,1.16)</drawSize>
+      <drawSize>1.305</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.1</generateCommonality>
@@ -690,7 +690,7 @@
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawOffset>0.08,0.0</DrawOffset>
+        <DrawOffset>0.12,0.0</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
@@ -1547,7 +1547,7 @@
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
       <SightsEfficiency>1.0</SightsEfficiency>
       <ShotSpread>0.1</ShotSpread>
-      <SwayFactor>1.19</SwayFactor>
+      <SwayFactor>1.11</SwayFactor>
       <Bulk>7.65</Bulk>
     </statBases>
     <weaponTags>
@@ -1998,7 +1998,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_M27IAR_UGL</defName>
-    <label>M27 IAR + M320 GLM</label>
+    <label>M27 IAR GL</label>
     <description>An automatic rifle made for long range suppresive fire while being lighter than a typical LMG.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/HK/M27IAR_UGL</texPath>
@@ -2264,7 +2264,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Mk16SCAR_UGL</defName>
-    <label>Mk16 + FN40GL</label>
+    <label>Mk16 EGLM</label>
     <description>A spec-ops combat assault rifle firing an intermediate rifle cartridge. Comes equiped with an underbarrel FN40GL.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/FN/SCARMk16_UGL</texPath>
@@ -2309,7 +2309,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_556x45mmNATO_FMJ_SB</defaultProjectile>
-        <warmupTime>1</warmupTime>
+        <warmupTime>0.8</warmupTime>
         <range>51</range>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -4173,7 +4173,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_VHSD2CT_UGL</defName>
-    <label>VHS-D2 CT + VHS-BG</label>
+    <label>VHS-D2 CT GL</label>
     <description>A bullpup assault rifle with an integrated reflex sight. Compact and impressively accurate at long range. Comes equiped with an underbarrel 40mm grenade launcher.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/VHSD2CT_UGL</texPath>
@@ -4619,8 +4619,6 @@
         <warmupTime>1.2</warmupTime>
         <range>59</range>
         <soundCast>HID_Shot_556Suppressed</soundCast>
-        <soundCastTail>HID_GunTail_556mmNATO</soundCastTail>
-        <muzzleFlashScale>3</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -5048,7 +5046,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Mk17SCAR_UGL</defName>
-    <label>Mk17 Mod 0 + FN40GL</label>
+    <label>Mk17 Mod 0 EGLM</label>
     <description>A spec-ops combat assault rifle firing a full-sized rifle cartridge. Comes equiped with an underbarrel FN40GL.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/FN/SCARMk17Mod0_UGL</texPath>
@@ -5778,6 +5776,7 @@
       <drawSize>1.45</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
+    <generateCommonality>0.5</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticRifles</li>
     </thingCategories>
@@ -5996,7 +5995,7 @@
       <drawSize>(1.595,1.595)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <generateCommonality>0.5</generateCommonality>
+    <generateCommonality>0.25</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticRifles</li>
     </thingCategories>

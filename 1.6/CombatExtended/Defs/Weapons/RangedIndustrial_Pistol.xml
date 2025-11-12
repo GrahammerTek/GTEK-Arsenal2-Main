@@ -1248,7 +1248,7 @@
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
-    <generateCommonality>0.06</generateCommonality>
+    <generateCommonality>0.04</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_RevolverHandguns</li>
     </thingCategories>
@@ -1925,7 +1925,7 @@
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Revolver</soundInteract>
-    <generateCommonality>0.06</generateCommonality>
+    <generateCommonality>0.04</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_RevolverHandguns</li>
     </thingCategories>
@@ -3388,115 +3388,11 @@
     </modExtensions>
   </ThingDef>
   <!--=PISTOL=-->
-  <!--Beretta M9A1-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_BerettaM9Gun</defName>
-    <label>Beretta M9A1</label>
-    <description>Your typical 9mm duty pistol. Its steel-frame construction helps reduce some recoil.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A1</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.9,0.9)</drawSize>
-    </graphicData>
-    <uiIconScale>1.5</uiIconScale>
-    <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.75</generateCommonality>
-    <thingCategories Inherit="False">
-      <li>HID_SemiAutomaticHandguns</li>
-    </thingCategories>
-    <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <displayPriority>405</displayPriority>
-    </recipeMaker>
-    <statBases>
-      <Mass>0.96</Mass>
-      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
-      <SightsEfficiency>0.70</SightsEfficiency>
-      <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.78</SwayFactor>
-      <Bulk>2.16</Bulk>
-      <WorkToMake>7000</WorkToMake>
-    </statBases>
-    <weaponTags>
-      <li>SimpleGun</li>
-      <li>Autopistol</li>
-      <li>CE_Sidearm</li>
-      <li>CE_AI_BROOM</li>
-      <li>CE_OneHandedWeapon</li>
-      <li>ModernHandgun</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <costList>
-      <Steel>25</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>2.38</recoilAmount>
-        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
-        <warmupTime>0.6</warmupTime>
-        <range>18</range>
-        <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li Class="CombatExtended.ToolCE">
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.54</cooldownTime>
-        <chanceFactor>1.5</chanceFactor>
-        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
-      </li>
-      <li Class="CombatExtended.ToolCE">
-        <label>muzzle</label>
-        <capacities>
-          <li>Poke</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.54</cooldownTime>
-        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
-        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
-      </li>
-    </tools>
-    <comps>
-      <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>15</magazineSize>
-        <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
-      </li>
-      <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>FALSE</aiUseBurstMode>
-        <aiAimMode>Snapshot</aiAimMode>
-      </li>
-    </comps>
-    <modExtensions>
-      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
-        <def>MF_StandardMuzzleFalshTwo</def>
-        <drawSize>(0.55,0.55)</drawSize>
-        <offsets>
-          <li>(0.25,0.093)</li>
-        </offsets>
-      </li>
-    </modExtensions>
-  </ThingDef>
   <!--Beretta 92FS-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Beretta92FS</defName>
     <label>Beretta 92FS</label>
-    <description>Your typical 9mm duty pistol. Its steel-frame construction helps reduce some recoil.</description>
+    <description>Widely popular semi-automatic duty pistol. Feeds from 15-round magazines and chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Beretta/Beretta92FS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -3599,7 +3495,7 @@
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Beretta92FS_Inox</defName>
     <label>Beretta 92FS Inox</label>
-    <description>Your typical 9mm duty pistol. Its steel-frame construction helps reduce some recoil.</description>
+    <description>Widely popular semi-automatic duty pistol. Feeds from 15-round magazines and chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Beretta/Beretta92FS_Inox</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -3700,48 +3596,40 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Beretta M9A3-->
+  <!--Beretta M9A1-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_BerettaM9A3Gun</defName>
-    <label>Beretta M9A3</label>
-    <description>Your typical 9mm duty pistol. Its steel-frame construction helps reduce some recoil. Fitted with a suppressor. Comes equipped with reflex and laser sights, and a compensator.</description>
+    <defName>HIDGun_BerettaM9Gun</defName>
+    <label>Beretta M9A1</label>
+    <description>Developed as an upgrade to the original 92FS design, the Beretta M9A1 features an added accessory rail and various minor changes intended to improve reliability. Feeds from 15-round magazines and chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A3</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9,0.9)</drawSize>
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.33</generateCommonality>
+    <generateCommonality>0.75</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
-    <recipeMaker IsNull="True">
-      <researchPrerequisite Inherit="false"></researchPrerequisite>
-      <researchPrerequisites>
-        <li>BlowbackOperation</li>
-        <li>CE_AdvancedNV</li>
-      </researchPrerequisites>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
-        <Crafting>5</Crafting>
+        <Crafting>4</Crafting>
       </skillRequirements>
       <displayPriority>405</displayPriority>
     </recipeMaker>
     <statBases>
-      <Mass>1.29</Mass>
+      <Mass>0.96</Mass>
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
-      <SightsEfficiency>0.80</SightsEfficiency>
+      <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.17</ShotSpread>
-      <SwayFactor>0.90</SwayFactor>
-      <Bulk>2.33</Bulk>
-      <WorkToMake>8000</WorkToMake>
+      <SwayFactor>0.78</SwayFactor>
+      <Bulk>2.16</Bulk>
+      <WorkToMake>7000</WorkToMake>
     </statBases>
-    <equippedStatOffsets>
-      <!--Because laser-->
-      <AimingAccuracy>0.05</AimingAccuracy>
-      <AimingDelayFactor>-0.10</AimingDelayFactor>
-    </equippedStatOffsets>
     <weaponTags>
+      <li>SimpleGun</li>
       <li>Autopistol</li>
       <li>CE_Sidearm</li>
       <li>CE_AI_BROOM</li>
@@ -3753,16 +3641,16 @@
     </weaponClasses>
     <costList>
       <Steel>25</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.36</recoilAmount>
+        <recoilAmount>2.38</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
-        <warmupTime>0.5</warmupTime>
-        <range>21</range>
+        <warmupTime>0.6</warmupTime>
+        <range>18</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -3793,7 +3681,324 @@
     </tools>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>17</magazineSize>
+        <magazineSize>15</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.25,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Beretta M9A4-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_BerettaM9A4Gun</defName>
+    <label>Beretta M9A4</label>
+    <description>A modernized upgrade to the aging M9 design, the Beretta M9A4 features an optics mount, a threaded barrel, and supports an improved 18-round magazine. Chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.2</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.95</Mass>
+      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.79</SwayFactor>
+      <Bulk>2.21</Bulk>
+      <WorkToMake>7000</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.40</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>18</range>
+        <soundCast>HID_Shot_9mmPara</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>18</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <offsets>
+          <li>(0.26,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Beretta M9A4 Tactical-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_BerettaM9A4Tactical</defName>
+    <label>Beretta M9A4 Tactical</label>
+    <description>A modernized upgrade to the aging M9 design, the Beretta M9A4 features an optics mount, a threaded barrel, and supports an improved 18-round magazine. Chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A4_Tactical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.1</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite Inherit="false" />
+      <researchPrerequisites>
+        <li>BlowbackOperation</li>
+        <li>CE_SimpleNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>1.31</Mass>
+      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.15</ShotSpread>
+      <SwayFactor>1.19</SwayFactor>
+      <Bulk>3.44</Bulk>
+      <WorkToMake>8500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.54</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>21</range>
+        <soundCast>HID_Shot_9mmParaSuppressed</soundCast>
+        <muzzleFlashScale>3</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>18</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawOffset>0.1,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Beretta 92XI SAO GARA-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_Beretta92XI_SAO_GARA</defName>
+    <label>Beretta 92XI SAO GARA</label>
+    <description>High-end competition variant of the Beretta 92 series of handguns. Comes standard with an attached compensator and fitted with a red dot and laser light. Holds 22 rounds of 9x19mm ammuntion.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/Beretta92XI_SAO_GARA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite Inherit="false"></researchPrerequisite>
+      <researchPrerequisites>
+        <li>BlowbackOperation</li>
+        <li>CE_AdvancedNV</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>1.14</Mass>
+      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.17</ShotSpread>
+      <SwayFactor>0.86</SwayFactor>
+      <Bulk>2.29</Bulk>
+      <WorkToMake>9500</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <!--Because laser-->
+      <AimingAccuracy>0.05</AimingAccuracy>
+      <AimingDelayFactor>-0.10</AimingDelayFactor>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ExoticHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.45</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>21</range>
+        <soundCast>HID_Shot_9mmPara</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>22</magazineSize>
         <reloadTime>4</reloadTime>
         <ammoSet>AmmoSet_9x19mmPara</ammoSet>
       </li>
@@ -4031,6 +4236,7 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.8</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
@@ -4573,7 +4779,7 @@
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_P320SIG</defName>
     <label>SIG P320</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
+    <description>An ancient pattern of semi-automatic 9mm pistol. Once seen as the future of handguns, the SIG P320 is now generally considered unsafe due to a faulty design process. Even now, millions of these old pistols lay dormant among the various ruins, waiting for the unsuspecting scavenger to find. Holds 17 rounds of 9x19mm.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/SIG/P320</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -4581,6 +4787,7 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.5</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
@@ -4684,7 +4891,7 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.06</generateCommonality>
+    <generateCommonality>0.04</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
@@ -5007,7 +5214,6 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.8</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
@@ -5866,7 +6072,7 @@
       <SwayFactor>0.63</SwayFactor>
       <Bulk>1.91</Bulk>
       <WorkToMake>7000</WorkToMake>
-      <SellPriceFactor>1</SellPriceFactor>
+      <SellPriceFactor>1.25</SellPriceFactor>
     </statBases>
     <weaponTags>
       <li>SimpleGun</li>
@@ -6995,7 +7201,7 @@
   <!--Ruger American Duty Pistol 9mm-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_RugerAmericanDutyPistol_9mm</defName>
-    <label>Ruger American Duty Pistol 9mm</label>
+    <label>Ruger American Duty Pistol 9</label>
     <description>A sturdy, modular, polymer-framed 9mm pistol. Available in a variety of configurations.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanDutyPistol</texPath>
@@ -7099,7 +7305,7 @@
   <!--Ruger American Duty Pistol 45 ACP-->
   <ThingDef ParentName="HIDGun_MainWeaponBase">
     <defName>HIDGun_RugerAmericanDutyPistol_45ACP</defName>
-    <label>Ruger American Duty Pistol 45 ACP</label>
+    <label>Ruger American Duty Pistol 45</label>
     <description>A sturdy, modular, polymer-framed .45 ACP pistol. Available in a variety of configurations.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanDutyPistol_45</texPath>
@@ -7302,7 +7508,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_9mm_Base">
     <defName>HIDGun_RugerAmericanCompactPistol_9mm</defName>
-    <label>Ruger American Compact Pistol 9mm</label>
+    <label>Ruger American Compact Pistol 9</label>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -7310,7 +7516,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_9mm_Base">
     <defName>HIDGun_RugerAmericanCompactPistol_9mm_Gray</defName>
-    <label>Ruger American Compact Pistol 9mm (Gray)</label>
+    <label>Ruger American Compact Pistol 9 (Gray)</label>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol_Gray</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -7421,7 +7627,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_45ACP_Base">
     <defName>HIDGun_RugerAmericanCompactPistol_45ACP</defName>
-    <label>Ruger American Compact Pistol 45 ACP</label>
+    <label>Ruger American Compact Pistol 45</label>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol_45</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -7429,7 +7635,7 @@
   </ThingDef>
   <ThingDef ParentName="HIDGun_RugerAmericanCompactPistol_45ACP_Base">
     <defName>HIDGun_RugerAmericanCompactPistol_45ACP_Gray</defName>
-    <label>Ruger American Compact Pistol 45 ACP (Gray)</label>
+    <label>Ruger American Compact Pistol 45 (Gray)</label>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Ruger/HIDGun_AmericanCompactPistol_Gray_45</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -7964,7 +8170,6 @@
       <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock17</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>1.2</generateCommonality>
     <weaponTags>
       <li>GTEK_Glock17_Blk</li>
     </weaponTags>
@@ -7976,7 +8181,7 @@
       <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock17_Grn</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.4</generateCommonality>
+    <generateCommonality>0.33</generateCommonality>
     <weaponTags>
       <li>GTEK_Glock17_Grn</li>
     </weaponTags>
@@ -8114,7 +8319,7 @@
     </recipeMaker>
     <statBases>
       <Mass>0.67</Mass>
-      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
       <SwayFactor>0.63</SwayFactor>
@@ -8222,7 +8427,7 @@
     </recipeMaker>
     <statBases>
       <Mass>0.71</Mass>
-      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.80</SightsEfficiency>
       <ShotSpread>0.18</ShotSpread>
       <SwayFactor>0.64</SwayFactor>
@@ -8313,7 +8518,7 @@
     </graphicData>
     <uiIconScale>1.4</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.25</generateCommonality>
+    <generateCommonality>0.2</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
@@ -8403,6 +8608,109 @@
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalshTwo</def>
         <drawSize>(0.65,0.65)</drawSize>
+        <offsets>
+          <li>(0.19,0.093)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!--Glock 45-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_Glock45S</defName>
+    <label>Glock 45</label>
+    <description>A sleek and lightweight polymer-framed 9mm pistol, like many others. Easy to shoot and has a high magazine capacity, it makes for a popular everyday civilian carry handgun.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Glock/Glock45</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.93,0.93)</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <statBases>
+      <Mass>0.69</Mass>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+      <SightsEfficiency>0.70</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>0.65</SwayFactor>
+      <Bulk>1.89</Bulk>
+      <WorkToMake>7500</WorkToMake>
+    </statBases>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>CE_Sidearm</li>
+      <li>CE_AI_BROOM</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>5</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.80</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>16</range>
+        <soundCast>HID_Shot_9mmPara_Modern</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>17</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.55,0.55)</drawSize>
         <offsets>
           <li>(0.19,0.093)</li>
         </offsets>
@@ -8512,7 +8820,7 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--H&K USP-->
+  <!--H&K USP 45-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_USP45Std</defName>
     <label>H&amp;K USP 45</label>
@@ -8524,6 +8832,7 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.75</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
@@ -8615,7 +8924,7 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--H&K USP Tactical-->
+  <!--H&K USP 45 Tactical-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_USP45Tactical</defName>
     <label>H&amp;K USP 45 Tactical</label>
@@ -8643,12 +8952,12 @@
       <displayPriority>405</displayPriority>
     </recipeMaker>
     <statBases>
-      <Mass>1.29</Mass>
-      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+      <Mass>1.04</Mass>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
-      <ShotSpread>0.11</ShotSpread>
-      <SwayFactor>1.34</SwayFactor>
-      <Bulk>4.08</Bulk>
+      <ShotSpread>0.15</ShotSpread>
+      <SwayFactor>1.02</SwayFactor>
+      <Bulk>3.04</Bulk>
       <WorkToMake>9000</WorkToMake>
     </statBases>
     <equippedStatOffsets>
@@ -8675,7 +8984,7 @@
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.88</recoilAmount>
+        <recoilAmount>2.10</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
@@ -8721,11 +9030,11 @@
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawOffset>0.05,0.0</DrawOffset>
+        <DrawOffset>0.08,0.0</DrawOffset>
       </li>
     </modExtensions>
   </ThingDef>
-  <!--H&K USP Match-->
+  <!--H&K USP 9 Match-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_USP9Match</defName>
     <label>H&amp;K USP 9 Match</label>
@@ -8831,16 +9140,13 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Desert Eagle 50-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_DesertEagle_50AE</defName>
-    <label>Desert Eagle</label>
+  <!--Desert Eagle Mark XIX-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable" Abstract="True" Name="HID_BaseDesertEagleMarkXIX">
     <description>A large semi-automatic pistol which uses a gas operated system, similar to a rifle. Available in a variety of calibers, this one is chambered in the powerful .50 AE cartridge.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/DesertEagle</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9,0.9)</drawSize>
     </graphicData>
+    <uiIconScale>1.3</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.6</generateCommonality>
     <thingCategories Inherit="False">
@@ -8934,16 +9240,25 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Desert Eagle 50 Laser-->
+  <ThingDef ParentName="HID_BaseDesertEagleMarkXIX">
+    <defName>HIDGun_DesertEagle_50AE</defName>
+    <label>Desert Eagle Mark XIX</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/DesertEagle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <!--Desert Eagle Mark XIX Tactical-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_DesertEagle_50AE_Black</defName>
-    <label>Desert Eagle Tactical</label>
+    <label>Desert Eagle Mark XIX Tactical</label>
     <description>A large semi-automatic pistol which uses a gas operated system, similar to a rifle. Available in a variety of calibers, this one is chambered in the powerful .50 AE cartridge.\n\nFitted with a laser light and features an integrated muzzle brake to greatly reduce felt recoil.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/DesertEagle_Blk</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9,0.9)</drawSize>
     </graphicData>
+    <uiIconScale>1.3</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
     <generateCommonality>0.08</generateCommonality>
     <thingCategories Inherit="False">
@@ -8999,7 +9314,7 @@
         <range>23</range>
         <soundCast>HID_Shot_ThunderPistol</soundCast>
         <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
-        <muzzleFlashScale>6</muzzleFlashScale>
+        <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -9046,18 +9361,19 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <!--Desert Eagle 44-->
+  <!--Desert Eagle Mark XIX (Gold)-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_DesertEagle_44MagnumGold</defName>
-    <label>Desert Eagle 44 (Gold)</label>
+    <label>Desert Eagle Mark XIX (Gold)</label>
     <description>A large semi-automatic pistol which uses a gas operated system, similar to a rifle. Available in a variety of calibers, this one is chambered in the powerful .44 Magnum cartridge and has been gold plated.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/DesertEagle44_Gold</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/DesertEagle_Gold</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9,0.9)</drawSize>
     </graphicData>
+    <uiIconScale>1.3</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.05</generateCommonality>
+    <generateCommonality>0.04</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
@@ -9069,11 +9385,11 @@
       <displayPriority>405</displayPriority>
     </recipeMaker>
     <statBases>
-      <Mass>1.91</Mass>
-      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+      <Mass>2.00</Mass>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
       <SightsEfficiency>0.70</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
-      <SwayFactor>1.16</SwayFactor>
+      <SwayFactor>1.18</SwayFactor>
       <Bulk>2.73</Bulk>
       <WorkToMake>8000</WorkToMake>
       <SellPriceFactor>1.5</SellPriceFactor>
@@ -9096,15 +9412,15 @@
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.69</recoilAmount>
+        <recoilAmount>2.94</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_44Magnum_FMJ</defaultProjectile>
+        <defaultProjectile>Bullet_50AE_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <range>20</range>
-        <soundCast>HID_Shot_357Magnum</soundCast>
+        <soundCast>HID_Shot_ThunderPistol</soundCast>
         <soundCastTail>HID_GunTail_MagnumPistol</soundCastTail>
-        <muzzleFlashScale>6</muzzleFlashScale>
+        <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -9132,9 +9448,9 @@
     </tools>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>8</magazineSize>
+        <magazineSize>7</magazineSize>
         <reloadTime>4</reloadTime>
-        <ammoSet>AmmoSet_44Magnum</ammoSet>
+        <ammoSet>AmmoSet_50AE</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
         <aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -9144,7 +9460,7 @@
     <modExtensions>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalshTwo</def>
-        <drawSize>(1,1)</drawSize>
+        <drawSize>(1.5,1.2)</drawSize>
         <offsets>
           <li>(0.28,0.02)</li>
         </offsets>

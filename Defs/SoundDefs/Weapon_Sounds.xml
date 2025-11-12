@@ -318,6 +318,23 @@
       </li>
     </subSounds>
   </SoundDef>
+  <!--8 Gauge-->
+  <SoundDef>
+    <defName>HID_Shot_8Gauge_NoPump</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Shot_GTEK8GaA</clipPath>
+          </li>
+        </grains>
+        <volumeRange>20~20</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
   <!--.22 LR-->
   <SoundDef>
     <defName>HID_Shot_22Caliber</defName>
@@ -1047,6 +1064,7 @@
             <clipPath>Shot_GTEKThunderPistol</clipPath>
           </li>
         </grains>
+        <volumeRange>40~40</volumeRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>

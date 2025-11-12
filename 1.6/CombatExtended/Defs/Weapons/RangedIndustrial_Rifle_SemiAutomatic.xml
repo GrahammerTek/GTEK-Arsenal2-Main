@@ -4091,7 +4091,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_50Beowulf_FMJ</defaultProjectile>
         <warmupTime>1.2</warmupTime>
-        <range>33</range>
+        <range>35</range>
         <soundCast>HID_Shot_ThunderGigaGun</soundCast>
         <soundCastTail>HID_GunTail_762mmNATO</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>

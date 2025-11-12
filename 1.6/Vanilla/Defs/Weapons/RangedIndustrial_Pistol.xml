@@ -1583,87 +1583,11 @@
     </tools>
   </ThingDef>
   <!--=PISTOL=-->
-  <!--Beretta M9A1-->
-  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_BerettaM9Gun</defName>
-    <label>Beretta M9A1</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A1</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.9,0.9)</drawSize>
-    </graphicData>
-    <uiIconScale>1.5</uiIconScale>
-    <soundInteract>Interact_Autopistol</soundInteract>
-    <generateCommonality>0.75</generateCommonality>
-    <thingCategories Inherit="False">
-      <li>HID_SemiAutomaticHandguns</li>
-    </thingCategories>
-    <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-      <displayPriority>405</displayPriority>
-    </recipeMaker>
-    <weaponTags>
-      <li>SimpleGun</li>
-      <li>Autopistol</li>
-      <li>ModernHandgun</li>
-    </weaponTags>
-    <weaponClasses>
-      <li>RangedLight</li>
-    </weaponClasses>
-    <statBases>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>0.96</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.40</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
-    </statBases>
-    <costList>
-      <Steel>25</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
-        <warmupTime>0.3</warmupTime>
-        <range>25.9</range>
-        <soundCast>HID_Shot_9mmPara</soundCast>
-        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>grip</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>9</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
   <!--Beretta 92FS-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Beretta92FS</defName>
     <label>Beretta 92FS</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
+    <description>Widely popular semi-automatic duty pistol. Feeds from 15-round magazines and chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Beretta/Beretta92FS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1738,7 +1662,7 @@
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
     <defName>HIDGun_Beretta92FS_Inox</defName>
     <label>Beretta 92FS Inox</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire.</description>
+    <description>Widely popular semi-automatic duty pistol. Feeds from 15-round magazines and chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Beretta/Beretta92FS_Inox</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1811,13 +1735,89 @@
       </li>
     </tools>
   </ThingDef>
-  <!--Beretta M9A3-->
+  <!--Beretta M9A1-->
   <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
-    <defName>HIDGun_BerettaM9A3Gun</defName>
-    <label>Beretta M9A3</label>
-    <description>An ancient pattern blowback-operated self-loading pistol. It lacks stopping power and range, but is quick to fire. Fitted with a suppressor.</description>
+    <defName>HIDGun_BerettaM9Gun</defName>
+    <label>Beretta M9A1</label>
+    <description>Developed as an upgrade to the original 92FS design, the Beretta M9A1 features an added accessory rail and various minor changes intended to improve reliability. Feeds from 15-round magazines and chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A3</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.75</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>Autopistol</li>
+      <li>ModernHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.96</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>HID_Shot_9mmPara</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Beretta M9A4-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_BerettaM9A4Gun</defName>
+    <label>Beretta M9A4</label>
+    <description>A modernized upgrade to the aging M9 design, the Beretta M9A4 features an optics mount, a threaded barrel, and supports an improved 18-round magazine. Chambered for 9x19mm ammunition. Its steel frame is not only sturdy, but the extra weight also helps mitigate some recoil.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/BerettaM9A4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.9,0.9)</drawSize>
     </graphicData>
@@ -1835,21 +1835,97 @@
       <li>RangedLight</li>
     </weaponClasses>
     <statBases>
-      <WorkToMake>6000</WorkToMake>
-      <Mass>1.35</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.40</AccuracyMedium>
-      <AccuracyLong>0.30</AccuracyLong>
+      <WorkToMake>5500</WorkToMake>
+      <Mass>0.95</Mass>
+      <AccuracyTouch>0.82</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.42</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker IsNull="True">
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>HID_Shot_9mmPara</soundCast>
+        <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--Beretta M9A4 Tactical-->
+  <!--Beretta 92XI SAO GARA-->
+  <ThingDef ParentName="HIDGun_MainWeaponBase_Makeable">
+    <defName>HIDGun_Beretta92XI_SAO_GARA</defName>
+    <label>Beretta 92XI SAO GARA</label>
+    <description>High-end competition variant of the Beretta 92 series of handguns. Comes standard with an attached compensator and fitted with a red dot and laser light. Holds 22 rounds of 9x19mm ammuntion.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Beretta/Beretta92XI_SAO_GARA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.06</generateCommonality>
+    <thingCategories Inherit="False">
+      <li>HID_SemiAutomaticHandguns</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Autopistol</li>
+      <li>ExoticHandgun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>6500</WorkToMake>
+      <Mass>0.95</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
     </statBases>
     <equippedStatOffsets>
       <ShootingAccuracyPawn>0.4</ShootingAccuracyPawn>
       <AimingDelayFactor>-0.10</AimingDelayFactor>
     </equippedStatOffsets>
     <costList>
-      <Steel>35</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>25</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <recipeMaker IsNull="True">
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
@@ -1863,11 +1939,11 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
-        <warmupTime>0.4</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <range>25.9</range>
         <soundCast>HID_Shot_9mmPara</soundCast>
         <soundCastTail>HID_GunTail_9mmPara</soundCastTail>
-        <muzzleFlashScale>3</muzzleFlashScale>
+        <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -2428,6 +2504,7 @@
     </graphicData>
     <uiIconScale>1.5</uiIconScale>
     <soundInteract>Interact_Autopistol</soundInteract>
+    <generateCommonality>0.75</generateCommonality>
     <thingCategories Inherit="False">
       <li>HID_SemiAutomaticHandguns</li>
     </thingCategories>
@@ -4673,7 +4750,7 @@
         <defaultProjectile>HIDBullet_9x19mm_Slow</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>19.9</range>
-        <burstShotCount>3</burstShotCount>
+        <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <soundCast>HID_Shot_9mmPara_Modern</soundCast>
         <soundCastTail>HID_GunTail_9mmPara</soundCastTail>

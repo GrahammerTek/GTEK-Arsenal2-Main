@@ -480,7 +480,7 @@
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/AzraelPRS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.74,1.74)</drawSize>
+      <drawSize>1.66</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <generateCommonality>0.33</generateCommonality>
@@ -587,7 +587,7 @@
         <def>MF_StandardMuzzleFalshThree</def>
         <drawSize>(1.1,1)</drawSize>
         <offsets>
-          <li>(1.17,0.05)</li>
+          <li>(1.15,0.05)</li>
         </offsets>
       </li>
     </modExtensions>
@@ -719,7 +719,7 @@
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/BarrettMRAD_Snd</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.66,1.66)</drawSize>
+      <drawSize>1.74</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <thingCategories Inherit="False">
@@ -754,7 +754,7 @@
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.89</recoilAmount>
+        <recoilAmount>1.92</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
@@ -825,7 +825,7 @@
         <def>MF_StandardMuzzleFalshThree</def>
         <drawSize>(1.75,1.3)</drawSize>
         <offsets>
-          <li>(1.23,0)</li>
+          <li>(1.2,0)</li>
         </offsets>
       </li>
     </modExtensions>
