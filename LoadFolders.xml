@@ -1,11 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <loadFolders>
-  <v1.4>
-    <li>/</li>
-    <li IfModActive="CETeam.CombatExtended">1.4/CombatExtended</li>
-    <li IfModNotActive="CETeam.CombatExtended">1.4/Vanilla</li>
-    <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.4/VFE</li>
-  </v1.4>
   <v1.5>
     <li>/</li>
     <li IfModActive="CETeam.CombatExtended">1.5/CombatExtended</li>
